@@ -1,6 +1,138 @@
 [
     {
         "id": 1,
-        "recipeId": 1
+        "recipeId": 1,
+        "ingredient": "Golden Caster Sugar",
+        "quantity": "200",
+        "unit": "grams",
+        "instructionSection": 1
+    },
+    {
+        "id": 2,
+        "recipeId": 1,
+        "ingredient": "Butter",
+        "quantity": "200",
+        "unit": "grams",
+        "instructionSection": 1
+    },
+    {
+        "id": 3,
+        "recipeId": 1,
+        "ingredient": "Eggs",
+        "quantity": "4",
+        "unit": "large",
+        "instructionSection": 1
+    },
+    {
+        "id": 4,
+        "recipeId": 1,
+        "ingredient": "Self-raising Flour",
+        "quantity": "200",
+        "unit": "grams",
+        "instructionSection": 1
+    },
+    {
+        "id": 5,
+        "recipeId": 1,
+        "ingredient": "Cocoa Powder",
+        "quantity": "2",
+        "unit": "table spoons",
+        "instructionSection": 1
+    },
+    {
+        "id": 6,
+        "recipeId": 1,
+        "ingredient": "Baking Powder",
+        "quantity": "1",
+        "unit": "tea spoon",
+        "instructionSection": 1
+    },
+    {
+        "id": 7,
+        "recipeId": 1,
+        "ingredient": "Vanilla Extract",
+        "quantity": "1/2",
+        "unit": "tea spoon",
+        "instructionSection": 1
+    },
+    {
+        "id": 8,
+        "recipeId": 1,
+        "ingredient": "Salt",
+        "quantity": "1",
+        "unit": "pinch",
+        "instructionSection": 1
+    },
+    {
+        "id": 9,
+        "recipeId": 1,
+        "ingredient": "Milk",
+        "quantity": "2",
+        "unit": "table spoons",
+        "instructionSection": 1
+    },
+    {
+        "id": 10,
+        "recipeId": 1,
+        "ingredient": "Milk Chocolate",
+        "quantity": "100",
+        "unit": "grams",
+        "instructionSection": 2
+    },
+    {
+        "id": 11,
+        "recipeId": 1,
+        "ingredient": "Butter",
+        "quantity": "200",
+        "unit": "grams",
+        "instructionSection": 2
+    },
+    {
+        "id": 12,
+        "recipeId": 1,
+        "ingredient": "Icing Sugar",
+        "quantity": "400",
+        "unit": "grams",
+        "instructionSection": 2
+    },
+    {
+        "id": 13,
+        "recipeId": 1,
+        "ingredient": "Cocoa Powder",
+        "quantity": "5",
+        "unit": "table spoons",
+        "instructionSection": 2
+    },
+    {
+        "id": 14,
+        "recipeId": 1,
+        "ingredient": "Milk",
+        "quantity": "2",
+        "unit": "table spoons",
+        "instructionSection": 2
+    },
+    {
+        "id": 15,
+        "recipeId": 1,
+        "ingredient": "Dark Chocolate",
+        "quantity": "50",
+        "unit": "grams",
+        "instructionSection": 3
+    },
+    {
+        "id": 16,
+        "recipeId": 1,
+        "ingredient": "Milk Chocolate",
+        "quantity": "25",
+        "unit": "grams",
+        "instructionSection": 3
+    },
+    {
+        "id": 17,
+        "recipeId": 1,
+        "ingredient": "White Chocolate",
+        "quantity": "25",
+        "unit": "grams",
+        "instructionSection": 3
     }
 ]

@@ -5,167 +5,6 @@
         "description": "Master the chocolate cake with an airy, light sponge and rich buttercream filling. It's simple enough for an afternoon tea but special enough for a party too",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake",
-        "ingredients": [
-            {
-                "ingredient": "Golden Caster Sugar",
-                "quantity": "200",
-                "unit": "grams",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Butter",
-                "quantity": "200",
-                "unit": "grams",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Eggs",
-                "quantity": "4",
-                "unit": "large",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Self-raising Flour",
-                "quantity": "200",
-                "unit": "grams",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Cocoa Powder",
-                "quantity": "2",
-                "unit": "table spoons",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Baking Powder",
-                "quantity": "1",
-                "unit": "tea spoon",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Vanilla Extract",
-                "quantity": "1/2",
-                "unit": "tea spoon",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Salt",
-                "quantity": "1",
-                "unit": "pinch",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Milk",
-                "quantity": "2",
-                "unit": "table spoons",
-                "instructionSection": 1
-            },
-            {
-                "ingredient": "Milk Chocolate",
-                "quantity": "100",
-                "unit": "grams",
-                "instructionSection": 2
-            },
-            {
-                "ingredient": "Butter",
-                "quantity": "200",
-                "unit": "grams",
-                "instructionSection": 2
-            },
-            {
-                "ingredient": "Icing Sugar",
-                "quantity": "400",
-                "unit": "grams",
-                "instructionSection": 2
-            },
-            {
-                "ingredient": "Cocoa Powder",
-                "quantity": "5",
-                "unit": "table spoons",
-                "instructionSection": 2
-            },
-            {
-                "ingredient": "Milk",
-                "quantity": "2",
-                "unit": "table spoons",
-                "instructionSection": 2
-            },
-            {
-                "ingredient": "Dark Chocolate",
-                "quantity": "50",
-                "unit": "grams",
-                "instructionSection": 3
-            },
-            {
-                "ingredient": "Milk Chocolate",
-                "quantity": "25",
-                "unit": "grams",
-                "instructionSection": 3
-            },
-            {
-                "ingredient": "White Chocolate",
-                "quantity": "25",
-                "unit": "grams",
-                "instructionSection": 3
-            }
-        ],
-        "instructions": [
-            {
-                "step": 1,
-                "instruction": "Pre-heat the oven to gas mark 5. Butter the base and sides of two 20cm round sandwich tins and line the bases with baking parchment.",
-                "instructionSection": 1
-            },
-            {
-                "step": 2,
-                "instruction": "In a large bowl, beat together 200g golden caster sugar, 200g softened unsalted butter, 4 large eggs, 200g self-raising flour, 2 tbsp cocoa powder, 1 tsp baking powder, 1/2 tsp vanilla extract, 2 tbsp milk and a pinch of salt until pale.",
-                "instructionSection": 1
-            },
-            {
-                "step": 3,
-                "instruction": "Divide the mixture between the prepared tins. Bake for 20 mins or until a skewer inserted into the centre of the cake comes out clean.",
-                "instructionSection": 1
-            },
-            {
-                "step": 4,
-                "instruction": "Leave to cool in the tin for 10 mins, then turn out onto a wire rack to cool completely.",
-                "instructionSection": 1
-            },
-            {
-                "step": 5,
-                "instruction": "For the buttercream, put 100g chopped milk chocolate in a heatproof bowl and melt in the microwave, stirring every 30 seconds. Leave the melted chocolate to cool for 5 minutes.",
-                "instructionSection": 2
-            },
-            {
-                "step": 6,
-                "instruction": "Mash 200g softened butter and 400g icing sugar together with a fork, then switch to a wooden spoon or electric beaters, if you have them.",
-                "instructionSection": 2
-            },
-            {
-                "step": 7,
-                "instruction": "Sift in 5 tbsp cocoa powder with a pinch of salt and pour in the melted chocolate and 2 tbsp milk. Mix again until smooth.",
-                "instructionSection": 2
-            },
-            {
-                "step": 8,
-                "instruction": "On a cake stand or large plate, sandwich the cakes together with half of the buttercream, then spread the rest on top. Decorate with chocolate shards if you like.",
-                "instructionSection": 2
-            },
-            {
-                "step": 9,
-                "instruction": "To make chocolate shards: melt 50g dark chocolate and pour it onto a tray lined with baking parchment or foil.",
-                "instructionSection": 3
-            },
-            {
-                "step": 10,
-                "instruction": "Now melt 25g milk chocolate and 25g white chocolate, and drizzle them over the dark chocolate before it sets.",
-                "instructionSection": 3
-            },
-            {
-                "step": 11,
-                "instruction": "Shake the tray gently to level the mixture then leave to set somewhere cool. Chop into shards.",
-                "instructionSection": 3
-            }
-        ],
         "sectionValues": {
             "1": "Cake",
             "2": "Icing",
@@ -187,36 +26,28 @@
             "servings": 14,
             "nutritionalInformation": {
                 "calories": {
-                    "perServing": 523,
-                    "total": 7322
+                    "perServing": 523
                 },
                 "fat": {
-                    "perServing": 29,
-                    "total": 406
+                    "perServing": 29
                 },
                 "saturates": {
-                    "perServing": 18,
-                    "total": 252
+                    "perServing": 18
                 },
                 "carbs": {
-                    "perServing": 59,
-                    "total": 826
+                    "perServing": 59
                 },
                 "sugar": {
-                    "perServing": 47,
-                    "total": 658
+                    "perServing": 47
                 },
                 "fibre": {
-                    "perServing": 2,
-                    "total": 28
+                    "perServing": 2
                 },
                 "protein": {
-                    "perServing": 6,
-                    "total": 84
+                    "perServing": 6
                 },
                 "salt": {
-                    "perServing": 0.6,
-                    "total": 8.4
+                    "perServing": 0.6
                 }
             },
             "isVegetarian": true,

@@ -1,6 +1,79 @@
 [
     {
         "id": 1,
-        "recipeId": 1
+        "recipeId": 1,
+        "step": 1,
+        "instruction": "Pre-heat the oven to gas mark 5. Butter the base and sides of two 20cm round sandwich tins and line the bases with baking parchment.",
+        "instructionSection": 1
+    },
+    {
+        "id": 2,
+        "recipeId": 1,
+        "step": 2,
+        "instruction": "In a large bowl, beat together 200g golden caster sugar, 200g softened unsalted butter, 4 large eggs, 200g self-raising flour, 2 tbsp cocoa powder, 1 tsp baking powder, 1/2 tsp vanilla extract, 2 tbsp milk and a pinch of salt until pale.",
+        "instructionSection": 1
+    },
+    {
+        "id": 3,
+        "recipeId": 1,
+        "step": 3,
+        "instruction": "Divide the mixture between the prepared tins. Bake for 20 mins or until a skewer inserted into the centre of the cake comes out clean.",
+        "instructionSection": 1
+    },
+    {
+        "id": 4,
+        "recipeId": 1,
+        "step": 4,
+        "instruction": "Leave to cool in the tin for 10 mins, then turn out onto a wire rack to cool completely.",
+        "instructionSection": 1
+    },
+    {
+        "id": 5,
+        "recipeId": 1,
+        "step": 5,
+        "instruction": "For the buttercream, put 100g chopped milk chocolate in a heatproof bowl and melt in the microwave, stirring every 30 seconds. Leave the melted chocolate to cool for 5 minutes.",
+        "instructionSection": 2
+    },
+    {
+        "id": 6,
+        "recipeId": 1,
+        "step": 6,
+        "instruction": "Mash 200g softened butter and 400g icing sugar together with a fork, then switch to a wooden spoon or electric beaters, if you have them.",
+        "instructionSection": 2
+    },
+    {
+        "id": 7,
+        "recipeId": 1,
+        "step": 7,
+        "instruction": "Sift in 5 tbsp cocoa powder with a pinch of salt and pour in the melted chocolate and 2 tbsp milk. Mix again until smooth.",
+        "instructionSection": 2
+    },
+    {
+        "id": 8,
+        "recipeId": 1,
+        "step": 8,
+        "instruction": "On a cake stand or large plate, sandwich the cakes together with half of the buttercream, then spread the rest on top. Decorate with chocolate shards if you like.",
+        "instructionSection": 2
+    },
+    {
+        "id": 9,
+        "recipeId": 1,
+        "step": 9,
+        "instruction": "To make chocolate shards: melt 50g dark chocolate and pour it onto a tray lined with baking parchment or foil.",
+        "instructionSection": 3
+    },
+    {
+        "id": 10,
+        "recipeId": 1,
+        "step": 10,
+        "instruction": "Now melt 25g milk chocolate and 25g white chocolate, and drizzle them over the dark chocolate before it sets.",
+        "instructionSection": 3
+    },
+    {
+        "id": 11,
+        "recipeId": 1,
+        "step": 11,
+        "instruction": "Shake the tray gently to level the mixture then leave to set somewhere cool. Chop into shards.",
+        "instructionSection": 3
     }
 ]
