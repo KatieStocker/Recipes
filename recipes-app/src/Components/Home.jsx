@@ -2,7 +2,7 @@ import React from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 //Above data will be passed as props
 
-import RecipePage from './RecipePage'
+import RecipePage from './Recipe/RecipePage'
 
 const Home = () => {
     return (

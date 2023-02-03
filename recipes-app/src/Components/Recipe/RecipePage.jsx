@@ -1,7 +1,7 @@
 import React from 'react'
 // Below data will be used here -> select the right recipe id based on the recipe data passed through the props
-import RecipeIngredientsData from '../Tests/TestData/RecipeIngredientsExample.json'
-import RecipeInstructionsData from '../Tests/TestData/RecipeInstructionsExample.json'
+import RecipeIngredientsData from '../../Tests/TestData/RecipeIngredientsExample.json'
+import RecipeInstructionsData from '../../Tests/TestData/RecipeInstructionsExample.json'
 
 const RecipePage = ({ data }) => {
 
