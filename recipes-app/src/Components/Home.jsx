@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 
@@ -19,8 +20,13 @@ const Home = () => {
 
     return (
         <>
-            <TitleSection />
-            <RecipePage data={{ selectedRecipe }} />
+            <Router>
+                <Routes>
+                    {/* ToDo: TitleSection Component to be encapsulated within a separate component which will render "featured" recipes etc. */}
+                    <Route exact path="/" element={<TitleSection />}></Route>
+                    <Route path="/recipe" element={<RecipePage data={{ selectedRecipe }} />}></Route>
+                </Routes>
+            </Router>
         </>
     )
 }
