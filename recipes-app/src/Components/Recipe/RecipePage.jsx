@@ -8,11 +8,10 @@ import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'
 
 const RecipePage = ({ data }) => {
 
-    // temporary assignment, recipe id will be passed through the props based on which is selected.
-    let recipeId = data.RecipeData[0].id
+    const { selectedRecipe } = data;
 
     const renderRecipe = () => {
-        const recipeData = data.RecipeData[0];
+        const recipeData = selectedRecipe;
 
         return (
             <div>
@@ -35,8 +34,8 @@ const RecipePage = ({ data }) => {
                 {renderRecipe()}
             </div>
             <div>
-                <RecipePageIngredients data={{ ingredients, recipeId }} />
-                <RecipePageInstructions data={{ instructions, recipeId }} />
+                <RecipePageIngredients data={{ ingredients, recipeId: selectedRecipe.id }} />
+                <RecipePageInstructions data={{ instructions, recipeId: selectedRecipe.id }} />
             </div>
         </div>
     )
