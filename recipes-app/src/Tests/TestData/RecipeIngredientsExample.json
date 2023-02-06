@@ -4,16 +4,18 @@
         "recipeId": 1,
         "ingredient": "Golden Caster Sugar",
         "quantity": "200",
-        "unit": "grams",
-        "instructionSection": 1
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 2,
         "recipeId": 1,
         "ingredient": "Butter",
         "quantity": "200",
-        "unit": "grams",
-        "instructionSection": 1
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 3,
@@ -21,39 +23,44 @@
         "ingredient": "Eggs",
         "quantity": "4",
         "unit": "large",
-        "instructionSection": 1
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 4,
         "recipeId": 1,
         "ingredient": "Self-raising Flour",
         "quantity": "200",
-        "unit": "grams",
-        "instructionSection": 1
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 5,
         "recipeId": 1,
         "ingredient": "Cocoa Powder",
         "quantity": "2",
-        "unit": "table spoons",
-        "instructionSection": 1
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 6,
         "recipeId": 1,
         "ingredient": "Baking Powder",
         "quantity": "1",
-        "unit": "tea spoon",
-        "instructionSection": 1
+        "unit": "tsp",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 7,
         "recipeId": 1,
         "ingredient": "Vanilla Extract",
         "quantity": "1/2",
-        "unit": "tea spoon",
-        "instructionSection": 1
+        "unit": "tsp",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 8,
@@ -61,78 +68,187 @@
         "ingredient": "Salt",
         "quantity": "1",
         "unit": "pinch",
-        "instructionSection": 1
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 9,
         "recipeId": 1,
         "ingredient": "Milk",
         "quantity": "2",
-        "unit": "table spoons",
-        "instructionSection": 1
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": ""
     },
     {
         "id": 10,
         "recipeId": 1,
         "ingredient": "Milk Chocolate",
         "quantity": "100",
-        "unit": "grams",
-        "instructionSection": 2
+        "unit": "g",
+        "instructionSection": 2,
+        "prepInfo": ""
     },
     {
         "id": 11,
         "recipeId": 1,
         "ingredient": "Butter",
         "quantity": "200",
-        "unit": "grams",
-        "instructionSection": 2
+        "unit": "g",
+        "instructionSection": 2,
+        "prepInfo": ""
     },
     {
         "id": 12,
         "recipeId": 1,
         "ingredient": "Icing Sugar",
         "quantity": "400",
-        "unit": "grams",
-        "instructionSection": 2
+        "unit": "g",
+        "instructionSection": 2,
+        "prepInfo": ""
     },
     {
         "id": 13,
         "recipeId": 1,
         "ingredient": "Cocoa Powder",
         "quantity": "5",
-        "unit": "table spoons",
-        "instructionSection": 2
+        "unit": "tbsp",
+        "instructionSection": 2,
+        "prepInfo": ""
     },
     {
         "id": 14,
         "recipeId": 1,
         "ingredient": "Milk",
         "quantity": "2",
-        "unit": "table spoons",
-        "instructionSection": 2
+        "unit": "tbsp",
+        "instructionSection": 2,
+        "prepInfo": ""
     },
     {
         "id": 15,
         "recipeId": 1,
         "ingredient": "Dark Chocolate",
         "quantity": "50",
-        "unit": "grams",
-        "instructionSection": 3
+        "unit": "g",
+        "instructionSection": 3,
+        "prepInfo": ""
     },
     {
         "id": 16,
         "recipeId": 1,
         "ingredient": "Milk Chocolate",
         "quantity": "25",
-        "unit": "grams",
-        "instructionSection": 3
+        "unit": "g",
+        "instructionSection": 3,
+        "prepInfo": ""
     },
     {
         "id": 17,
         "recipeId": 1,
         "ingredient": "White Chocolate",
         "quantity": "25",
-        "unit": "grams",
-        "instructionSection": 3
+        "unit": "g",
+        "instructionSection": 3,
+        "prepInfo": ""
+    },
+    {
+        "id": 18,
+        "recipeId": 2,
+        "ingredient": "Butter",
+        "quantity": "50",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 19,
+        "recipeId": 2,
+        "ingredient": "Butter",
+        "quantity": "50",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 20,
+        "recipeId": 2,
+        "ingredient": "Potatoes",
+        "quantity": "450",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": "peeled and cut into 1cm pieces"
+    },
+    {
+        "id": 21,
+        "recipeId": 2,
+        "ingredient": "onion",
+        "quantity": "1",
+        "unit": "small",
+        "instructionSection": 1,
+        "prepInfo": "cut to the same size as the potatoes"
+    },
+    {
+        "id": 22,
+        "recipeId": 2,
+        "ingredient": "White Part of Leeks",
+        "quantity": "450",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": "sliced, save the green tops for another soup or stock"
+    },
+    {
+        "id": 23,
+        "recipeId": 2,
+        "ingredient": "Stock (chicken or vegetable)",
+        "quantity": "2",
+        "unit": "pts",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 24,
+        "recipeId": 2,
+        "ingredient": "Whipping Cream",
+        "quantity": "142",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 25,
+        "recipeId": 2,
+        "ingredient": "Full-Fat Milk",
+        "quantity": "125",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 26,
+        "recipeId": 2,
+        "ingredient": "Leek",
+        "quantity": "1",
+        "unit": "average",
+        "instructionSection": 2,
+        "prepInfo": "just the white part"
+    },
+    {
+        "id": 27,
+        "recipeId": 2,
+        "ingredient": "Butter",
+        "quantity": "small",
+        "unit": "knob",
+        "instructionSection": 2,
+        "prepInfo": ""
+    },
+    {
+        "id": 28,
+        "recipeId": 2,
+        "ingredient": "Chives",
+        "quantity": "small",
+        "unit": "handful",
+        "instructionSection": 2,
+        "prepInfo": "finely chopped"
     }
 ]

@@ -75,5 +75,61 @@
         "step": 11,
         "instruction": "Shake the tray gently to level the mixture then leave to set somewhere cool. Chop into shards.",
         "instructionSection": 3
+    },
+    {
+        "id": 12,
+        "recipeId": 2,
+        "step": 1,
+        "instruction": "Melt 50g butter in a heavy saucepan. When it foams, add 450g potatoes, cut into 1cm cubes, 1 small onion, cut to the same size as the potatoes, and 450g white parts of leeks, sliced and toss them in the butter until they are well coated.",
+        "instructionSection": 1
+    },
+    {
+        "id": 13,
+        "recipeId": 2,
+        "step": 2,
+        "instruction": "Season well with salt and freshly ground pepper and toss again. Put a disc of greaseproof paper (called a cartouche by chefs) on top of the vegetables to keep in the steam, then cover the pan with its lid.",
+        "instructionSection": 1
+    },
+    {
+        "id": 14,
+        "recipeId": 2,
+        "step": 3,
+        "instruction": "Cook over a gentle heat for 10 minutes, or until the vegetables are soft but not coloured.",
+        "instructionSection": 1
+    },
+    {
+        "id": 15,
+        "recipeId": 2,
+        "step": 4,
+        "instruction": "Uncover the pan and discard the paper. Pour in 850ml of the light chicken or vegetable stock, bring to the boil and simmer until the vegetables are just cooked - about 5 minutes. Do no overcook or the soup will lose its fresh flavour.",
+        "instructionSection": 1
+    },
+    {
+        "id": 16,
+        "recipeId": 2,
+        "step": 5,
+        "instruction": "Puree in a blender until silky smooth, in batches if necessary, then taste and adjust the seasoning. Return the soup to a clear pan and stir in three quarters of a 142ml carton of whipping cream and 125ml full-fat milk.",
+        "instructionSection": 1
+    },
+    {
+        "id": 17,
+        "recipeId": 2,
+        "step": 6,
+        "instruction": "To finish the soup, finely shred the white part of 1 leek and gently cook it in a small knob of butter for a few minutes until it is softened but not coloured.",
+        "instructionSection": 2
+    },
+    {
+        "id": 18,
+        "recipeId": 2,
+        "step": 7,
+        "instruction": "Reheat the soup to a gentle simmer (add some extra stock at this point if the soup is too thick for your liking), then pour into warmed bowls.",
+        "instructionSection": 2
+    },
+    {
+        "id": 19,
+        "recipeId": 2,
+        "step": 8,
+        "instruction": "Drizzle the remaining cream over each serving, top with a little pile of buttered leeks and a scattering of chives and black pepper and serve at once.",
+        "instructionSection": 2
     }
 ]
