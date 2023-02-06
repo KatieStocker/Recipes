@@ -6,9 +6,9 @@ const RecipePageInstructions = ({ data }) => {
 
     const renderInstructions = () => {
         return instructions.map((i) => (
-            <>
+            <div key={i.id}>
                 {i.recipeId === recipeId ? <p>{i.step}. {i.instruction}</p> : <></>}
-            </>
+            </div>
         ))
     }
 
