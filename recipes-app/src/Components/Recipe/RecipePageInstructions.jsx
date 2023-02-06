@@ -7,7 +7,7 @@ const RecipePageInstructions = ({ data }) => {
     const renderInstructions = () => {
         return instructions.map((i) => (
             <>
-                {i.recipeId === recipeId ? <p>{i.step}. {i.instruction}</p> : <p>Test</p>}
+                {i.recipeId === recipeId ? <p>{i.step}. {i.instruction}</p> : <></>}
             </>
         ))
     }
