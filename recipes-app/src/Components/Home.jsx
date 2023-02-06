@@ -8,7 +8,6 @@ const Home = () => {
     return (
         <>
             <TitleSection />
-            <span>- - - - - - - - - - - -</span>
             <RecipePage data={{ RecipeData }} />
         </>
     )
