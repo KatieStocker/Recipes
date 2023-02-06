@@ -1,29 +1,14 @@
 import React from 'react'
+import '../../CSS/RecipePage.css'
+import RecipePageIngredients from './RecipePageIngredients'
+import RecipePageInstructions from './RecipePageInstructions'
 // Below data will be used here -> select the right recipe id based on the recipe data passed through the props
-import RecipeIngredientsData from '../../Tests/TestData/RecipeIngredientsExample.json'
-import RecipeInstructionsData from '../../Tests/TestData/RecipeInstructionsExample.json'
+import ingredients from '../../Tests/TestData/RecipeIngredientsExample.json'
+import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'
 
 const RecipePage = ({ data }) => {
 
-    let recipeIdValue = data.RecipeData[0].id
-
-    // ToDo: make this it's own separate component (same goes for instruction data)
-    // Note: for the unit, can use an enum, or similar, to render the initialised measurement OR store the unit as that value
-    const renderIngredients = () => {
-        return RecipeIngredientsData.map((i) => (
-            <>
-                {i.recipeId === recipeIdValue ? <p>{i.quantity} {i.unit} {i.ingredient}</p> : <p>Test</p>}
-            </>
-        ))
-    }
-
-    const renderInstructions = () => {
-        return RecipeInstructionsData.map((i) => (
-            <>
-                {i.recipeId === recipeIdValue ? <p>{i.step}. {i.instruction}</p> : <p>Test</p>}
-            </>
-        ))
-    }
+    let recipeId = data.RecipeData[0].id
 
     const renderRecipe = () => {
         const recipeData = data.RecipeData[0];
@@ -43,19 +28,15 @@ const RecipePage = ({ data }) => {
     }
 
     return (
-        <>
+        <div className="recipe-page">
             <div>
                 {renderRecipe()}
             </div>
             <div>
-                <h3>Ingredients</h3>
-                {renderIngredients()}
+                <RecipePageIngredients data={{ ingredients, recipeId }} />
+                <RecipePageInstructions data={{ instructions, recipeId }} />
             </div>
-            <div>
-                <h3>Instructions</h3>
-                {renderInstructions()}
-            </div>
-        </>
+        </div>
     )
 }
 export default RecipePage;
