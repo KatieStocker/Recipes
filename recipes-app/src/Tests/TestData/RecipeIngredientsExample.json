@@ -67,7 +67,7 @@
         "recipeId": 1,
         "ingredient": "Salt",
         "quantity": "1",
-        "unit": "pinch",
+        "unit": "pinch of",
         "instructionSection": 1,
         "prepInfo": ""
     },
@@ -164,15 +164,6 @@
     {
         "id": 19,
         "recipeId": 2,
-        "ingredient": "Butter",
-        "quantity": "50",
-        "unit": "g",
-        "instructionSection": 1,
-        "prepInfo": ""
-    },
-    {
-        "id": 20,
-        "recipeId": 2,
         "ingredient": "Potatoes",
         "quantity": "450",
         "unit": "g",
@@ -180,16 +171,16 @@
         "prepInfo": "peeled and cut into 1cm pieces"
     },
     {
-        "id": 21,
+        "id": 20,
         "recipeId": 2,
-        "ingredient": "onion",
+        "ingredient": "Onion",
         "quantity": "1",
         "unit": "small",
         "instructionSection": 1,
         "prepInfo": "cut to the same size as the potatoes"
     },
     {
-        "id": 22,
+        "id": 21,
         "recipeId": 2,
         "ingredient": "White Part of Leeks",
         "quantity": "450",
@@ -198,7 +189,7 @@
         "prepInfo": "sliced, save the green tops for another soup or stock"
     },
     {
-        "id": 23,
+        "id": 22,
         "recipeId": 2,
         "ingredient": "Stock (chicken or vegetable)",
         "quantity": "2",
@@ -207,7 +198,7 @@
         "prepInfo": ""
     },
     {
-        "id": 24,
+        "id": 23,
         "recipeId": 2,
         "ingredient": "Whipping Cream",
         "quantity": "142",
@@ -216,7 +207,7 @@
         "prepInfo": ""
     },
     {
-        "id": 25,
+        "id": 24,
         "recipeId": 2,
         "ingredient": "Full-Fat Milk",
         "quantity": "125",
@@ -225,7 +216,7 @@
         "prepInfo": ""
     },
     {
-        "id": 26,
+        "id": 25,
         "recipeId": 2,
         "ingredient": "Leek",
         "quantity": "1",
@@ -234,20 +225,20 @@
         "prepInfo": "just the white part"
     },
     {
-        "id": 27,
+        "id": 26,
         "recipeId": 2,
         "ingredient": "Butter",
         "quantity": "small",
-        "unit": "knob",
+        "unit": "knob of",
         "instructionSection": 2,
         "prepInfo": ""
     },
     {
-        "id": 28,
+        "id": 27,
         "recipeId": 2,
         "ingredient": "Chives",
         "quantity": "small",
-        "unit": "handful",
+        "unit": "handful of",
         "instructionSection": 2,
         "prepInfo": "finely chopped"
     }
