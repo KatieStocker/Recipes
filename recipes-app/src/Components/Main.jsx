@@ -23,7 +23,6 @@ const Main = () => {
         <>
             <Router>
                 <Routes>
-                    {/* ToDo: TitleSection Component to be encapsulated within a separate component which will render "featured" recipes etc. */}
                     <Route exact path="/" element={<HomePage />}></Route>
                     <Route path="/recipe" element={<RecipePage data={{ selectedRecipe }} />}></Route>
                     <Route path="/all-recipes" element={<AllRecipes data={{ recipes: RecipeData }} />}></Route>
