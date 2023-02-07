@@ -19,13 +19,15 @@ const Main = () => {
         }
     }
 
+    console.log("Main page recipe object: " + JSON.stringify(RecipeData))
+
     return (
         <>
             <Router>
                 <Routes>
                     <Route exact path="/" element={<HomePage />}></Route>
                     <Route path="/recipe" element={<RecipePage data={{ selectedRecipe }} />}></Route>
-                    <Route path="/all-recipes" element={<AllRecipes data={{ recipes: RecipeData }} />}></Route>
+                    <Route path="/all-recipes" element={<AllRecipes data={{ RecipeData }} />}></Route>
                 </Routes>
             </Router>
         </>

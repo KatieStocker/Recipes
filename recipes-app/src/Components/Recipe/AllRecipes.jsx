@@ -3,11 +3,13 @@
 import React from 'react'
 import RecipeThumbnail from './RecipeThumbnail'
 
-const AllRecipes = (data) => {
-    const { Recipes } = data
+const AllRecipes = ({ data }) => {
+    const { RecipeData } = data;
+    console.log("data object: " + JSON.stringify(data))
+    console.log("recipes object: " + JSON.stringify(RecipeData))
 
     const renderRecipes = () => {
-        return Recipes.map((i) => (
+        return RecipeData.map((i) => (
             <RecipeThumbnail key={i.id} data={{ recipe: i }} />
         ))
     }
@@ -15,7 +17,7 @@ const AllRecipes = (data) => {
     return (
         <div>
             <h1>All Recipes</h1>
-            <div>
+            <div className="row">
                 {renderRecipes()}
             </div>
         </div>
