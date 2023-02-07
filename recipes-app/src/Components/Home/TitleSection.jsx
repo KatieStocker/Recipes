@@ -1,5 +1,5 @@
 import React from 'react'
-import '../CSS/TitleSection.css'
+import '../../CSS/TitleSection.css'
 
 const TitleSection = () => {
     return (

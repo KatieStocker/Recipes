@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 
+import AllRecipes from './Recipe/AllRecipes';
+import HomePage from './Home/HomePage'
 import RecipePage from './Recipe/RecipePage'
-import TitleSection from './TitleSection'
 
-const Home = () => {
+const Main = () => {
 
     let selectedRecipe = RecipeData[0]
 
@@ -23,11 +24,12 @@ const Home = () => {
             <Router>
                 <Routes>
                     {/* ToDo: TitleSection Component to be encapsulated within a separate component which will render "featured" recipes etc. */}
-                    <Route exact path="/" element={<TitleSection />}></Route>
+                    <Route exact path="/" element={<HomePage />}></Route>
                     <Route path="/recipe" element={<RecipePage data={{ selectedRecipe }} />}></Route>
+                    <Route path="/all-recipes" element={<AllRecipes data={{ recipes: RecipeData }} />}></Route>
                 </Routes>
             </Router>
         </>
     )
 }
-export default Home;
+export default Main;
