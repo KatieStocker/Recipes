@@ -5,20 +5,24 @@ const RecipePageIngredients = ({ data }) => {
     const { ingredients, recipeId } = data
 
     const renderIngredients = () => {
-        return ingredients.map((i) => (
-            <div key={i.id} className="col-6">
-                {i.recipeId === recipeId ? <p key={i.id}>{i.quantity} {i.unit} {i.ingredient}</p> : <></>}
-            </div>
-        ))
+        return ingredients
+            .filter((i) => {
+                return i.recipeId === recipeId
+            })
+            .map((i) => (
+                <div key={i.id} className="col-6">
+                    <p key={i.id}>{i.quantity} {i.unit} {i.ingredient}</p>
+                </div>
+            ))
     }
 
     return (
-        <>
-            <h3>Ingredients</h3>
+        <div className="section-separator">
+            <h3 className="mb-4">Ingredients</h3>
             <div className="row">
                 {renderIngredients()}
             </div>
-        </>
+        </div>
     )
 }
 export default RecipePageIngredients;
