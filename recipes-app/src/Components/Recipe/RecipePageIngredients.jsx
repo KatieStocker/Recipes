@@ -6,7 +6,7 @@ const RecipePageIngredients = ({ data }) => {
 
     const renderIngredients = () => {
         return ingredients.map((i) => (
-            <div key={i.id}>
+            <div key={i.id} className="col-6">
                 {i.recipeId === recipeId ? <p key={i.id}>{i.quantity} {i.unit} {i.ingredient}</p> : <></>}
             </div>
         ))
@@ -15,7 +15,9 @@ const RecipePageIngredients = ({ data }) => {
     return (
         <>
             <h3>Ingredients</h3>
-            {renderIngredients()}
+            <div className="row">
+                {renderIngredients()}
+            </div>
         </>
     )
 }
