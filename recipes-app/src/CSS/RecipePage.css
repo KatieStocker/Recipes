@@ -22,3 +22,17 @@
 p.timing {
     margin: 2px;
 }
+
+.timings-section {
+    width: 100%;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+    padding-top: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.timings-section-div {
+    width: 50%;
+    margin: 0 auto;
+}
