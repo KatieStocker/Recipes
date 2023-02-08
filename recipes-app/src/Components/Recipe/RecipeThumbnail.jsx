@@ -4,7 +4,6 @@ import React from 'react'
 
 const RecipeThumbnail = ({ data }) => {
     const { recipe } = data;
-    console.log(JSON.stringify(recipe))
 
     return (
         <div className="col-4 recipe-thumbnail">
