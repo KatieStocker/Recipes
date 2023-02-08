@@ -36,3 +36,8 @@ p.timing {
     width: 50%;
     margin: 0 auto;
 }
+
+.section-separator {
+    border-bottom: 1px dashed black;
+    margin: 5%;
+}

@@ -8,7 +8,7 @@ import RecipePage from './Recipe/RecipePage'
 
 const Main = () => {
 
-    let selectedRecipe = RecipeData[0]
+    let selectedRecipe = RecipeData[1]
 
     // ToDo: function will be called for when the user selects a recipe from the list/on the website.
     const getRecipeFromId = (selectedId) => {
