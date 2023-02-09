@@ -1,0 +1,23 @@
+.divider {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgba(179, 237, 208, 0.4);
+    border: ridge 2px rgba(179, 237, 208, 0.4);
+    border-radius: 15px;
+}
+
+.category {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 1%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.category-button {
+    margin: 1%;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background-color: white;
+}

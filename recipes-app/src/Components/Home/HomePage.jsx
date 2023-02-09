@@ -1,9 +1,22 @@
 import React from 'react'
+
+import '../../CSS/HomePage.css'
+
+import Categories from './Categories';
+import Featured from './Featured';
 import TitleSection from './TitleSection';
 
-const HomePage = () => {
+const HomePage = ({ data }) => {
+
+    const { RecipeData } = data;
+
+
     return (
-        <TitleSection />
+        <>
+            <TitleSection />
+            <Categories />
+            <Featured data={{ RecipeData }} />
+        </>
     )
 }
 export default HomePage;
