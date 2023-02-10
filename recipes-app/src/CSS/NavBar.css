@@ -1,9 +1,10 @@
 .sidenav {
-    width: 25%;
+    width: 20%;
     transition: width 0.3s ease-in-out;
     height: 100vh;
-    background-color: rgb(10, 25, 41);
+    background-color: rgb(49, 113, 93);
     padding-top: 28px;
+    float: left;
 }
 
 .sidenavClosed {
@@ -17,7 +18,7 @@
     align-items: center;
     padding: 10px 20px;
     cursor: pointer;
-    color: #B2BAC2;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -39,7 +40,7 @@
     align-self: center;
     align-self: flex-start;
     justify-self: flex-end;
-    color: #B2BAC2;
+    color: #ffffff;
     background-color: transparent;
     border: none;
     cursor: pointer;
