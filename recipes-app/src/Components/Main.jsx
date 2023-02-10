@@ -19,8 +19,6 @@ const Main = () => {
         }
     }
 
-    console.log("Main page recipe object: " + JSON.stringify(RecipeData))
-
     return (
         <>
             <Router>
