@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import '../../CSS/RecipePage.css'
 import RecipePageIngredients from './RecipePageIngredients'
 import RecipePageInstructions from './RecipePageInstructions'
@@ -10,6 +12,13 @@ import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'
 const RecipePage = ({ data }) => {
 
     const { selectedRecipe } = data;
+    const { id } = useParams();
+
+    // ToDo: amend once recipes are selectable on the main/featured/all-recipes pages
+    useEffect(() => {
+        //console.log(`id value: ${id}`)
+
+    }, [id, data]);
 
     const renderRecipe = () => {
         const recipeData = selectedRecipe;

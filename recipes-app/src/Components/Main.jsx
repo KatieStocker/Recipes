@@ -26,7 +26,7 @@ const Main = () => {
             <Router>
                 <Routes>
                     <Route exact path="/" element={<HomePage data={{ RecipeData }} />}></Route>
-                    <Route path="/recipe" element={<RecipePage data={{ selectedRecipe }} />}></Route>
+                    <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} />}></Route>
                     <Route path="/all-recipes" element={<AllRecipes data={{ RecipeData }} />}></Route>
                 </Routes>
             </Router>
