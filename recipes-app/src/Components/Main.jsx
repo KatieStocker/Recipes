@@ -4,6 +4,7 @@ import RecipeData from '../Tests/TestData/RecipeExample.json'
 
 import AllRecipes from './Recipe/AllRecipes';
 import HomePage from './Home/HomePage'
+import NavigationBar from './Navigation/NavigationBar'
 import RecipePage from './Recipe/RecipePage'
 
 const Main = () => {
@@ -22,11 +23,14 @@ const Main = () => {
     return (
         <>
             <Router>
-                <Routes>
-                    <Route exact path="/" element={<HomePage data={{ RecipeData }} />}></Route>
-                    <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} />}></Route>
-                    <Route path="/all-recipes" element={<AllRecipes data={{ RecipeData }} />}></Route>
-                </Routes>
+                <NavigationBar />
+                <div className="main">
+                    <Routes>
+                        <Route exact path="/" element={<HomePage data={{ RecipeData }} className="sub-page" />}></Route>
+                        <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} className="sub-page" />}></Route>
+                        <Route path="/all-recipes" element={<AllRecipes data={{ RecipeData }} className="sub-page" />}></Route>
+                    </Routes>
+                </div>
             </Router>
         </>
     )

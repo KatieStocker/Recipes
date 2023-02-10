@@ -12,11 +12,11 @@ const HomePage = ({ data }) => {
 
 
     return (
-        <>
+        <div>
             <TitleSection />
             <Categories />
             <Featured data={{ RecipeData }} />
-        </>
+        </div>
     )
 }
 export default HomePage;

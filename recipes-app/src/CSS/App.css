@@ -5,4 +5,15 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(255, 254, 237);
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 75%;
+  display: flex;
+}
+
+.sub-page {
+  display: initial;
 }
