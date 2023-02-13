@@ -123,5 +123,63 @@
             "food"
         ],
         "author": "Test Author"
+    },
+    {
+        "id": 3,
+        "title": "Placeholder",
+        "description": "Place holder description",
+        "image_url": "",
+        "web_link": "",
+        "sectionValues": {
+            "1": "Test"
+        },
+        "extraInformation": {
+            "prepTime": {
+                "minutes": 30,
+                "hours": 0
+            },
+            "createTime": {
+                "minutes": 15,
+                "hours": 1
+            },
+            "totalTime": {
+                "minutes": 45,
+                "hours": 1
+            },
+            "servings": 6,
+            "nutritionalInformation": {
+                "calories": {
+                    "perServing": 252
+                },
+                "fat": {
+                    "perServing": 18
+                },
+                "saturates": {
+                    "perServing": 11
+                },
+                "carbs": {
+                    "perServing": 18
+                },
+                "sugar": {
+                    "perServing": 0
+                },
+                "fibre": {
+                    "perServing": 3
+                },
+                "protein": {
+                    "perServing": 5
+                },
+                "salt": {
+                    "perServing": 0.7
+                }
+            },
+            "isVegetarian": true,
+            "isVegan": false
+        },
+        "type": "Food",
+        "tags": [
+            "TODO CHANGE THIS ENTRY"
+        ],
+        "author": "Test Author"
     }
 ]
