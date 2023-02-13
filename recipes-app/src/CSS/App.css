@@ -11,6 +11,8 @@ body {
 .main {
   width: 78%;
   float: right;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .sub-page {

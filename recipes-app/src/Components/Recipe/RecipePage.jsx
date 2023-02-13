@@ -24,7 +24,7 @@ const RecipePage = ({ data }) => {
         const recipeData = selectedRecipe;
 
         return (
-            <div>
+            <div className="main-section">
                 <h1 className="m-3">{recipeData.title}</h1>
                 <img src={recipeData.image_url} alt="recipe-url" className="mb-3" />
                 <h5 className="mb-3">{recipeData.description}</h5>
