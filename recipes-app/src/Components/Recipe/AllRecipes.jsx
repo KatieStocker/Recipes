@@ -17,7 +17,7 @@ const AllRecipes = ({ data }) => {
     return (
         <div className="main-section">
             <h1>All Recipes</h1>
-            <div className="row">
+            <div className="row all-row">
                 {renderRecipes()}
             </div>
         </div>
