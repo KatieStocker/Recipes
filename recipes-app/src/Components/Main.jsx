@@ -6,6 +6,7 @@ import AllRecipes from './Recipe/AllRecipes';
 import HomePage from './Home/HomePage'
 import NavigationBar from './Navigation/NavigationBar'
 import RecipePage from './Recipe/RecipePage'
+import Recipes from './Recipe/Recipes';
 
 const Main = () => {
 
@@ -29,6 +30,8 @@ const Main = () => {
                         <Route exact path="/" element={<HomePage data={{ RecipeData }} className="sub-page" />}></Route>
                         <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} className="sub-page" />}></Route>
                         <Route path="/all-recipes" element={<AllRecipes data={{ RecipeData }} className="sub-page" />}></Route>
+                        <Route path="/food" element={<Recipes data={{ RecipeData, filter: "Food" }} />}></Route>
+                        <Route path="/drinks" element={<Recipes data={{ RecipeData, filter: "Drink" }} />}></Route>
                     </Routes>
                 </div>
             </Router>
