@@ -15,6 +15,14 @@ body {
   overflow: scroll;
 }
 
+/* ToDo - implement this when the side nav bar is collapsed */
+.main-collapsed-side-bar {
+  width: 95%;
+  float: right;
+  height: 100vh;
+  overflow: scroll;
+}
+
 .sub-page {
   display: initial;
 }
