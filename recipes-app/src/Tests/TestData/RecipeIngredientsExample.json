@@ -241,5 +241,59 @@
         "unit": "handful of",
         "instructionSection": 2,
         "prepInfo": "finely chopped"
+    },
+    {
+        "id": 28,
+        "recipeId": 3,
+        "ingredient": "Ripe Passion Fruit",
+        "quantity": "2",
+        "unit": "halved",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 29,
+        "recipeId": 3,
+        "ingredient": "Vanilla Vodka",
+        "quantity": "60",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 30,
+        "recipeId": 3,
+        "ingredient": "Passoa",
+        "quantity": "30",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 31,
+        "recipeId": 3,
+        "ingredient": "Lime Juice",
+        "quantity": "1",
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 32,
+        "recipeId": 3,
+        "ingredient": "Sugar Syrup",
+        "quantity": "1",
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 33,
+        "recipeId": 3,
+        "ingredient": "Prosecco",
+        "quantity": "",
+        "unit": "",
+        "instructionSection": 1,
+        "prepInfo": ""
     }
 ]

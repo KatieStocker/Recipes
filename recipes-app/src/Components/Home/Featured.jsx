@@ -1,7 +1,4 @@
-// Use to render a couple of recipes to feature on the home page -> would be a component which will render on the Home component and will be switched out with a Router when the user moves to a different page.
-// Would render these recipes as thumbnails and Title
-
-import React from 'react'
+import Recipes from '../Recipe/Recipes';
 
 const Featured = ({ data }) => {
 
@@ -10,6 +7,8 @@ const Featured = ({ data }) => {
 
     return (
         <div className="mt-3">
+            <h2>Featured Recipes</h2>
+            <Recipes data={{ RecipeData, filter: "Drink" }} />
         </div>
     )
 }

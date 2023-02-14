@@ -126,59 +126,63 @@
     },
     {
         "id": 3,
-        "title": "Placeholder",
-        "description": "Place holder description",
-        "image_url": "",
-        "web_link": "",
+        "title": "Passion Fruit Martini",
+        "description": "This easy passion fruit cocktail is bursting with zingy flavours and is perfect for celebrating with friends. Top with prosecco for a special drink.",
+        "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/passionfruit-pornstar-martini-df3bbfb.jpg?quality=90&webp=true&resize=300,272",
+        "web_link": "https://www.bbcgoodfood.com/recipes/passionfruit-pornstar-martini",
         "sectionValues": {
-            "1": "Test"
+            "1": "Drink"
         },
         "extraInformation": {
             "prepTime": {
-                "minutes": 30,
+                "minutes": 5,
                 "hours": 0
             },
             "createTime": {
-                "minutes": 15,
-                "hours": 1
+                "minutes": 0,
+                "hours": 0
             },
             "totalTime": {
-                "minutes": 45,
-                "hours": 1
+                "minutes": 5,
+                "hours": 0
             },
-            "servings": 6,
+            "servings": 2,
             "nutritionalInformation": {
                 "calories": {
-                    "perServing": 252
+                    "perServing": 224
                 },
                 "fat": {
-                    "perServing": 18
-                },
-                "saturates": {
-                    "perServing": 11
-                },
-                "carbs": {
-                    "perServing": 18
-                },
-                "sugar": {
                     "perServing": 0
                 },
+                "saturates": {
+                    "perServing": 0
+                },
+                "carbs": {
+                    "perServing": 16
+                },
+                "sugar": {
+                    "perServing": 16
+                },
                 "fibre": {
-                    "perServing": 3
+                    "perServing": 2
                 },
                 "protein": {
-                    "perServing": 5
+                    "perServing": 1
                 },
                 "salt": {
-                    "perServing": 0.7
+                    "perServing": 0.03
                 }
             },
             "isVegetarian": true,
             "isVegan": false
         },
-        "type": "Food",
+        "type": "Drink",
         "tags": [
-            "TODO CHANGE THIS ENTRY"
+            "drink",
+            "cocktail",
+            "alcoholic",
+            "passion fruit",
+            "martini"
         ],
         "author": "Test Author"
     }
