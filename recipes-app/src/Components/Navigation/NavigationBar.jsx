@@ -10,9 +10,11 @@ const NavigationBar = ({ data }) => {
 
     return (
         <div className={open ? "side-nav" : "side-navClosed"}>
-            <button className="menuBtn" onClick={toggleOpen}>
-                {open ? <KeyboardDoubleArrowLeftIcon /> : <KeyboardDoubleArrowRightIcon />}
-            </button>
+            <div className="menuBtnDiv" onClick={toggleOpen}>
+                <button className="menuBtn">
+                    {open ? <KeyboardDoubleArrowLeftIcon className="arrowIcon" /> : <KeyboardDoubleArrowRightIcon className="arrowIcon" />}
+                </button>
+            </div>
             {navData.map(item => {
                 return <Link key={item.id} className="side-item" to={item.link}>
                     {item.icon}

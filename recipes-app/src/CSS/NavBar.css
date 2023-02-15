@@ -1,3 +1,7 @@
+.arrowIcon:hover {
+    color: black;
+}
+
 .side-nav {
     transition: width 0.3s ease-in-out;
     width: 15%;
@@ -37,16 +41,27 @@
 
 .side-item:hover {
     background-color: #244f7d1c;
+    color: black;
+}
 
+.menuBtnDiv {
+    width: 100%;
+    display: flex;
+}
+
+.menuBtnDiv:hover {
+    background-color: #244f7d1c;
+    color: black;
 }
 
 .menuBtn {
-    align-self: center;
+    align-self: right;
     align-self: flex-start;
     justify-self: flex-end;
     color: #ffffff;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 25%;
 }
