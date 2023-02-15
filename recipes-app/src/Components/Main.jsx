@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 
+import About from './About';
 import FilteredRecipes from './Recipe/FilteredRecipes';
 import HomePage from './Home/HomePage'
 import NavigationBar from './Navigation/NavigationBar'
@@ -37,6 +38,7 @@ const Main = () => {
                         <Route path="/all-recipes" element={<FilteredRecipes data={{ RecipeData, filter: "" }} className="sub-page" />}></Route>
                         <Route path="/food" element={<FilteredRecipes data={{ RecipeData, filter: "Food" }} />}></Route>
                         <Route path="/drinks" element={<FilteredRecipes data={{ RecipeData, filter: "Drink" }} />}></Route>
+                        <Route path="/about" element={<About />}></Route>
                     </Routes>
                 </div>
             </Router>
