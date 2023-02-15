@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react'
+import { useState } from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 
 import FilteredRecipes from './Recipe/FilteredRecipes';
@@ -8,6 +8,12 @@ import NavigationBar from './Navigation/NavigationBar'
 import RecipePage from './Recipe/RecipePage'
 
 const Main = () => {
+
+    const [open, setOpen] = useState(true)
+
+    const toggleOpen = () => {
+        setOpen(!open)
+    }
 
     let selectedRecipe = RecipeData[1]
 
@@ -23,8 +29,8 @@ const Main = () => {
     return (
         <>
             <Router>
-                <NavigationBar />
-                <div className="main">
+                <NavigationBar data={{ open, toggleOpen }} />
+                <div className={open ? "main" : "main-collapsed-side-bar"}>
                     <Routes>
                         <Route exact path="/" element={<HomePage data={{ RecipeData }} className="sub-page" />}></Route>
                         <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} className="sub-page" />}></Route>

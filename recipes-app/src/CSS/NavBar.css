@@ -1,19 +1,23 @@
-.sidenav {
-    width: 15%;
+.side-nav {
     transition: width 0.3s ease-in-out;
+    width: 15%;
     height: 100vh;
     background-color: rgb(49, 113, 93);
     padding-top: 28px;
     float: left;
 }
 
-.sidenavClosed {
-    /* composes: sidenav; */
+.side-navClosed {
+    /* composes: side-nav; */
     transition: width 0.3s ease-in-out;
-    width: 10%;
+    width: 5%;
+    height: 100vh;
+    background-color: rgb(49, 113, 93);
+    padding-top: 28px;
+    float: left;
 }
 
-.sideitem {
+.side-item {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -31,7 +35,7 @@
     visibility: hidden;
 }
 
-.sideitem:hover {
+.side-item:hover {
     background-color: #244f7d1c;
 
 }

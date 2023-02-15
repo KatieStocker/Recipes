@@ -9,6 +9,7 @@ body {
 }
 
 .main {
+  transition: width 0.3s ease-in-out;
   width: 85%;
   float: right;
   height: 100vh;
@@ -17,6 +18,7 @@ body {
 
 /* ToDo - implement this when the side nav bar is collapsed */
 .main-collapsed-side-bar {
+  transition: width 0.3s ease-in-out;
   width: 95%;
   float: right;
   height: 100vh;
