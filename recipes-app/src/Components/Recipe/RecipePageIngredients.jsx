@@ -1,5 +1,3 @@
-import React from 'react'
-
 const RecipePageIngredients = ({ data }) => {
 
     const { ingredients, recipeId } = data

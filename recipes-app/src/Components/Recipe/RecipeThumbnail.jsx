@@ -1,7 +1,3 @@
-// ToDo -> will display a brief summary of the recipe (image, title, prep/cook time) in a thumbnail type layout
-
-import React from 'react'
-
 const RecipeThumbnail = ({ data }) => {
     const { recipe } = data;
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import '../../CSS/HomePage.css'
 
 import Categories from './Categories';

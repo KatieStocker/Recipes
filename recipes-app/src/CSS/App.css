@@ -16,7 +16,6 @@ body {
   overflow: scroll;
 }
 
-/* ToDo - implement this when the side nav bar is collapsed */
 .main-collapsed-side-bar {
   transition: width 0.3s ease-in-out;
   width: 95%;
