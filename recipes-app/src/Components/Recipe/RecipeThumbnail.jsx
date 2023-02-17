@@ -5,8 +5,6 @@ const RecipeThumbnail = ({ data }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        // ToDo: Implement functionality to display the RecipePage when the recipe thumbnail is clicked
-        console.log(`handleClick function recipe data value: ${JSON.stringify(recipe)}`)
         navigate(`/recipe/${recipe.id}`, { state: { recipe } })
     }
 
