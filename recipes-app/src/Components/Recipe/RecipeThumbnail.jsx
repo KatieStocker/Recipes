@@ -1,8 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 const RecipeThumbnail = ({ data }) => {
     const { recipe } = data;
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        // ToDo: Implement functionality to display the RecipePage when the recipe thumbnail is clicked
+        console.log(`handleClick function recipe data value: ${JSON.stringify(recipe)}`)
+        navigate(`/recipe/${recipe.id}`, { state: { recipe } })
+    }
 
     return (
-        <div className="col-4 recipe-thumbnail">
+        <div className="col-4 recipe-thumbnail" onClick={handleClick}>
             <img src={recipe.image_url} alt="recipe-url" className="thumbnail-image" />
             <h4>{recipe.title}</h4>
             <div className="row">

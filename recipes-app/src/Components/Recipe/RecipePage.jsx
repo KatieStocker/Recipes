@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import '../../CSS/RecipePage.css'
 import RecipePageIngredients from './RecipePageIngredients'
 import RecipePageInstructions from './RecipePageInstructions'
@@ -10,18 +9,16 @@ import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'
 
 const RecipePage = ({ data }) => {
 
+    const { state } = useLocation();
     const { selectedRecipe } = data;
-    const { id } = useParams();
+    let recipeData = selectedRecipe;
 
-    // ToDo: amend once recipes are selectable on the main/featured/all-recipes pages
-    useEffect(() => {
-        //console.log(`id value: ${id}`)
-
-    }, [id, data]);
+    if (state !== null && state.length !== 0) {
+        const { recipe } = state;
+        recipeData = recipe;
+    }
 
     const renderRecipe = () => {
-        const recipeData = selectedRecipe;
-
         return (
             <div className="main-section">
                 <h1 className="m-3">{recipeData.title}</h1>
@@ -41,8 +38,8 @@ const RecipePage = ({ data }) => {
                 {renderRecipe()}
             </div>
             <div>
-                <RecipePageIngredients data={{ ingredients, recipeId: selectedRecipe.id }} />
-                <RecipePageInstructions data={{ instructions, recipeId: selectedRecipe.id }} />
+                <RecipePageIngredients data={{ ingredients, recipeId: recipeData.id }} />
+                <RecipePageInstructions data={{ instructions, recipeId: recipeData.id }} />
             </div>
         </div>
     )
