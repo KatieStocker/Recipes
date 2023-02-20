@@ -1,22 +1,21 @@
+import { RecipeUtils } from "../../utils";
+
+const { getTimeString, isTimeZero } = RecipeUtils
+
 const RecipeTimes = ({ data }) => {
 
     const { recipeTimings } = data;
 
     const renderTime = (timeValueObject, type) => {
-
-        const hours = `${timeValueObject.hours}${timeValueObject.hours === 1 ? "hr" : "hrs"}`
-        const minutes = `${timeValueObject.minutes}${timeValueObject.minutes === 1 ? "min" : "mins"}`
-        const timeString = `${timeValueObject.hours === 0 ? "" : hours} ${timeValueObject.minutes === 0 ? "" : minutes}`
-
         return (
-            <p>{type} time: {timeString}</p>
+            <p>{type} time: {getTimeString(timeValueObject)}</p>
         )
     }
 
     return (
         <div className="timings-section">
-            {renderTime(recipeTimings.prepTime, "Prep")}
-            {renderTime(recipeTimings.createTime, "Create")}
+            {!isTimeZero(recipeTimings.prepTime) && renderTime(recipeTimings.prepTime, "Prep")}
+            {!isTimeZero(recipeTimings.cookTime) && renderTime(recipeTimings.cookTime, "Cook")}
         </div>
     )
 }
