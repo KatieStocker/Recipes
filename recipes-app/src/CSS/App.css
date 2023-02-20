@@ -25,7 +25,8 @@ body {
   width: 85%;
   float: right;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding: 1%;
 }
 
 .main-collapsed-side-bar {
@@ -33,7 +34,8 @@ body {
   width: 95%;
   float: right;
   height: 100vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  padding: 1%
 }
 
 .sub-page {
