@@ -26,7 +26,7 @@ const RecipePage = ({ data }) => {
                 <h5 className="mb-3">{recipeData.description}</h5>
                 <h6 className="mb-3">{recipeData.author}</h6>
                 <div className="timings-section-div">
-                    <RecipeTimes data={{ recipeTimings: recipeData.extraInformation }} />
+                    <RecipeTimes data={{ recipeTimings: recipeData.extraInformation, isThumbnail: false }} />
                 </div>
             </div>
         )

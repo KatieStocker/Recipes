@@ -1,21 +1,15 @@
 import { RecipeUtils } from "../../utils";
 
-const { getTimeString, isTimeZero } = RecipeUtils
+const { isTimeZero, renderTimings } = RecipeUtils
 
 const RecipeTimes = ({ data }) => {
-
-    const { recipeTimings } = data;
-
-    const renderTime = (timeValueObject, type) => {
-        return (
-            <p>{type} time: {getTimeString(timeValueObject)}</p>
-        )
-    }
+    const { recipeTimings, isThumbnail } = data;
+    const cssClass = isThumbnail ? "row" : "timings-section row"
 
     return (
-        <div className="timings-section">
-            {!isTimeZero(recipeTimings.prepTime) && renderTime(recipeTimings.prepTime, "Prep")}
-            {!isTimeZero(recipeTimings.cookTime) && renderTime(recipeTimings.cookTime, "Cook")}
+        <div className={cssClass}>
+            {!isTimeZero(recipeTimings.prepTime) && renderTimings(recipeTimings.prepTime, "Prep")}
+            {!isTimeZero(recipeTimings.cookTime) && renderTimings(recipeTimings.cookTime, "Cook")}
         </div>
     )
 }
