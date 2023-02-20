@@ -19,10 +19,6 @@
                 "minutes": 20,
                 "hours": 0
             },
-            "totalTime": {
-                "minutes": 55,
-                "hours": 0
-            },
             "servings": 14,
             "nutritionalInformation": {
                 "calories": {
@@ -81,10 +77,6 @@
             },
             "cookTime": {
                 "minutes": 25,
-                "hours": 0
-            },
-            "totalTime": {
-                "minutes": 45,
                 "hours": 0
             },
             "servings": 6,
@@ -149,10 +141,6 @@
                 "minutes": 0,
                 "hours": 0
             },
-            "totalTime": {
-                "minutes": 5,
-                "hours": 0
-            },
             "servings": 2,
             "nutritionalInformation": {
                 "calories": {
@@ -211,10 +199,6 @@
             },
             "cookTime": {
                 "minutes": 20,
-                "hours": 0
-            },
-            "totalTime": {
-                "minutes": 30,
                 "hours": 0
             },
             "servings": 12,
