@@ -1,1 +1,1 @@
-export { default as RecipeUtils } from './RecipeUtils'
+export { default as RecipeTimeUtils } from './RecipeTimeUtils'

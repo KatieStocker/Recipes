@@ -1,6 +1,6 @@
-import { RecipeUtils } from "../../utils";
+import { RecipeTimeUtils } from "../../utils";
 
-const { isTimeZero, renderTimings } = RecipeUtils
+const { isTimeZero, renderTimings } = RecipeTimeUtils
 
 const RecipeTimes = ({ data }) => {
     const { recipeTimings, isThumbnail } = data;
