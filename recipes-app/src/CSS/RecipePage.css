@@ -1,3 +1,13 @@
+.instruction {
+    text-align: left;
+}
+
+.instruction-step-number {
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+}
+
 .recipe-page {
     margin-left: 20%;
     margin-right: 20%;

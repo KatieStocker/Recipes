@@ -9,7 +9,7 @@ const RecipePageInstructions = ({ data }) => {
             })
             .map((i) => (
                 <div key={i.id}>
-                    <p>{i.step}. {i.instruction}</p>
+                    <p className="instruction"><span className="instruction-step-number">{i.step}.</span> {i.instruction}</p>
                 </div>
             ))
     }
