@@ -9,7 +9,7 @@ const FilteredRecipes = ({ data }) => {
 
     return (
         <div className="main-section">
-            <h1>{getTitle()} Recipes</h1>
+            <h1 className="mb-3">{getTitle()} Recipes</h1>
             <Recipes data={{ RecipeData, filter }} />
         </div>
     )
