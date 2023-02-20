@@ -173,5 +173,54 @@
         "step": 5,
         "instruction": "Serve with lemon wedges and caster sugar, or your favourite fillings. Once cold, you can layer the pancakes between baking parchment, then wrap in cling film and freeze for up to 2 months.",
         "instructionSection": 1
+    },
+    {
+        "id": 26,
+        "recipeId": 5,
+        "step": 1,
+        "instruction": "Put the red wine, cinnamon, star anise, cloves, lemon zest and sugar in a large pan. Cook on a low heat for 10 mins.",
+        "instructionSection": 1
+    },
+    {
+        "id": 27,
+        "recipeId": 5,
+        "step": 2,
+        "instruction": "Remove from the heat and cool, leaving to infuse for about 30 mins.",
+        "instructionSection": 1
+    },
+    {
+        "id": 28,
+        "recipeId": 5,
+        "step": 3,
+        "instruction": "To serve, heat without boiling, stir in the sloe gin (optional, but if using, add 100ml), and pour into mugs or heatproof glasses.",
+        "instructionSection": 1
+    },
+    {
+        "id": 29,
+        "recipeId": 6,
+        "step": 1,
+        "instruction": "Put the mixed dried fruit in a bowl with the orange juice and zest and 2 tbsp water. Cover and microwave for 2 mins, then leave to cool completely. Alternatively, heat gently in a pan, stirring now and then until the liquid has been absorbed and leave to cool.",
+        "instructionSection": 1
+    },
+    {
+        "id": 30,
+        "recipeId": 6,
+        "step": 2,
+        "instruction": "Heat oven to 150C/130C fan/gas 2. Roll out a third of the marzipan and use the base of a deep 20cm cake tin as a template to cut out a circle. Wrap any offcuts and the remaining two-thirds of marzipan and set aside for later. Butter and line the cake tin with a double layer of parchment. Beat the butter and sugar together until creamy. Add the eggs, flour, almonds, baking powder, lemon zest, mixed spice and vanilla (all in one go) and mix until well combined. Mix in the cooled soaked dried fruit and fold in the cherries.",
+        "instructionSection": 1
+    },
+    {
+        "id": 31,
+        "recipeId": 6,
+        "step": 3,
+        "instruction": "Scrape half the cake mixture into the tin. Top with the disc of marzipan, then the remaining cake mixture, and level the top with a spatula. Bake for 2 hrs. Check it's cooked by inserting a skewer to the centre of the cake, if any wet mixture clings to the skewer, return to the oven for another 10 mins, then check again. Cool in the tin for 15 mins, then turn out onto a wire rack and leave to cool completely.",
+        "instructionSection": 1
+    },
+    {
+        "id": 32,
+        "recipeId": 6,
+        "step": 4,
+        "instruction": "Brush the top of the cake with apricot jam. Roll out half of the remaining marzipan and use the base of the cake as a template to cut out another disc. Place it on top of the cake and crimp the edges, if you like. Roll the remaining marzipan into 11 equal-sized balls. Brush the marzipan with beaten egg and arrange in a circle on top around the outside, and brush them with a little egg too. Put under a hot grill for a minute or two until just starting to caramelise - be very careful as the marzipan will burn easily. Leave to cool and wrap a ribbon around the cake, if you like. Will keep for up to a week in a sealed tin.",
+        "instructionSection": 1
     }
 ]
