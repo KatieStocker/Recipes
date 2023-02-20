@@ -9,7 +9,7 @@ const RecipePageIngredients = ({ data }) => {
             })
             .map((i) => (
                 <div key={i.id} className="col-6">
-                    <p key={i.id}>{i.quantity} {i.unit} {i.ingredient}</p>
+                    <p key={i.id}>{i.quantity} {i.unit} {i.ingredient} {i.prepInfo !== "" ? `(${i.prepInfo})` : ""}</p>
                 </div>
             ))
     }
