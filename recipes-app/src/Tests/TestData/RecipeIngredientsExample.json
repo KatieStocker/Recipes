@@ -295,5 +295,59 @@
         "unit": "",
         "instructionSection": 1,
         "prepInfo": ""
+    },
+    {
+        "id": 34,
+        "recipeId": 4,
+        "ingredient": "Plain Flour",
+        "quantity": "100",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 35,
+        "recipeId": 4,
+        "ingredient": "Eggs",
+        "quantity": "2",
+        "unit": "Large",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 36,
+        "recipeId": 4,
+        "ingredient": "Milk",
+        "quantity": "300",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 37,
+        "recipeId": 4,
+        "ingredient": "Sunflower or Vegetable Oil",
+        "quantity": "1",
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": "plus a little extra for frying"
+    },
+    {
+        "id": 38,
+        "recipeId": 4,
+        "ingredient": "Lemon Wedges",
+        "quantity": "",
+        "unit": "",
+        "instructionSection": 1,
+        "prepInfo": "to serve, optional"
+    },
+    {
+        "id": 39,
+        "recipeId": 4,
+        "ingredient": "Caster Sugar",
+        "quantity": "",
+        "unit": "",
+        "instructionSection": 1,
+        "prepInfo": "to serve, optional"
     }
 ]

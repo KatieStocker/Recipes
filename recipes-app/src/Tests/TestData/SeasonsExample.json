@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "New Year's Day"
+    },
+    {
+        "id": 2,
+        "name": "Lunar New Year"
+    },
+    {
+        "id": 3,
+        "name": "Pancake Day"
+    },
+    {
+        "id": 4,
+        "name": "Valentine's Day"
+    },
+    {
+        "id": 5,
+        "name": "St. David's Day"
+    },
+    {
+        "id": 6,
+        "name": "St. Patrick's Day"
+    },
+    {
+        "id": 7,
+        "name": "Mother's Day"
+    },
+    {
+        "id": 8,
+        "name": "Easter"
+    },
+    {
+        "id": 9,
+        "name": "Father's Day"
+    },
+    {
+        "id": 10,
+        "name": "Halloween"
+    },
+    {
+        "id": 11,
+        "name": "Diwali"
+    },
+    {
+        "id": 12,
+        "name": "Bonfire Night"
+    },
+    {
+        "id": 13,
+        "name": "Hanukkah"
+    },
+    {
+        "id": 14,
+        "name": "Christmas Eve"
+    },
+    {
+        "id": 15,
+        "name": "Christmas Day"
+    },
+    {
+        "id": 16,
+        "name": "Boxing Day"
+    },
+    {
+        "id": 17,
+        "name": "New Years Eve"
+    },
+    {
+        "id": 18,
+        "name": "Winter"
+    },
+    {
+        "id": 19,
+        "name": "Spring"
+    },
+    {
+        "id": 20,
+        "name": "Summer"
+    },
+    {
+        "id": 21,
+        "name": "Autumn"
+    },
+    {
+        "id": 22,
+        "name": "Ramadan"
+    },
+    {
+        "id": 23,
+        "name": "Eid"
+    },
+    {
+        "id": 24,
+        "name": "Thanksgiving"
+    }
+]
