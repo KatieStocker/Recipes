@@ -7,6 +7,7 @@ import FilteredRecipes from './Recipe/FilteredRecipes';
 import HomePage from './Home/HomePage'
 import NavigationBar from './Navigation/NavigationBar'
 import RecipePage from './Recipe/RecipePage'
+import SeasonalPage from './Seasonal/SeasonalPage';
 
 const Main = () => {
 
@@ -33,12 +34,13 @@ const Main = () => {
                 <NavigationBar data={{ open, toggleOpen }} />
                 <div className={open ? "main" : "main-collapsed-side-bar"}>
                     <Routes>
-                        <Route exact path="/" element={<HomePage data={{ RecipeData }} className="sub-page" />}></Route>
-                        <Route path="/about" element={<About />}></Route>
-                        <Route path="/all-recipes" element={<FilteredRecipes data={{ RecipeData, filter: "" }} className="sub-page" />}></Route>
-                        <Route path="/drinks" element={<FilteredRecipes data={{ RecipeData, filter: "Drink" }} />}></Route>
-                        <Route path="/food" element={<FilteredRecipes data={{ RecipeData, filter: "Food" }} />}></Route>
-                        <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} className="sub-page" />}></Route>
+                        <Route exact path="/" element={<HomePage data={{ RecipeData }} className="sub-page" />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/all-recipes" element={<FilteredRecipes data={{ RecipeData, filter: "" }} className="sub-page" />} />
+                        <Route path="/drinks" element={<FilteredRecipes data={{ RecipeData, filter: "Drink" }} />} />
+                        <Route path="/food" element={<FilteredRecipes data={{ RecipeData, filter: "Food" }} />} />
+                        <Route exact path="/recipe/:id" element={<RecipePage data={{ selectedRecipe }} className="sub-page" />} />
+                        <Route path="/seasonal" element={<SeasonalPage data={{ RecipeData }} />} />
                     </Routes>
                 </div>
             </Router>
