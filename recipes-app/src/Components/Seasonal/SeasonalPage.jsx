@@ -1,21 +1,19 @@
+import { renderRecipes } from "../../utils/RecipesUtils";
 
 const SeasonalPage = ({ data }) => {
     const { RecipeData } = data;
 
-    const getSeasonalData = () => {
-        return RecipeData.filter((i) => {
-            return i.isSeasonal
-        })
+    const renderSeasonalRecipes = () => {
+        let recipes = RecipeData.filter((i) => { return i.isSeasonal })
+        return renderRecipes(recipes)
     }
-
-    console.log(getSeasonalData())
-    console.log(JSON.stringify(getSeasonalData()))
-
 
     return (
         <div>
             <h1 className="mb-3">Seasonal Recipes</h1>
-
+            <div className="row">
+                {renderSeasonalRecipes()}
+            </div>
         </div>
     )
 }

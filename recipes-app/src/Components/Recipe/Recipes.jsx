@@ -1,13 +1,7 @@
-import RecipeThumbnail from './RecipeThumbnail'
+import { renderRecipes } from "../../utils/RecipesUtils";
 
 const Recipes = ({ data }) => {
     const { RecipeData, filter } = data;
-
-    const renderRecipes = (recipes) => {
-        return recipes.map((i) => (
-            <RecipeThumbnail key={i.id} data={{ recipe: i }} />
-        ))
-    }
 
     const renderFilteredRecipes = (filterValue) => {
         let recipes = RecipeData.filter((i) => {
