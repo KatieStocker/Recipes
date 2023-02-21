@@ -94,5 +94,49 @@
     {
         "id": 24,
         "name": "Thanksgiving"
+    },
+    {
+        "id": 25,
+        "name": "Burns Night"
+    },
+    {
+        "id": 26,
+        "name": "Anniversary"
+    },
+    {
+        "id": 27,
+        "name": "Birthday"
+    },
+    {
+        "id": 28,
+        "name": "Dinner Party"
+    },
+    {
+        "id": 29,
+        "name": "Wedding"
+    },
+    {
+        "id": 30,
+        "name": "Vegetarian"
+    },
+    {
+        "id": 31,
+        "name": "Vegan"
+    },
+    {
+        "id": 32,
+        "name": "Dairy Free"
+    },
+    {
+        "id": 33,
+        "name": "Gluten Free"
+    },
+    {
+        "id": 34,
+        "name": "Nut Free"
+    },
+    {
+        "id": 35,
+        "name": "Egg Free"
     }
 ]
