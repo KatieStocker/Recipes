@@ -20,10 +20,10 @@ const SeasonalPage = ({ data }) => {
 
     const handleOptionClick = (selectedCategory) => {
         setSelectedCategory(selectedCategory.name)
-        updateSetRecipes(selectedCategory.optionIds)
+        updateRecipes(selectedCategory.optionIds)
     }
 
-    const updateSetRecipes = (categoryOptionIds) => {
+    const updateRecipes = (categoryOptionIds) => {
         let filteredRecipeArray = []
         for (let i = 0; i < categoryOptionIds.length; i++) {
             const filteredRecipe = getFilteredRecipes(categoryOptionIds[i])
