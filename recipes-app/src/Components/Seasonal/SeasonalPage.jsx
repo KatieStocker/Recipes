@@ -1,25 +1,38 @@
+import { useState } from 'react'
+
 import { renderRecipes } from "../../utils/RecipesUtils";
-import { categoriesData } from '../../lib/categoriesData'
+import { categoriesData } from '../../lib/categoriesData';
 
 const SeasonalPage = ({ data }) => {
     const { RecipeData } = data;
+    const seasonalData = RecipeData.filter((i) => { return i.isSeasonal })
+    const [recipes, setRecipes] = useState(seasonalData)
 
-    const renderSeasonalRecipes = () => {
-        let recipes = RecipeData.filter((i) => { return i.isSeasonal })
-        return renderRecipes(recipes)
-    }
-
-    const filterCategories = () => {
+    const getFilteredCategories = () => {
         return categoriesData.filter((i) => { return i.isSeason })
     }
 
+    const getFilteredRecipes = (id) => {
+        return seasonalData.filter((i) => { return i.seasonIds.includes(id) })
+    }
+
+    const handleOptionClick = (categoryOptionIds) => {
+        let filteredRecipeArray = []
+        for (let i = 0; i < categoryOptionIds.length; i++) {
+            const filteredRecipe = getFilteredRecipes(categoryOptionIds[i])
+            if (filteredRecipe.length > 0 && !filteredRecipeArray.includes(filteredRecipe[0])) {
+                filteredRecipeArray.push(filteredRecipe[0])
+            }
+        }
+        setRecipes(filteredRecipeArray)
+    }
+
     const renderCategories = () => {
-        let categories = filterCategories().sort((a, b) => a.name.localeCompare(b.name))
+        let categories = getFilteredCategories().sort((a, b) => a.name.localeCompare(b.name))
 
         return categories.map((i) => (
             <div key={i.id} className="col-3">
-                {/* ToDo: add an onclick function to each of these which will change the rendered recipe thumbnails based on the option clicked */}
-                <p key={i.id}>{i.name}</p>
+                <p key={i.id} className="category-option" onClick={() => handleOptionClick(i.optionIds)}>{i.name}</p>
             </div>
         ))
     }
@@ -31,9 +44,8 @@ const SeasonalPage = ({ data }) => {
             <div className="row">
                 {renderCategories()}
             </div>
-            {/* Dynamically change what is rendered below based on the selected category from the above renderCategories */}
             <div className="row mt-5">
-                {renderSeasonalRecipes()}
+                {recipes.length > 0 ? renderRecipes(recipes) : <div><p>No recipes currently available for this category.</p></div>}
             </div>
         </div >
     )
