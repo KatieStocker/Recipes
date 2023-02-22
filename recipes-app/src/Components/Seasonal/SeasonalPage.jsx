@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../../CSS/SeasonalPage.css'
 
 import { renderRecipes } from "../../utils/RecipesUtils";
 import { categoriesData } from '../../lib/categoriesData';
@@ -38,7 +39,7 @@ const SeasonalPage = ({ data }) => {
         let categories = getFilteredCategories().sort((a, b) => a.name.localeCompare(b.name))
 
         return categories.map((i) => (
-            <div key={i.id} className="col-3">
+            <div key={i.id} className="col-3 individual-category">
                 <p key={i.id} className="category-option" onClick={() => handleOptionClick(i)}>{i.name}</p>
             </div>
         ))
@@ -46,7 +47,7 @@ const SeasonalPage = ({ data }) => {
 
     const renderNoneAvailableMessage = () => {
         return (
-            <div>
+            <div className="no-recipes">
                 <p>No Recipes Yet Available for the Category: {selectedCategory}</p>
             </div>
         )
@@ -68,7 +69,7 @@ const SeasonalPage = ({ data }) => {
         <div>
             <h1 className="mb-3">Seasonal Recipes</h1>
             <h3 className="mb-3">Categories</h3>
-            <div className="row">
+            <div className="row categories">
                 {renderCategories()}
             </div>
             <div className="mt-4">

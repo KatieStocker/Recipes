@@ -1,0 +1,22 @@
+.categories {
+    padding: 1%;
+    overflow-y: scroll;
+    height: 20vh;
+    background-color: rgba(179, 237, 208, 0.3);
+}
+
+.individual-category {
+    padding: 1%;
+    padding-bottom: 0%;
+}
+
+.individual-category:hover {
+    background-color: rgba(179, 237, 208, 0.5);
+    border-radius: 15%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.no-recipes {
+    font-style: italic;
+}
