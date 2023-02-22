@@ -52,6 +52,18 @@ const SeasonalPage = ({ data }) => {
         )
     }
 
+    const renderRecipesSection = () => {
+        return (
+            <div>
+                {/* {selectedCategory !== "" ? <h3>{selectedCategory} Recipes</h3> : <></>} */}
+                <h3>{selectedCategory} Recipes</h3>
+                <div className="row mt-5">
+                    {renderRecipes(recipes)}
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div>
             <h1 className="mb-3">Seasonal Recipes</h1>
@@ -59,8 +71,8 @@ const SeasonalPage = ({ data }) => {
             <div className="row">
                 {renderCategories()}
             </div>
-            <div className="row mt-5">
-                {recipes.length > 0 ? renderRecipes(recipes) : renderNoneAvailableMessage()}
+            <div className="mt-4">
+                {recipes.length > 0 ? renderRecipesSection() : renderNoneAvailableMessage()}
             </div>
         </div >
     )
