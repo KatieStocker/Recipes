@@ -6,7 +6,9 @@ import { categoriesData } from '../../lib/categoriesData';
 const SeasonalPage = ({ data }) => {
     const { RecipeData } = data;
     const seasonalData = RecipeData.filter((i) => { return i.isSeasonal })
+
     const [recipes, setRecipes] = useState(seasonalData)
+    const [selectedCategory, setSelectedCategory] = useState()
 
     const getFilteredCategories = () => {
         return categoriesData.filter((i) => { return i.isSeason })
@@ -16,7 +18,12 @@ const SeasonalPage = ({ data }) => {
         return seasonalData.filter((i) => { return i.seasonIds.includes(id) })
     }
 
-    const handleOptionClick = (categoryOptionIds) => {
+    const handleOptionClick = (selectedCategory) => {
+        setSelectedCategory(selectedCategory.name)
+        updateSetRecipes(selectedCategory.optionIds)
+    }
+
+    const updateSetRecipes = (categoryOptionIds) => {
         let filteredRecipeArray = []
         for (let i = 0; i < categoryOptionIds.length; i++) {
             const filteredRecipe = getFilteredRecipes(categoryOptionIds[i])
@@ -32,9 +39,17 @@ const SeasonalPage = ({ data }) => {
 
         return categories.map((i) => (
             <div key={i.id} className="col-3">
-                <p key={i.id} className="category-option" onClick={() => handleOptionClick(i.optionIds)}>{i.name}</p>
+                <p key={i.id} className="category-option" onClick={() => handleOptionClick(i)}>{i.name}</p>
             </div>
         ))
+    }
+
+    const renderNoneAvailableMessage = () => {
+        return (
+            <div>
+                <p>No Recipes Yet Available for the Category: {selectedCategory}</p>
+            </div>
+        )
     }
 
     return (
@@ -45,7 +60,7 @@ const SeasonalPage = ({ data }) => {
                 {renderCategories()}
             </div>
             <div className="row mt-5">
-                {recipes.length > 0 ? renderRecipes(recipes) : <div><p>No recipes currently available for this category.</p></div>}
+                {recipes.length > 0 ? renderRecipes(recipes) : renderNoneAvailableMessage()}
             </div>
         </div >
     )
