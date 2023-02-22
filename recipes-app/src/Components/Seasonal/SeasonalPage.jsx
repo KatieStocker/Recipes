@@ -39,7 +39,7 @@ const SeasonalPage = ({ data }) => {
         let categories = getFilteredCategories().sort((a, b) => a.name.localeCompare(b.name))
 
         return categories.map((i) => (
-            <div key={i.id} className="col-3 individual-category">
+            <div key={i.id} className={`col-3 ${selectedCategory !== i.name ? "individual-category" : "individual-category-selected"}`}>
                 <p key={i.id} className="category-option" onClick={() => handleOptionClick(i)}>{i.name}</p>
             </div>
         ))
