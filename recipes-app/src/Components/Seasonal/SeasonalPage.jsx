@@ -56,7 +56,6 @@ const SeasonalPage = ({ data }) => {
     const renderRecipesSection = () => {
         return (
             <div>
-                {/* {selectedCategory !== "" ? <h3>{selectedCategory} Recipes</h3> : <></>} */}
                 <h3>{selectedCategory} Recipes</h3>
                 <div className="row mt-5">
                     {renderRecipes(recipes)}
