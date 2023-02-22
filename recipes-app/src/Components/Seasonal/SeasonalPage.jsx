@@ -16,7 +16,7 @@ const SeasonalPage = ({ data }) => {
     }
 
     const getFilteredRecipes = (id) => {
-        return seasonalData.filter((i) => { return i.seasonIds.includes(id) })
+        return seasonalData.filter((i) => { return i.categoryIds.includes(id) })
     }
 
     const handleOptionClick = (selectedCategory) => {
