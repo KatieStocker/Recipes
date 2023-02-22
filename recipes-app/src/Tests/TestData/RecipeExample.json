@@ -50,7 +50,10 @@
         "isVegetarian": true,
         "isVegan": false,
         "isSeasonal": false,
-        "seasonIds": [],
+        "isOccasional": true,
+        "categoryIds": [
+            27
+        ],
         "type": "Food",
         "tags": [
             "snack",
@@ -109,8 +112,9 @@
         },
         "isVegetarian": true,
         "isVegan": false,
-        "isSeasonal": false,
-        "seasonIds": [
+        "isSeasonal": true,
+        "isOccasional": false,
+        "categoryIds": [
             18,
             19
         ],
@@ -172,7 +176,12 @@
         "isVegetarian": true,
         "isVegan": false,
         "isSeasonal": false,
-        "seasonIds": [],
+        "isOccasional": true,
+        "categoryIds": [
+            26,
+            28,
+            29
+        ],
         "type": "Drink",
         "tags": [
             "drink",
@@ -231,9 +240,10 @@
         },
         "isVegetarian": true,
         "isVegan": false,
-        "isSeasonal": false,
-        "seasonIds": [
-            4
+        "isSeasonal": true,
+        "isOccasional": false,
+        "categoryIds": [
+            3
         ],
         "type": "Food",
         "tags": [
@@ -291,7 +301,8 @@
         "isVegetarian": false,
         "isVegan": false,
         "isSeasonal": true,
-        "seasonIds": [
+        "isOccasional": false,
+        "categoryIds": [
             14,
             15,
             16,
@@ -354,7 +365,8 @@
         "isVegetarian": true,
         "isVegan": false,
         "isSeasonal": true,
-        "seasonIds": [
+        "isOccasional": false,
+        "categoryIds": [
             8,
             19
         ],
