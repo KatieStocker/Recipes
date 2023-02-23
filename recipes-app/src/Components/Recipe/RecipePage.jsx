@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import '../../CSS/RecipePage.css'
+import BackButton from '../Utilities/BackButton';
 import RecipePageIngredients from './RecipePageIngredients'
 import RecipePageInstructions from './RecipePageInstructions'
 import RecipeTimes from './RecipeTimes'
@@ -34,6 +35,7 @@ const RecipePage = ({ data }) => {
 
     return (
         <div className="recipe-page">
+            <BackButton />
             <div>
                 {renderRecipe()}
             </div>
