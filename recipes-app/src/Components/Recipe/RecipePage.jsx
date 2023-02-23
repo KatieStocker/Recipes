@@ -1,9 +1,10 @@
 import { useLocation } from 'react-router-dom';
 import '../../CSS/RecipePage.css'
+
 import BackButton from '../Utilities/BackButton';
 import RecipePageIngredients from './RecipePageIngredients'
 import RecipePageInstructions from './RecipePageInstructions'
-import RecipeTimes from './RecipeTimes'
+import RecipePageRecipe from './RecipePageRecipe';
 
 import ingredients from '../../Tests/TestData/RecipeIngredientsExample.json'
 import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'
@@ -19,27 +20,11 @@ const RecipePage = ({ data }) => {
         recipeData = recipe;
     }
 
-    const renderRecipe = () => {
-        return (
-            <div className="main-section">
-                <h1 className="m-3">{recipeData.title}</h1>
-                <img src={recipeData.image_url} alt="recipe-url" className="mb-3" />
-                <h5 className="mb-3">{recipeData.description}</h5>
-                <h6 className="mb-3">{recipeData.author}</h6>
-                <div className="timings-section-div">
-                    <RecipeTimes data={{ recipeTimings: recipeData.extraInformation, isThumbnail: false }} />
-                </div>
-            </div>
-        )
-    }
-
     return (
         <div className="recipe-page">
             <BackButton />
             <div>
-                {renderRecipe()}
-            </div>
-            <div>
+                <RecipePageRecipe data={{ recipeData }} />
                 <RecipePageIngredients data={{ ingredients, recipeId: recipeData.id }} />
                 <RecipePageInstructions data={{ instructions, recipeId: recipeData.id }} />
             </div>
