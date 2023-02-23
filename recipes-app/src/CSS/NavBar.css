@@ -32,10 +32,10 @@
 
 .side-item,
 .side-itemClosed {
+    transition: padding 0.3s ease-in-out;
     width: 100%;
     display: flex;
     padding: 10px;
-    /* padding-left: 2vw; */
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
