@@ -11,16 +11,32 @@ describe(`Client tests - NavigationBar test suite`, () => {
         render(<Router><NavigationBar data={{ open: true, toggleOpen: mockToggleOpen }} /></Router>);
     });
 
-    test(`it should have the className "" when open:true is passed to the component`, () => {
+    test('it should match the snapshot', () => {
+        expect(render(<Router><NavigationBar data={{ open: true, toggleOpen: mockToggleOpen }} /></Router>)).toMatchSnapshot();
+    });
+
+    test(`it should have the className ".side-nav" when open:true is passed to the component`, () => {
         const { container } = render(<Router><NavigationBar data={{ open: true, toggleOpen: mockToggleOpen }} /></Router>);
         const mainNavDiv = container.querySelector(`.side-nav`);
         expect(mainNavDiv).toBeTruthy();
     });
 
-    test(`it should have the className "" when open:false is passed to the component`, () => {
+    test(`it should have the className ".side-navClosed" when open:false is passed to the component`, () => {
         const { container } = render(<Router><NavigationBar data={{ open: false, toggleOpen: mockToggleOpen }} /></Router>);
         const mainNavDiv = container.querySelector(`.side-navClosed`);
         expect(mainNavDiv).toBeTruthy();
+    });
+
+    test(`it should not have the className ".collapsed" when open:true is passed to the component`, () => {
+        const { container } = render(<Router><NavigationBar data={{ open: true, toggleOpen: mockToggleOpen }} /></Router>);
+        const arrowIconDiv = container.querySelector(`.collapsed`);
+        expect(arrowIconDiv).toBeFalsy();
+    });
+
+    test(`it should have the className ".collapsed" when open:false is passed to the component`, () => {
+        const { container } = render(<Router><NavigationBar data={{ open: false, toggleOpen: mockToggleOpen }} /></Router>);
+        const arrowIconDiv = container.querySelector(`.collapsed`);
+        expect(arrowIconDiv).toBeTruthy();
     });
 
     test(`it should call mockToggleOpen when the toggle button has been clicked`, () => {
