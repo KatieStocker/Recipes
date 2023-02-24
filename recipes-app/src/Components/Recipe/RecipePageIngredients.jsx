@@ -8,7 +8,7 @@ const RecipePageIngredients = ({ data }) => {
                 return i.recipeId === recipeId
             })
             .map((i) => (
-                <div key={i.id} className="col-6">
+                <div key={i.id} className="col-6 ingredient-div">
                     <p key={i.id}>{i.quantity} {i.unit} {i.ingredient} {i.prepInfo !== "" ? `(${i.prepInfo})` : ""}</p>
                 </div>
             ))
