@@ -8,7 +8,7 @@ const RecipePageInstructions = ({ data }) => {
                 return i.recipeId === recipeId
             })
             .map((i) => (
-                <div key={i.id}>
+                <div key={i.id} className="instruction-div">
                     <p className="instruction"><span className="instruction-step-number">{i.step}.</span> {i.instruction}</p>
                 </div>
             ))
