@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { testSingleRecipe } from './TestData/sampleRecipes';
-import RecipePageRecipe from '../Components/Recipe/RecipePageRecipe';
+import { testSingleRecipe } from '../TestData/sampleRecipes';
+import RecipePageRecipe from '../../Components/Recipe/RecipePageRecipe';
 
 describe(`Client tests - RecipePageRecipe test suite`, () => {
 

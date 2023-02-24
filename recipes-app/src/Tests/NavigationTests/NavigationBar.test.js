@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
-import NavigationBar from '../Components/Navigation/NavigationBar.jsx';
+import NavigationBar from '../../Components/Navigation/NavigationBar.jsx';
 
 describe(`Client tests - NavigationBar test suite`, () => {
 
