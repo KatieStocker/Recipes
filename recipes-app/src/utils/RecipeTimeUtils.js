@@ -1,7 +1,15 @@
 export const getTimeString = (timeValueObject) => {
-    const hours = `${timeValueObject.hours}${timeValueObject.hours === 1 ? "hr" : "hrs"}`
-    const minutes = `${timeValueObject.minutes}${timeValueObject.minutes === 1 ? "min" : "mins"}`
+    const hours = getStringFromValues(timeValueObject.hours, "hr")
+    const minutes = getStringFromValues(timeValueObject.minutes, "min")
     return `${timeValueObject.hours === 0 ? "" : hours} ${timeValueObject.minutes === 0 ? "" : minutes}`
+}
+
+const getStringFromValues = (timeValue, timeUnit) => {
+    return `${timeValue}${timeUnit + getPluralOf(timeValue)}`;
+}
+
+const getPluralOf = (timeValue) => {
+    return timeValue !== 1 ? "s" : "";
 }
 
 export const isTimeZero = (timeValueObject) => {
