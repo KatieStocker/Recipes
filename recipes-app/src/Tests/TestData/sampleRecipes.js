@@ -186,6 +186,65 @@ const testMultipleRecipes = [
             "martini"
         ],
         "author": "Test Author"
+    },
+    {
+        "id": 3,
+        "title": "Pizza",
+        "description": "Recipe for a regular pizza.",
+        "image_url": "https://test.image.com",
+        "web_link": "",
+        "sectionValues": {
+            "1": "Dough",
+            "2": "Pizza"
+        },
+        "extraInformation": {
+            "prepTime": {
+                "minutes": 20,
+                "hours": 0
+            },
+            "cookTime": {
+                "minutes": 30,
+                "hours": 0
+            },
+            "servings": 2,
+            "nutritionalInformation": {
+                "calories": {
+                    "perServing": 600
+                },
+                "fat": {
+                    "perServing": 15
+                },
+                "saturates": {
+                    "perServing": 19
+                },
+                "carbs": {
+                    "perServing": 16
+                },
+                "sugar": {
+                    "perServing": 16
+                },
+                "fibre": {
+                    "perServing": 2
+                },
+                "protein": {
+                    "perServing": 7
+                },
+                "salt": {
+                    "perServing": 0.1
+                }
+            }
+        },
+        "isVegetarian": false,
+        "isVegan": false,
+        "isSeasonal": false,
+        "isOccasional": true,
+        "categoryIds": [
+        ],
+        "type": "Food",
+        "tags": [
+            "pizza"
+        ],
+        "author": "Test Author"
     }
 ]
 
