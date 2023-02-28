@@ -227,27 +227,34 @@
         "id": 33,
         "recipeId": 7,
         "step": 1,
-        "instruction": "In a bowl, mix together the warm milk, water, yeast, and sugar. Add the flour, olive oil, and salt.",
+        "instruction": "In a bowl, mix together the warm milk, water, yeast, and sugar. Add the flour, olive oil, and salt and mix together with your hands.",
         "instructionSection": 1
     },
     {
         "id": 34,
         "recipeId": 7,
         "step": 2,
-        "instruction": "Set the dough in a lightly floured bowl, covered loosely with a tea towel, and leave it to proof for approximately 2 hours or until it has doubled in size.",
+        "instruction": "Tip the dough out onto a lightly floured surface and knead for up to 10 minutes until dough is soft and smooth, but not too sticky.",
         "instructionSection": 1
     },
     {
         "id": 35,
         "recipeId": 7,
         "step": 3,
-        "instruction": "After the dough has proofed, divide it into 6 equal sized balls, roll out each on a lightly floured surface, and then fry in a hot pan on both sides for 2-3 minutes.",
+        "instruction": "Set the dough in a lightly oiled bowl, covered loosely with a tea towel, and leave it to proof for approximately 2 hours or until it has doubled in size.",
         "instructionSection": 1
     },
     {
         "id": 36,
         "recipeId": 7,
         "step": 4,
+        "instruction": "After the dough has proofed, divide it into 6 equal sized balls, roll out each on a lightly floured surface, and then fry in a hot pan on both sides for 2-3 minutes.",
+        "instructionSection": 1
+    },
+    {
+        "id": 37,
+        "recipeId": 7,
+        "step": 5,
         "instruction": "To serve, spread with melted butter and sprinkle on some parsley.",
         "instructionSection": 1
     }

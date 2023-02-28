@@ -537,7 +537,7 @@
         "quantity": "500",
         "unit": "g",
         "instructionSection": 1,
-        "prepInfo": ""
+        "prepInfo": "plus extra for dough kneading or rolling"
     },
     {
         "id": 61,
@@ -591,7 +591,7 @@
         "quantity": "3",
         "unit": "tbsp",
         "instructionSection": 1,
-        "prepInfo": ""
+        "prepInfo": "plus extra for dough proofing bowl"
     },
     {
         "id": 67,
