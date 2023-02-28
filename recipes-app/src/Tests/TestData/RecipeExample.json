@@ -378,5 +378,64 @@
             "dessert"
         ],
         "author": "Test Author"
+    },
+    {
+        "id": 7,
+        "title": "Bread Puffs",
+        "description": "Simple bread puffs. Even more delicious if you spread on some warm butter and fresh parsley when still warm.",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgs_fAZ3yL7aU72havOTtZFUSNGGi4GH3b8B7DAf_15Bh4o_aZhFU06jqd_4dWWsiXSGM&usqp=CAU",
+        "web_link": "",
+        "sectionValues": {
+            "1": "Bread"
+        },
+        "extraInformation": {
+            "prepTime": {
+                "minutes": 10,
+                "hours": 0
+            },
+            "cookTime": {
+                "minutes": 10,
+                "hours": 2
+            },
+            "servings": 6,
+            "nutritionalInformation": {
+                "calories": {
+                    "perServing": 320
+                },
+                "fat": {
+                    "perServing": 15
+                },
+                "saturates": {
+                    "perServing": 2
+                },
+                "carbs": {
+                    "perServing": 40
+                },
+                "sugar": {
+                    "perServing": 2
+                },
+                "fibre": {
+                    "perServing": 2
+                },
+                "protein": {
+                    "perServing": 7
+                },
+                "salt": {
+                    "perServing": 0.07
+                }
+            }
+        },
+        "isVegetarian": true,
+        "isVegan": false,
+        "isSeasonal": false,
+        "isOccasional": false,
+        "categoryIds": [],
+        "type": "Food",
+        "tags": [
+            "bread",
+            "starter",
+            "fried"
+        ],
+        "author": "Test Author"
     }
 ]

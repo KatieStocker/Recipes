@@ -222,5 +222,33 @@
         "step": 4,
         "instruction": "Brush the top of the cake with apricot jam. Roll out half of the remaining marzipan and use the base of the cake as a template to cut out another disc. Place it on top of the cake and crimp the edges, if you like. Roll the remaining marzipan into 11 equal-sized balls. Brush the marzipan with beaten egg and arrange in a circle on top around the outside, and brush them with a little egg too. Put under a hot grill for a minute or two until just starting to caramelise - be very careful as the marzipan will burn easily. Leave to cool and wrap a ribbon around the cake, if you like. Will keep for up to a week in a sealed tin.",
         "instructionSection": 1
+    },
+    {
+        "id": 33,
+        "recipeId": 7,
+        "step": 1,
+        "instruction": "In a bowl, mix together the warm milk, water, yeast, and sugar. Add the flour, olive oil, and salt.",
+        "instructionSection": 1
+    },
+    {
+        "id": 34,
+        "recipeId": 7,
+        "step": 2,
+        "instruction": "Set the dough in a lightly floured bowl, covered loosely with a tea towel, and leave it to proof for approximately 2 hours or until it has doubled in size.",
+        "instructionSection": 1
+    },
+    {
+        "id": 35,
+        "recipeId": 7,
+        "step": 3,
+        "instruction": "After the dough has proofed, divide it into 6 equal sized balls, roll out each on a lightly floured surface, and then fry in a hot pan on both sides for 2-3 minutes.",
+        "instructionSection": 1
+    },
+    {
+        "id": 36,
+        "recipeId": 7,
+        "step": 4,
+        "instruction": "To serve, spread with melted butter and sprinkle on some parsley.",
+        "instructionSection": 1
     }
 ]

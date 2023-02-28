@@ -529,5 +529,86 @@
         "unit": "tbsp",
         "instructionSection": 1,
         "prepInfo": ""
+    },
+    {
+        "id": 60,
+        "recipeId": 7,
+        "ingredient": "Plain Flour",
+        "quantity": "500",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 61,
+        "recipeId": 7,
+        "ingredient": "Milk",
+        "quantity": "160",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": "lukewarm"
+    },
+    {
+        "id": 62,
+        "recipeId": 7,
+        "ingredient": "Water",
+        "quantity": "160",
+        "unit": "ml",
+        "instructionSection": 1,
+        "prepInfo": "lukewarm"
+    },
+    {
+        "id": 63,
+        "recipeId": 7,
+        "ingredient": "Dry Yeast",
+        "quantity": "7",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 64,
+        "recipeId": 7,
+        "ingredient": "Sugar",
+        "quantity": "10",
+        "unit": "g",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 65,
+        "recipeId": 7,
+        "ingredient": "Salt",
+        "quantity": "1",
+        "unit": "tsp",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 66,
+        "recipeId": 7,
+        "ingredient": "Olive Oil",
+        "quantity": "3",
+        "unit": "tbsp",
+        "instructionSection": 1,
+        "prepInfo": ""
+    },
+    {
+        "id": 67,
+        "recipeId": 7,
+        "ingredient": "Parsley",
+        "quantity": "",
+        "unit": "",
+        "instructionSection": 1,
+        "prepInfo": "optional, to serve"
+    },
+    {
+        "id": 68,
+        "recipeId": 7,
+        "ingredient": "Melted Butter",
+        "quantity": "",
+        "unit": "",
+        "instructionSection": 1,
+        "prepInfo": "optional, to serve"
     }
 ]
