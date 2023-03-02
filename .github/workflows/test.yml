@@ -13,6 +13,9 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./recipes-app
 
     strategy:
       matrix:
@@ -26,10 +29,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-      working-directory: ./recipes-app
     - name: Install dependencies
-      working-directory: ./recipes-app
       run: npm ci
     - name: Run tests
-      working-directory: ./recipes-app
       run: npm test
