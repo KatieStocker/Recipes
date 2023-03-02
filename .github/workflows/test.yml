@@ -27,6 +27,7 @@ jobs:
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
+        entryPoint: ./recipes-app
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
