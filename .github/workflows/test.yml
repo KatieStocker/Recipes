@@ -26,8 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Install dependencies
       working-directory: recipes-app
-    - run: npm ci
+      run: npm ci
+    - name: Run tests
       working-directory: recipes-app
-    - run: npm test
-      working-directory: recipes-app
+      run: npm test
