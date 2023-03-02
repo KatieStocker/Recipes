@@ -11,7 +11,7 @@ const Categories = () => {
                 Drinks
             </Link>
             <Link className="category-button col-2" to="/food">
-                Food
+                Test
             </Link>
         </div >
     )
