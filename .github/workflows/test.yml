@@ -24,16 +24,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Testing wkdir
-      run: |
-        ls -l
-        ls -a
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        entryPoint: ./recipes-app
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    #- name: Use Node.js ${{ matrix.node-version }}
+    #  uses: actions/setup-node@v3
+    #  with:
+    #    entryPoint: ./recipes-app
+    #    node-version: ${{ matrix.node-version }}
+    #    cache: 'npm'
     - name: Install dependencies
       run: npm ci
     - name: Run tests
