@@ -32,8 +32,8 @@
         id BIGSERIAL NOT NULL PRIMARY KEY,
         title VARCHAR(50) NOT NULL,
         description VARCHAR(300) NOT NULL,
-        image_url VARCHAR() NOT NULL,
-        web_link VARCHAR() NULL,
+        image_url VARCHAR(300) NOT NULL,
+        web_link VARCHAR(300) NULL,
         is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
         is_vegan BOOLEAN NOT NULL DEFAULT FALSE,
         is_seasonal BOOLEAN NOT NULL DEFAULT FALSE,
@@ -50,6 +50,7 @@
 - [x] the categoryIds will be removed and placed into their own table - there is now a tag and recipe_tag table. The tag table contains various different names to use as tags, the recipe_tag table contains a link between recipe and tag.
 - [x] the tags will be removed and placed into their own tags table with a link to the recipe.id - has been removed and a tag and recipe_tag table have been created. The tag table will have the list of tags available, recipe_tag will act as a link between the tag.id and recipe.id.
 - [x] extraInformation will be removed and placed in a separate table - has been separated out and replaced with a recipe_time and recipe_nutritional_info table.
+- [ ] image_url type may need changing.
 
 ### example data
     INSERT INTO recipe (title, description, image_url, web_link, is_vegetarian, is_occasional, type, author)
