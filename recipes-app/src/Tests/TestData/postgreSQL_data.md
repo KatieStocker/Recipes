@@ -17,7 +17,9 @@
 - [recipe_category_options](#recipe_category_options-table)
 - [recipe_ingredient](#recipe_ingredient-table)
 - [recipe_instruction](#recipe_instruction-table)
+- [recipe_nutritional_info](#recipe_nutritional_info-table)
 - [recipe_tag](#recipe_tag-table)
+- [recipe_time](#recipe_time-table)
 - [tag](#tag-table)
 
 ---
@@ -30,7 +32,6 @@
         description VARCHAR(300) NOT NULL,
         image_url VARCHAR() NOT NULL,
         web_link VARCHAR() NULL,
-        extra_information VARCHAR(150), ## have a separate table
         is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
         is_vegan BOOLEAN NOT NULL DEFAULT FALSE,
         is_seasonal BOOLEAN NOT NULL DEFAULT FALSE,
@@ -41,11 +42,12 @@
 
 <sup>Create a recipe table.</sup>
 
-Differences to .json files 
+### Differences to .json files 
 - [x] sectionValues will be moved to its own table - has been removed and a instruction_section table has been created in its place.
 - [ ] the booleans (i.e. isVegetarian etc.) will be removed and placed into their own table - TODO?
 - [x] the categoryIds will be removed and placed into their own table - there is now a tag and recipe_tag table. The tag table contains various different names to use as tags, the recipe_tag table contains a link between recipe and tag.
 - [x] the tags will be removed and placed into their own tags table with a link to the recipe.id - has been removed and a tag and recipe_tag table have been created. The tag table will have the list of tags available, recipe_tag will act as a link between the tag.id and recipe.id.
+- [x] extraInformation will be removed and placed in a separate table - has been separated out and replaced with a recipe_time and recipe_nutritional_info table.
 
 ### example data
     INSERT INTO recipe (title, description, image_url, web_link, is_vegetarian, is_occasional, type, author)
@@ -76,8 +78,8 @@ Differences to .json files
 
       CREATE TABLE recipe_category_options (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        recipe_id INT NOT NULL FOREIGN KEY,
-        category_options_id INT NOT NULL FOREIGN KEY
+        recipe_id INT NOT NULL REFERENCES recipe(id),
+        category_options_id INT NOT NULL REFERENCES category_options(id)
       );
 
 <sup>Create a recipe category options table - a link between the recipe and the category options.</sup>
@@ -93,11 +95,11 @@ Differences to .json files
 
       CREATE TABLE recipe_ingredient (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        recipe_id INT NOT NULL FOREIGN KEY,
+        recipe_id INT NOT NULL REFERENCES recipe(id),
         name VARCHAR(50) NOT NULL,
         quantity INT,
         unit VARCHAR(10),
-        instruction_section_id INT NOT NULL FOREIGN KEY, ## need to make changes
+        instruction_section_id INT NOT NULL REFERENCES instruction_section(id),
         prep_info VARCHAR(150)
       );
 
@@ -117,10 +119,10 @@ Differences to .json files
 
       CREATE TABLE recipe_instruction (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        recipe_id INT NOT NULL FOREIGN KEY,
+        recipe_id INT NOT NULL REFERENCES recipe(id),
         step INT NOT NULL,
         instruction VARCHAR(500) NOT NULL,
-        instruction_section_id INT NOT NULL FOREIGN KEY, ## need to make changes
+        instruction_section_id INT NOT NULL REFERENCES instruction_section(id)
       );
 
 <sup>Create a recipe instruction table.</sup>
@@ -142,7 +144,7 @@ Differences to .json files
 
       CREATE TABLE instruction_section (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        recipe_id INT NOT NULL FOREIGN KEY,
+        recipe_id INT NOT NULL REFERENCES recipe(id),
         name VARCHAR(25) NOT NULL,
       );
 
@@ -179,8 +181,8 @@ Differences to .json files
 
       CREATE TABLE recipe_tag (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        recipe_id INT NOT NULL FOREIGN KEY,
-        tag_id INT NOT NULL FOREIGN KEY
+        recipe_id INT NOT NULL REFERENCES recipe(id),
+        tag_id INT NOT NULL REFERENCES tag(id)
       );
 
 <sup>Create a recipe_tag table.</sup>
@@ -190,5 +192,50 @@ Differences to .json files
 ### example data (would require a recipe and tag to exist)
     INSERT INTO recipe_tag (recipe_id, tag_id)
     VALUES(1, 24);
+
+--- 
+## recipe_time table
+
+      CREATE TABLE recipe_time (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        recipe_id INT NOT NULL REFERENCES recipe(id),
+        prep_minutes INT CHECK (minutes > 60) DEFAULT 0 NOT NULL,
+        prep_hours INT DEFAULT 0 NOT NULL,
+        cook_minutes INT CHECK (minutes > 60) DEFAULT 0 NOT NULL,
+        cook_hours INT DEFAULT 0 NOT NULL
+      );
+
+<sup>Create a recipe_time table.</sup>
+
+<sup>The recipe_id will link to recipe.id.</sup>
+
+### example data (would require a recipe to exist)
+    INSERT INTO recipe_tag (recipe_id, prep_minutes, cook_minutes, cook_hours)
+    VALUES(6, 30, 10, 2);
+
+---
+## recipe_nutritional_info table
+
+      CREATE TABLE recipe_nutritional_info (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        recipe_id INT NOT NULL REFERENCES recipe(id),
+        servings INT NOT NULL DEFAULT 1 CHECK (servings > 0),
+        calories NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        fat NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        saturates NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        carbs NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        sugar NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        fibre NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        protein NUMERIC(10, 3) NOT NULL DEFAULT 0,
+        salt NUMERIC(10, 3) NOT NULL DEFAULT 0
+      );
+
+<sup>Create a recipe_nutritional_info table.</sup>
+
+<sup>The recipe_id will link to recipe.id.</sup>
+
+### example data (would require a recipe to exist)
+    INSERT INTO recipe_tag (recipe_id, servings, calories, fat, saturates, carbs, sugar, fibre, protein, salt)
+    VALUES(1, 30, 10, 1);
 
 --- 
