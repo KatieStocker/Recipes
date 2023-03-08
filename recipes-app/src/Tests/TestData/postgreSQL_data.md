@@ -10,6 +10,18 @@
 <sup>Now connected to recipes database.</sup>
 
 ---
+## List of tables
+- [category_options](#category_options-table)
+- [instruction_section](#instruction_section-table)
+- [recipe](#recipe-table)
+- [recipe_category_options](#recipe_category_options-table)
+- [recipe_ingredient](#recipe_ingredient-table)
+- [recipe_instruction](#recipe_instruction-table)
+- [recipe_tag](#recipe_tag-table)
+- [tag](#tag-table)
+
+---
+--- 
 ## recipe table
 
       CREATE TABLE recipe (
@@ -19,34 +31,32 @@
         image_url VARCHAR() NOT NULL,
         web_link VARCHAR() NULL,
         extra_information VARCHAR(150), ## have a separate table
-        is_vegetarian BOOL,
-        is_vegan BOOL,
-        is_seasonal BOOL,
-        is_occasional BOOL, ## these could move to their own table
-        category_ids, ## own table
+        is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
+        is_vegan BOOLEAN NOT NULL DEFAULT FALSE,
+        is_seasonal BOOLEAN NOT NULL DEFAULT FALSE,
+        is_occasional BOOLEAN NOT NULL DEFAULT FALSE,
         type VARCHAR(10) NOT NULL,
-        tags ???,
         author VARCHAR(50) NOT NULL
       );
 
 <sup>Create a recipe table.</sup>
 
 Differences to .json files 
-- [x] sectionValues has been removed and a instruction_section table has been created in its place.
-- [ ] the booleans (i.e. isVegetarian etc.) will be removed and placed into their own table - TODO
-- [ ] the categoryIds will be removed and placed into their own table - TODO
-- [ ] the tags will be removed and placed into their own tags table with a link to the recipe.id - TODO
+- [x] sectionValues will be moved to its own table - has been removed and a instruction_section table has been created in its place.
+- [ ] the booleans (i.e. isVegetarian etc.) will be removed and placed into their own table - TODO?
+- [x] the categoryIds will be removed and placed into their own table - there is now a tag and recipe_tag table. The tag table contains various different names to use as tags, the recipe_tag table contains a link between recipe and tag.
+- [x] the tags will be removed and placed into their own tags table with a link to the recipe.id - has been removed and a tag and recipe_tag table have been created. The tag table will have the list of tags available, recipe_tag will act as a link between the tag.id and recipe.id.
 
 ### example data
-    INSERT INTO recipe (title, description, image_url, web_link, ....)
-    VALUES("Easy Chocolate Cake", "Master the chocolate cake with an airy, light sponge and rich buttercream filling...", "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272", "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake", );
+    INSERT INTO recipe (title, description, image_url, web_link, is_vegetarian, is_occasional, type, author)
+    VALUES("Easy Chocolate Cake", "Master the chocolate cake with an airy, light sponge and rich buttercream filling...", "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272", "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake", T, T, "Food", "Test Author");
 
 --- 
 ## category_options table
 
       CREATE TABLE category_options (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        name VARCHAR(50) NOT NULL,
+        name VARCHAR(50) NOT NULL UNIQUE,
       );
 
 <sup>Create a category options table.</sup>
@@ -93,7 +103,7 @@ Differences to .json files
 
 <sup>Create a recipe ingredient table.</sup>
 
-<sup>The recipe_id will link to recipe_id. The instruction_section_id will link to instruction_section.id</sup>
+<sup>The recipe_id will link to recipe.id. The instruction_section_id will link to instruction_section.id</sup>
 
 ### example data (would require a recipe and instruction_section to exist)
     INSERT INTO recipe_category_options (recipe_id, name, quantity, unit, instruction_section_id)
@@ -115,7 +125,7 @@ Differences to .json files
 
 <sup>Create a recipe instruction table.</sup>
 
-<sup>The recipe_id will link to recipe_id. The instruction_section_id will link to instruction_section.id</sup>
+<sup>The recipe_id will link to recipe.id. The instruction_section_id will link to instruction_section.id</sup>
 
 ### example data (would require a recipe and instruction_section to exist)
     INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
@@ -138,7 +148,7 @@ Differences to .json files
 
 <sup>Create an instruction section table.</sup>
 
-<sup>The recipe_id will link to recipe_id.</sup>
+<sup>The recipe_id will link to recipe.id.</sup>
 
 ### example data (would require a recipe to exist)
     INSERT INTO recipe_category_options (recipe_id, name)
@@ -149,3 +159,36 @@ Differences to .json files
 
     INSERT INTO recipe_category_options (recipe_id, name)
     VALUES(1, "Chocolate Shards");
+
+--- 
+## tag table
+
+      CREATE TABLE tag (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        name VARCHAR(25) NOT NULL UNIQUE
+      );
+
+<sup>Create a tag table.</sup>
+
+### example data
+    INSERT INTO tag (name)
+    VALUES("Cake");
+    
+--- 
+## recipe_tag table
+
+      CREATE TABLE recipe_tag (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        recipe_id INT NOT NULL FOREIGN KEY,
+        tag_id INT NOT NULL FOREIGN KEY
+      );
+
+<sup>Create a recipe_tag table.</sup>
+
+<sup>The recipe_id will link to recipe.id, tag_id to tag.id.</sup>
+
+### example data (would require a recipe and tag to exist)
+    INSERT INTO recipe_tag (recipe_id, tag_id)
+    VALUES(1, 24);
+
+--- 
