@@ -11,6 +11,8 @@
 
 ---
 ## List of tables
+- [category_group](#category_group-table)
+- [category_group_option](#category_group_option-table)
 - [category_options](#category_options-table)
 - [instruction_section](#instruction_section-table)
 - [recipe](#recipe-table)
@@ -238,4 +240,46 @@
     INSERT INTO recipe_tag (recipe_id, servings, calories, fat, saturates, carbs, sugar, fibre, protein, salt)
     VALUES(1, 30, 10, 1);
 
+--- 
+## category_group table
+
+      CREATE TABLE category_group (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        name VARCHAR(50) NOT NULL,
+        is_season BOOLEAN NOT NULL DEFAULT FALSE,
+        is_occasion BOOLEAN NOT NULL DEFAULT FALSE,
+        is_dietary BOOLEAN NOT NULL DEFAULT FALSE,
+      );
+
+<sup>Create a category_group table.</sup>
+
+### example data
+    INSERT INTO category_group (name, is_season)
+    VALUES("Easter", TRUE);
+
+--- 
+## category_group_option table
+
+      CREATE TABLE category_group_option (
+        id BIGSERIAL NOT NULL PRIMARY KEY,
+        category_group_id INT NOT NULL REFERENCES category_group(id),
+        category_option_id INT NOT NULL REFERENCES category_option(id)
+      );
+
+<sup>Create a category_group_option table.</sup>
+
+<sup>The category_group_id will link to category_group.id, and the category_option_id will link to the category_option.id</sup>
+
+### example data
+    INSERT INTO category_group_option (category_group_id, category_option_id)
+    VALUES(7, 8);
+
+    INSERT INTO category_group_option (category_group_id, category_option_id)
+    VALUES(12, 14);
+
+    INSERT INTO category_group_option (category_group_id, category_option_id)
+    VALUES(12, 15);
+
+    INSERT INTO category_group_option (category_group_id, category_option_id)
+    VALUES(12, 16);
 --- 
