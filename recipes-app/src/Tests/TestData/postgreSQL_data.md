@@ -13,10 +13,10 @@
 ## List of tables
 - [category_group](#category_group-table)
 - [category_group_option](#category_group_option-table)
-- [category_options](#category_options-table)
+- [category_option](#category_option-table)
 - [instruction_section](#instruction_section-table)
 - [recipe](#recipe-table)
-- [recipe_category_options](#recipe_category_options-table)
+- [recipe_category_option](#recipe_category_option-table)
 - [recipe_ingredient](#recipe_ingredient-table)
 - [recipe_instruction](#recipe_instruction-table)
 - [recipe_nutritional_info](#recipe_nutritional_info-table)
@@ -57,40 +57,40 @@
     VALUES("Easy Chocolate Cake", "Master the chocolate cake with an airy, light sponge and rich buttercream filling...", "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272", "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake", T, T, "Food", "Test Author");
 
 --- 
-## category_options table
+## category_option table
 
-      CREATE TABLE category_options (
+      CREATE TABLE category_option (
         id BIGSERIAL NOT NULL PRIMARY KEY,
-        name VARCHAR(50) NOT NULL UNIQUE,
+        name VARCHAR(50) NOT NULL UNIQUE
       );
 
-<sup>Create a category options table.</sup>
+<sup>Create a category option table.</sup>
 
 ### example data
-    INSERT INTO category_options (name)
+    INSERT INTO category_option (name)
     VALUES("New Year's Day");
 
-    INSERT INTO category_options (name)
+    INSERT INTO category_option (name)
     VALUES('Lunar New Year');
     
-    INSERT INTO category_options (name)
+    INSERT INTO category_option (name)
     VALUES('Pancake Day');
 
 --- 
-## recipe_category_options table
+## recipe_category_option table
 
-      CREATE TABLE recipe_category_options (
+      CREATE TABLE recipe_category_option (
         id BIGSERIAL NOT NULL PRIMARY KEY,
         recipe_id INT NOT NULL REFERENCES recipe(id),
-        category_options_id INT NOT NULL REFERENCES category_options(id)
+        category_option_id INT NOT NULL REFERENCES category_option(id)
       );
 
-<sup>Create a recipe category options table - a link between the recipe and the category options.</sup>
+<sup>Create a recipe category option table - a link between the recipe and the category option.</sup>
 
-<sup>The recipe_id will link to the recipe.id, and category_options_id will link to category_options.id.</sup>
+<sup>The recipe_id will link to the recipe.id, and category_option_id will link to category_option.id.</sup>
 
 ### example data (would require a recipe and category_option to exist)
-    INSERT INTO recipe_category_options (recipe_id, category_options_id)
+    INSERT INTO recipe_category_option (recipe_id, category_option_id)
     VALUES(1, 4);
 
 --- 
@@ -148,7 +148,7 @@
       CREATE TABLE instruction_section (
         id BIGSERIAL NOT NULL PRIMARY KEY,
         recipe_id INT NOT NULL REFERENCES recipe(id),
-        name VARCHAR(25) NOT NULL,
+        name VARCHAR(25) NOT NULL
       );
 
 <sup>Create an instruction section table.</sup>
@@ -202,9 +202,9 @@
       CREATE TABLE recipe_time (
         id BIGSERIAL NOT NULL PRIMARY KEY,
         recipe_id INT NOT NULL REFERENCES recipe(id),
-        prep_minutes INT CHECK (minutes > 60) DEFAULT 0 NOT NULL,
+        prep_minutes INT CHECK (prep_minutes > 60) DEFAULT 0 NOT NULL,
         prep_hours INT DEFAULT 0 NOT NULL,
-        cook_minutes INT CHECK (minutes > 60) DEFAULT 0 NOT NULL,
+        cook_minutes INT CHECK (cook_minutes > 60) DEFAULT 0 NOT NULL,
         cook_hours INT DEFAULT 0 NOT NULL
       );
 
@@ -249,7 +249,7 @@
         name VARCHAR(50) NOT NULL,
         is_season BOOLEAN NOT NULL DEFAULT FALSE,
         is_occasion BOOLEAN NOT NULL DEFAULT FALSE,
-        is_dietary BOOLEAN NOT NULL DEFAULT FALSE,
+        is_dietary BOOLEAN NOT NULL DEFAULT FALSE
       );
 
 <sup>Create a category_group table.</sup>
