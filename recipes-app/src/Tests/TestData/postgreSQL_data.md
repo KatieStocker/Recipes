@@ -10,6 +10,21 @@
 <sup>Now connected to recipes database.</sup>
 
 ---
+[\d psql Command](https://www.postgresql.org/docs/current/app-psql.html#:~:text=error%20is%20reported.-,%5Cd%5BS%2B%5D,-%5B%20pattern%20%5D)
+
+`\d`
+
+<sup>View a list of all visible tables, views, materialized views, sequences, and foreign tables in the current connected database.</sup>
+
+`\dt`
+
+<sup>View a list of tables in the current connected database.</sup>
+
+`\d <table_name>`
+
+<sup>View the columns, types, collation, nullable, defaults, indexes and references in the specified table.</sup>
+
+---
 ## List of tables
 - [category_group](#category_group-table)
 - [category_group_option](#category_group_option-table)
@@ -25,13 +40,22 @@
 - [tag](#tag-table)
 
 ---
+
+`ALTER TABLE <table_name> ALTER COLUMN <column_name> TYPE <new_data_type>;`
+
+<sup>Alter the type of a specified column in a specified table.</sup>
+
+<sup>e.g. Changing type for recipe.description from VARCHAR(300) to VARCHAR(1000) </sup>
+
+`ALTER TABLE recipe ALTER COLUMN description TYPE VARCHAR(1000);`
+
 --- 
 ## recipe table
 
       CREATE TABLE recipe (
         id BIGSERIAL NOT NULL PRIMARY KEY,
         title VARCHAR(50) NOT NULL,
-        description VARCHAR(300) NOT NULL,
+        description VARCHAR(1000) NOT NULL,
         image_url VARCHAR(300) NOT NULL,
         web_link VARCHAR(300) NULL,
         is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
