@@ -40,6 +40,15 @@
 - [tag](#tag-table)
 
 ## Sequence for running scripts to create tables and insert data with examples
+
+To use these scripts with psql, get the pwd of the script
+
+`cd <location of the script>` <sub>*using bash or equivalent</sub>
+
+`pwd` <sub>*using bash or equivalent</sub>
+
+`\i <pwd of the script/script_name.sql>` <sub>*using psql</sub>
+
 1. [recipe](./SQL/createRecipeTable.sql)
 2. [category_option](./SQL/createCategoryOptionTable.sql)
 3. [recipe_category_option](./SQL/createRecipeCategoryOptionTable.sql)
