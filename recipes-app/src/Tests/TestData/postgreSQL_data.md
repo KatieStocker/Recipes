@@ -49,6 +49,12 @@
 
 `ALTER TABLE recipe ALTER COLUMN description TYPE VARCHAR(1000);`
 
+---
+
+`UPDATE <table_name> SET <column_name> = <value> WHERE <condition>;`
+
+<sup>Modify data in a table based on a condition.</sup>
+
 --- 
 ## recipe table
 
@@ -56,8 +62,8 @@
         id BIGSERIAL NOT NULL PRIMARY KEY,
         title VARCHAR(50) NOT NULL,
         description VARCHAR(1000) NOT NULL,
-        image_url VARCHAR(300) NOT NULL,
-        web_link VARCHAR(300) NULL,
+        image_url VARCHAR(500) NOT NULL,
+        web_link VARCHAR(500) NULL,
         is_vegetarian BOOLEAN NOT NULL DEFAULT FALSE,
         is_vegan BOOLEAN NOT NULL DEFAULT FALSE,
         is_seasonal BOOLEAN NOT NULL DEFAULT FALSE,
@@ -78,7 +84,9 @@
 
 ### example data
     INSERT INTO recipe (title, description, image_url, web_link, is_vegetarian, is_occasional, type, author)
-    VALUES("Easy Chocolate Cake", "Master the chocolate cake with an airy, light sponge and rich buttercream filling...", "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272", "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake", T, T, "Food", "Test Author");
+    VALUES('Easy Chocolate Cake', 'Master the chocolate cake with an airy, light sponge and rich buttercream filling. It''s simple enough for an afternoon tea but special enough for a party too.', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272', 'https://www.bbcgoodfood.com/recipes/easy-chocolate-cake', true, true, 'Food', 'Test Author');
+
+<sup>Note: have to use single quotes for values. If a string value contains a single quote, double it up to escape it.</sup>
 
 --- 
 ## category_option table
@@ -92,7 +100,7 @@
 
 ### example data
     INSERT INTO category_option (name)
-    VALUES("New Year's Day");
+    VALUES('New Year''s Day');
 
     INSERT INTO category_option (name)
     VALUES('Lunar New Year');
@@ -136,10 +144,10 @@
 
 ### example data (would require a recipe and instruction_section to exist)
     INSERT INTO recipe_category_options (recipe_id, name, quantity, unit, instruction_section_id)
-    VALUES(1, "Golden Caster Sugar", 200, "g");
+    VALUES(1, 'Golden Caster Sugar', 200, 'g');
 
     INSERT INTO recipe_category_options (recipe_id, name, quantity, unit, instruction_section_id)
-    VALUES(1, "Milk Chocolate", 100, "g", 2);
+    VALUES(1, 'Milk Chocolate', 100, 'g', 2);
 
 --- 
 ## recipe_instruction table
@@ -158,13 +166,13 @@
 
 ### example data (would require a recipe and instruction_section to exist)
     INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
-    VALUES(1, 1, "Pre-heat the oven to gas mark 5. Butter the base and sides of two 20cm round sandwich tins and line the bases with baking parchment.", 1);
+    VALUES(1, 1, 'Pre-heat the oven to gas mark 5. Butter the base and sides of two 20cm round sandwich tins and line the bases with baking parchment.', 1);
 
     INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
-    VALUES(1, 2, "In a large bowl, beat together 200g golden caster sugar, 200g softened unsalted butter...", 1);
+    VALUES(1, 2, 'In a large bowl, beat together 200g golden caster sugar, 200g softened unsalted butter...', 1);
 
     INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
-    VALUES(1, 5, "For the buttercream, put 100g chopped milk chocolate in a heatproof bowl and melt...", 2);
+    VALUES(1, 5, 'For the buttercream, put 100g chopped milk chocolate in a heatproof bowl and melt...', 2);
 
 --- 
 ## instruction_section table
@@ -181,13 +189,13 @@
 
 ### example data (would require a recipe to exist)
     INSERT INTO recipe_category_options (recipe_id, name)
-    VALUES(1, "Cake");
+    VALUES(1, 'Cake');
 
     INSERT INTO recipe_category_options (recipe_id, name)
-    VALUES(1, "Icing");
+    VALUES(1, 'Icing');
 
     INSERT INTO recipe_category_options (recipe_id, name)
-    VALUES(1, "Chocolate Shards");
+    VALUES(1, 'Chocolate Shards');
 
 --- 
 ## tag table
@@ -201,7 +209,7 @@
 
 ### example data
     INSERT INTO tag (name)
-    VALUES("Cake");
+    VALUES('Cake');
     
 --- 
 ## recipe_tag table
@@ -280,7 +288,7 @@
 
 ### example data
     INSERT INTO category_group (name, is_season)
-    VALUES("Easter", TRUE);
+    VALUES('Easter', true);
 
 --- 
 ## category_group_option table
