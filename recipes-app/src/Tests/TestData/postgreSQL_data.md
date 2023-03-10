@@ -57,6 +57,7 @@
 
 --- 
 ## recipe table
+See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create and insert data.
 
       CREATE TABLE recipe (
         id BIGSERIAL NOT NULL PRIMARY KEY,
