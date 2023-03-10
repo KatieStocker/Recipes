@@ -39,6 +39,20 @@
 - [recipe_time](#recipe_time-table)
 - [tag](#tag-table)
 
+## Sequence for running scripts to create tables and insert data with examples
+1. [recipe](./SQL/createRecipeTable.sql)
+2. [category_option](./SQL/createCategoryOptionTable.sql)
+3. [recipe_category_option](./SQL/createRecipeCategoryOptionTable.sql)
+4. [instruction_section](./SQL/createInstructionSectionTable.sql)
+5. [recipe_ingredient](./SQL/createRecipeIngredientTable.sql)
+6. [recipe_instruction](./SQL/createRecipeInstructionTable.sql)
+7. [recipe_time](./SQL/createRecipeTimeTable.sql)
+8. [recipe_nutritional_info](./SQL/createRecipeNutritionalInfoTable.sql)
+9. [tag](./SQL/createTagTable.sql)
+10. [recipe_tag](./SQL/createRecipeTagTable.sql)
+11. [category_group](./SQL/createCategoryGroupTable.sql)
+12. [category_group_option](./SQL/createCategoryGroupOptionTable.sql)
+
 ---
 
 `ALTER TABLE <table_name> ALTER COLUMN <column_name> TYPE <new_data_type>;`
