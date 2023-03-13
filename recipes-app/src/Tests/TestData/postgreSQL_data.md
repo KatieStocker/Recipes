@@ -269,7 +269,7 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
 <sup>The recipe_id will link to recipe.id.</sup>
 
 ### example data (would require a recipe to exist)
-    INSERT INTO recipe_tag (recipe_id, prep_minutes, cook_minutes, cook_hours)
+    INSERT INTO recipe_time (recipe_id, prep_minutes, cook_minutes, cook_hours)
     VALUES(6, 30, 10, 2);
 
 ---
@@ -294,8 +294,8 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
 <sup>The recipe_id will link to recipe.id.</sup>
 
 ### example data (would require a recipe to exist)
-    INSERT INTO recipe_tag (recipe_id, servings, calories, fat, saturates, carbs, sugar, fibre, protein, salt)
-    VALUES(1, 30, 10, 1);
+    INSERT INTO recipe_nutritional_info (recipe_id, servings, calories, fat, saturates, carbs, sugar, fibre, protein, salt)
+    VALUES(1, 12, 312, 12, 62, 32, 6, 3, 6, 0.2);
 
 --- 
 ## category_group table
