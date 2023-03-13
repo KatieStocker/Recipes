@@ -4,22 +4,22 @@ CREATE TABLE instruction_section (
     name VARCHAR(25) NOT NULL
 );
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Easy Chocolate Cake";), "Cake");
+VALUES((SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake'), 'Cake');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Easy Chocolate Cake";), "Icing");
+VALUES((SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake'), 'Icing');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Easy Chocolate Cake";), "Chocolate Shards");
+VALUES((SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake'), 'Chocolate Shards');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Leek and Potato Soup";), "Soup");
+VALUES((SELECT id FROM recipe WHERE title = 'Leek and Potato Soup'), 'Soup');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Leek and Potato Soup";), "Garnish");
+VALUES((SELECT id FROM recipe WHERE title = 'Leek and Potato Soup'), 'Garnish');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Passion Fruit Martini";), "Drink");
+VALUES((SELECT id FROM recipe WHERE title = 'Passion Fruit Martini'), 'Drink');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Easy Pancakes";), "Pancake");
+VALUES((SELECT id FROM recipe WHERE title = 'Easy Pancakes'), 'Pancake');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Classic Mulled Wine";), "Mulled Wine");
+VALUES((SELECT id FROM recipe WHERE title = 'Classic Mulled Wine'), 'Mulled Wine');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Simnel Cake";), "Cake");
+VALUES((SELECT id FROM recipe WHERE title = 'Simnel Cake'), 'Cake');
 INSERT INTO instruction_section (recipe_id, name)
-VALUES((SELECT id FROM recipe WHERE title = "Bread Puffs";), "Bread");
+VALUES((SELECT id FROM recipe WHERE title = 'Bread Puffs'), 'Bread');
