@@ -258,9 +258,9 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
       CREATE TABLE recipe_time (
         id BIGSERIAL NOT NULL PRIMARY KEY,
         recipe_id INT NOT NULL REFERENCES recipe(id),
-        prep_minutes INT CHECK (prep_minutes > 60) DEFAULT 0 NOT NULL,
+        prep_minutes INT CHECK (prep_minutes < 60) DEFAULT 0 NOT NULL,
         prep_hours INT DEFAULT 0 NOT NULL,
-        cook_minutes INT CHECK (cook_minutes > 60) DEFAULT 0 NOT NULL,
+        cook_minutes INT CHECK (cook_minutes < 60) DEFAULT 0 NOT NULL,
         cook_hours INT DEFAULT 0 NOT NULL
       );
 
