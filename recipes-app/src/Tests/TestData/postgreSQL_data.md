@@ -167,10 +167,10 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
 <sup>The recipe_id will link to recipe.id. The instruction_section_id will link to instruction_section.id</sup>
 
 ### example data (would require a recipe and instruction_section to exist)
-    INSERT INTO recipe_category_options (recipe_id, name, quantity, unit, instruction_section_id)
+    INSERT INTO recipe_ingredient (recipe_id, name, quantity, unit, instruction_section_id)
     VALUES(1, 'Golden Caster Sugar', 200, 'g');
 
-    INSERT INTO recipe_category_options (recipe_id, name, quantity, unit, instruction_section_id)
+    INSERT INTO recipe_ingredient (recipe_id, name, quantity, unit, instruction_section_id)
     VALUES(1, 'Milk Chocolate', 100, 'g', 2);
 
 --- 
@@ -189,13 +189,13 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
 <sup>The recipe_id will link to recipe.id. The instruction_section_id will link to instruction_section.id</sup>
 
 ### example data (would require a recipe and instruction_section to exist)
-    INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
+    INSERT INTO recipe_instruction (recipe_id, step, instruction, instruction_section_id)
     VALUES(1, 1, 'Pre-heat the oven to gas mark 5. Butter the base and sides of two 20cm round sandwich tins and line the bases with baking parchment.', 1);
 
-    INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
+    INSERT INTO recipe_instruction (recipe_id, step, instruction, instruction_section_id)
     VALUES(1, 2, 'In a large bowl, beat together 200g golden caster sugar, 200g softened unsalted butter...', 1);
 
-    INSERT INTO recipe_category_options (recipe_id, step, instruction, instruction_section_id)
+    INSERT INTO recipe_instruction (recipe_id, step, instruction, instruction_section_id)
     VALUES(1, 5, 'For the buttercream, put 100g chopped milk chocolate in a heatproof bowl and melt...', 2);
 
 --- 
@@ -212,13 +212,13 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
 <sup>The recipe_id will link to recipe.id.</sup>
 
 ### example data (would require a recipe to exist)
-    INSERT INTO recipe_category_options (recipe_id, name)
+    INSERT INTO instruction_section (recipe_id, name)
     VALUES(1, 'Cake');
 
-    INSERT INTO recipe_category_options (recipe_id, name)
+    INSERT INTO instruction_section (recipe_id, name)
     VALUES(1, 'Icing');
 
-    INSERT INTO recipe_category_options (recipe_id, name)
+    INSERT INTO instruction_section (recipe_id, name)
     VALUES(1, 'Chocolate Shards');
 
 --- 
