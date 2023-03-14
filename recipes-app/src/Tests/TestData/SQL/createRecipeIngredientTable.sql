@@ -67,9 +67,9 @@ DECLARE
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Drink' AND recipe_id = r_id);
 BEGIN
 INSERT INTO 
-    recipe_ingredient (recipe_id, name, quantity, instruction_section_id, prep_info)
+    recipe_ingredient (recipe_id, name, quantity, unit, instruction_section_id, prep_info)
 VALUES
-    (r_id, 'Ripe Passion Fruit', 2, s1_id, 'halved'),
+    (r_id, 'Ripe Passion Fruit', 2, NULL, s1_id, 'halved'),
     (r_id, 'Vanilla Vodka', 60, 'ml', s1_id, NULL),
     (r_id, 'Passoa', 30, 'ml', s1_id, NULL),
     (r_id, 'Lime Juice', 1, 'tbsp', s1_id, NULL),
@@ -84,7 +84,7 @@ DECLARE
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Pancake' AND recipe_id = r_id);
 BEGIN
 INSERT INTO 
-    recipe_ingredient (recipe_id, name, quantity, unit, instruction_section_id)
+    recipe_ingredient (recipe_id, name, quantity, unit, instruction_section_id, prep_info)
 VALUES
     (r_id, 'Plain Flour', 100, 'g', s1_id, NULL),
     (r_id, 'Eggs', 2, 'large', s1_id, NULL),
