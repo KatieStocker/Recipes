@@ -49,18 +49,18 @@ To use these scripts with psql, get the pwd of the script
 
 `\i <pwd of the script/script_name.sql>` <sub>*using psql</sub>
 
-1. [recipe](./SQL/createRecipeTable.sql)
-2. [category_option](./SQL/createCategoryOptionTable.sql)
-3. [recipe_category_option](./SQL/createRecipeCategoryOptionTable.sql)
-4. [instruction_section](./SQL/createInstructionSectionTable.sql)
-5. [recipe_ingredient](./SQL/createRecipeIngredientTable.sql)
-6. [recipe_instruction](./SQL/createRecipeInstructionTable.sql)
-7. [recipe_time](./SQL/createRecipeTimeTable.sql)
-8. [recipe_nutritional_info](./SQL/createRecipeNutritionalInfoTable.sql)
-9. [tag](./SQL/createTagTable.sql)
-10. [recipe_tag](./SQL/createRecipeTagTable.sql)
-11. [category_group](./SQL/createCategoryGroupTable.sql)
-12. [category_group_option](./SQL/createCategoryGroupOptionTable.sql)
+1. [recipe](./SQL/create/createRecipeTable.sql)
+2. [category_option](./SQL/create/createCategoryOptionTable.sql)
+3. [recipe_category_option](./SQL/create/createRecipeCategoryOptionTable.sql)
+4. [instruction_section](./SQL/create/createInstructionSectionTable.sql)
+5. [recipe_ingredient](./SQL/create/createRecipeIngredientTable.sql)
+6. [recipe_instruction](./SQL/create/createRecipeInstructionTable.sql)
+7. [recipe_time](./SQL/create/createRecipeTimeTable.sql)
+8. [recipe_nutritional_info](./SQL/create/createRecipeNutritionalInfoTable.sql)
+9. [tag](./SQL/create/createTagTable.sql)
+10. [recipe_tag](./SQL/create/createRecipeTagTable.sql)
+11. [category_group](./SQL/create/createCategoryGroupTable.sql)
+12. [category_group_option](./SQL/create/createCategoryGroupOptionTable.sql)
 
 ---
 
@@ -80,7 +80,7 @@ To use these scripts with psql, get the pwd of the script
 
 --- 
 ## recipe table
-See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create and insert data.
+See [createRecipeTable.sql](./SQL/create/createRecipeTable.sql) for a script to create and insert data.
 
       CREATE TABLE recipe (
         id BIGSERIAL NOT NULL PRIMARY KEY,
