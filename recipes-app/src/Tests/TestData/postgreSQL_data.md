@@ -180,7 +180,7 @@ See [createRecipeTable.sql](./SQL/createRecipeTable.sql) for a script to create 
         id BIGSERIAL NOT NULL PRIMARY KEY,
         recipe_id INT NOT NULL REFERENCES recipe(id),
         step INT NOT NULL,
-        instruction VARCHAR(500) NOT NULL,
+        instruction VARCHAR(1000) NOT NULL,
         instruction_section_id INT NOT NULL REFERENCES instruction_section(id)
       );
 
