@@ -9,12 +9,9 @@ CREATE TABLE recipe_instruction (
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake');
-DECLARE 
-    s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Cake' AND recipe_id = r_id);
-DECLARE 
-    s2_id INT := (SELECT id FROM instruction_section WHERE name = 'Icing' AND recipe_id = r_id);
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake'); 
+    s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Cake' AND recipe_id = r_id); 
+    s2_id INT := (SELECT id FROM instruction_section WHERE name = 'Icing' AND recipe_id = r_id); 
     s3_id INT := (SELECT id FROM instruction_section WHERE name = 'Chocolate Shards' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -45,10 +42,8 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Leek and Potato Soup');
-DECLARE 
-    s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Soup' AND recipe_id = r_id);
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Leek and Potato Soup'); 
+    s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Soup' AND recipe_id = r_id); 
     s2_id INT := (SELECT id FROM instruction_section WHERE name = 'Garnish' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -73,8 +68,7 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Passion Fruit Martini');
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Passion Fruit Martini'); 
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Drink' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -85,8 +79,7 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Easy Pancakes');
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Easy Pancakes'); 
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Pancake' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -105,8 +98,7 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Classic Mulled Wine');
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Classic Mulled Wine'); 
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Mulled Wine' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -121,8 +113,7 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Simnel Cake');
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Simnel Cake'); 
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Cake' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
@@ -139,8 +130,7 @@ END$$;
 /*declaring variables to re-use*/
 DO $$
 DECLARE 
-    r_id INT := (SELECT id FROM recipe WHERE title = 'Bread Puffs');
-DECLARE 
+    r_id INT := (SELECT id FROM recipe WHERE title = 'Bread Puffs'); 
     s1_id INT := (SELECT id FROM instruction_section WHERE name = 'Bread' AND recipe_id = r_id);
 BEGIN
 /*insert into data commands*/
