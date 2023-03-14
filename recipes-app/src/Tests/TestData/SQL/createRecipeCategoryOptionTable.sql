@@ -7,43 +7,24 @@ DO $$
 -- Declare categories for re-use
 DECLARE
     nyd_cid INT := (SELECT id FROM category_option WHERE name = 'New Year''s Day');
-DECLARE
     pan_cid INT := (SELECT id FROM category_option WHERE name = 'Pancake Day');
-DECLARE
     eas_cid INT := (SELECT id FROM category_option WHERE name = 'Easter');
-DECLARE
     xme_cid INT := (SELECT id FROM category_option WHERE name = 'Christmas Eve');
-DECLARE
     xmd_cid INT := (SELECT id FROM category_option WHERE name = 'Christmas Day');
-DECLARE
     bxd_cid INT := (SELECT id FROM category_option WHERE name = 'Boxing Day');
-DECLARE
     win_cid INT := (SELECT id FROM category_option WHERE name = 'Winter');
-DECLARE
     spr_cid INT := (SELECT id FROM category_option WHERE name = 'Spring');
-DECLARE
     eid_cid INT := (SELECT id FROM category_option WHERE name = 'Eid');
-DECLARE
     ann_cid INT := (SELECT id FROM category_option WHERE name = 'Anniversary');
-DECLARE
     bdy_cid INT := (SELECT id FROM category_option WHERE name = 'Birthday');
-DECLARE
     din_cid INT := (SELECT id FROM category_option WHERE name = 'Dinner Party');
-DECLARE
-    wed_cid INT := (SELECT id FROM category_option WHERE name = 'Wedding');
-DECLARE 
-    ecc_rid INT := (SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake');
-DECLARE 
-    lps_rid INT := (SELECT id FROM recipe WHERE title = 'Leek and Potato Soup');
-DECLARE 
-    pfm_rid INT := (SELECT id FROM recipe WHERE title = 'Passion Fruit Martini');
-DECLARE 
-    pan_rid INT := (SELECT id FROM recipe WHERE title = 'Easy Pancakes');
-DECLARE 
-    cmw_rid INT := (SELECT id FROM recipe WHERE title = 'Classic Mulled Wine');
-DECLARE 
-    sim_rid INT := (SELECT id FROM recipe WHERE title = 'Simnel Cake');
-DECLARE 
+    wed_cid INT := (SELECT id FROM category_option WHERE name = 'Wedding'); 
+    ecc_rid INT := (SELECT id FROM recipe WHERE title = 'Easy Chocolate Cake'); 
+    lps_rid INT := (SELECT id FROM recipe WHERE title = 'Leek and Potato Soup'); 
+    pfm_rid INT := (SELECT id FROM recipe WHERE title = 'Passion Fruit Martini'); 
+    pan_rid INT := (SELECT id FROM recipe WHERE title = 'Easy Pancakes'); 
+    cmw_rid INT := (SELECT id FROM recipe WHERE title = 'Classic Mulled Wine'); 
+    sim_rid INT := (SELECT id FROM recipe WHERE title = 'Simnel Cake'); 
     brp_rid INT := (SELECT id FROM recipe WHERE title = 'Bread Puffs');
 BEGIN
     -- Easy Chocolate Cake
