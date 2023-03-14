@@ -1,0 +1,12 @@
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createCategoryOptionTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeCategoryOptionTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createInstructionSectionTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeIngredientTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeInstructionTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeTimeTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeNutritionalInfoTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createTagTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createRecipeTagTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createCategoryGroupTable.sql
+\i <your directory>/Recipes/recipes-app/src/Tests/TestData/SQL/createCategoryGroupOptionTable.sql
