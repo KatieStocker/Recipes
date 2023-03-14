@@ -28,38 +28,27 @@ DECLARE
     brp_rid INT := (SELECT id FROM recipe WHERE title = 'Bread Puffs');
 BEGIN
     -- Easy Chocolate Cake
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(ecc_rid, bdy_cid);
+    INSERT INTO 
+        recipe_category_option (recipe_id, category_option_id)
+    VALUES
+        (ecc_rid, bdy_cid),
     -- Leek and Potato Soup
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(lps_rid, win_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(lps_rid, spr_cid);
+        (lps_rid, win_cid),
+        (lps_rid, spr_cid),
     -- Passion Fruit Martini
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(pfm_rid, ann_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(pfm_rid, din_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(pfm_rid, wed_cid);
+        (pfm_rid, ann_cid),
+        (pfm_rid, din_cid),
+        (pfm_rid, wed_cid),
     -- Easy Pancakes
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(pan_rid, pan_cid);
+        (pan_rid, pan_cid),
     -- Classic Mulled Wine
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(cmw_rid, xme_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(cmw_rid, xmd_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(cmw_rid, bxd_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(cmw_rid, win_cid);
+        (cmw_rid, xme_cid),
+        (cmw_rid, xmd_cid),
+        (cmw_rid, bxd_cid),
+        (cmw_rid, win_cid),
     -- Simnel Cake
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(sim_rid, eas_cid);
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(sim_rid, spr_cid);
+        (sim_rid, eas_cid),
+        (sim_rid, spr_cid),
     -- Bread Puffs
-    INSERT INTO recipe_category_option (recipe_id, category_option_id)
-    VALUES(brp_rid, eid_cid);
+        (brp_rid, eid_cid);
 END; $$ language plpgsql

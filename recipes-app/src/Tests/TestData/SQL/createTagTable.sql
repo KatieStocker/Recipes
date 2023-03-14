@@ -2,42 +2,45 @@ CREATE TABLE tag (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     name VARCHAR(25) NOT NULL UNIQUE
 );
-INSERT INTO tag (name) VALUES ('Cake');
-INSERT INTO tag (name) VALUES ('Pastry');
-INSERT INTO tag (name) VALUES ('Bread');
-INSERT INTO tag (name) VALUES ('Biscuit');
-INSERT INTO tag (name) VALUES ('Snack');
-INSERT INTO tag (name) VALUES ('Dessert');
-INSERT INTO tag (name) VALUES ('Starter');
-INSERT INTO tag (name) VALUES ('Main');
-INSERT INTO tag (name) VALUES ('Chocolate');
-INSERT INTO tag (name) VALUES ('Dinner');
-INSERT INTO tag (name) VALUES ('Lunch');
-INSERT INTO tag (name) VALUES ('Breakfast');
-INSERT INTO tag (name) VALUES ('Soup');
-INSERT INTO tag (name) VALUES ('Appetiser');
-INSERT INTO tag (name) VALUES ('Cocktail');
-INSERT INTO tag (name) VALUES ('Alcoholic');
-INSERT INTO tag (name) VALUES ('Non-alcoholic');
-INSERT INTO tag (name) VALUES ('Free from');
-INSERT INTO tag (name) VALUES ('Vegetarian');
-INSERT INTO tag (name) VALUES ('Vegan');
-INSERT INTO tag (name) VALUES ('Festive');
-INSERT INTO tag (name) VALUES ('Savoury');
-INSERT INTO tag (name) VALUES ('Sweet');
-INSERT INTO tag (name) VALUES ('Sour');
-INSERT INTO tag (name) VALUES ('Bitter');
-INSERT INTO tag (name) VALUES ('Salty');
-INSERT INTO tag (name) VALUES ('Umami');
-INSERT INTO tag (name) VALUES ('No-bake');
-INSERT INTO tag (name) VALUES ('Meat');
-INSERT INTO tag (name) VALUES ('Fish');
-INSERT INTO tag (name) VALUES ('Vegetable');
-INSERT INTO tag (name) VALUES ('Finger food');
-INSERT INTO tag (name) VALUES ('Grilled');
-INSERT INTO tag (name) VALUES ('Baked');
-INSERT INTO tag (name) VALUES ('Fried');
-INSERT INTO tag (name) VALUES ('Stir fried');
-INSERT INTO tag (name) VALUES ('Air fried');
-INSERT INTO tag (name) VALUES ('Deep fried');
-INSERT INTO tag (name) VALUES ('Pan fried');
+INSERT INTO 
+    tag (name) 
+VALUES 
+    ('Cake'),
+    ('Pastry'),
+    ('Bread'),
+    ('Biscuit'),
+    ('Snack'),
+    ('Dessert'),
+    ('Starter'),
+    ('Main'),
+    ('Chocolate'),
+    ('Dinner'),
+    ('Lunch'),
+    ('Breakfast'),
+    ('Soup'),
+    ('Appetiser'),
+    ('Cocktail'),
+    ('Alcoholic'),
+    ('Non-alcoholic'),
+    ('Free from'),
+    ('Vegetarian'),
+    ('Vegan'),
+    ('Festive'),
+    ('Savoury'),
+    ('Sweet'),
+    ('Sour'),
+    ('Bitter'),
+    ('Salty'),
+    ('Umami'),
+    ('No-bake'),
+    ('Meat'),
+    ('Fish'),
+    ('Vegetable'),
+    ('Finger food'),
+    ('Grilled'),
+    ('Baked'),
+    ('Fried'),
+    ('Stir fried'),
+    ('Air fried'),
+    ('Deep fried'),
+    ('Pan fried');
