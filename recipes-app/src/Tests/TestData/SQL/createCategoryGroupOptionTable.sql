@@ -77,7 +77,7 @@ BEGIN
         (nwy_cg_id, nye_co_id),
         (nwy_cg_id, lny_co_id),
         -- Pancake Day
-        (pan_cg_id, lny_co_id),
+        (pan_cg_id, pan_co_id),
         -- Valentine's
         (val_cg_id, val_co_id),
         (val_cg_id, ann_co_id),
