@@ -256,7 +256,14 @@ DALL-E will generate four images from the prompt, each individually downloadable
 
 Response:
 
-<img src="Images/AI-Generated/DALL-E/1-sheer_khurma.png" width="15%">
-<img src="Images/AI-Generated/DALL-E/2-sheer_khurma.png" width="15%">
-<img src="Images/AI-Generated/DALL-E/3-sheer_khurma.png" width="15%">
-<img src="Images/AI-Generated/DALL-E/4-sheer_khurma.png" width="15%">
+<p float="left">
+<img src="Images/AI-Generated/DALL-E/1-sheer_khurma.png" width="15%"/>
+<img src="Images/AI-Generated/DALL-E/2-sheer_khurma.png" width="15%"/>
+<img src="Images/AI-Generated/DALL-E/3-sheer_khurma.png" width="15%"/>
+<img src="Images/AI-Generated/DALL-E/4-sheer_khurma.png" width="15%"/>
+</p>
+
+--- 
+
+Notes on findings:
+- Responses by DALL-E are more realistic than Midjourney.
