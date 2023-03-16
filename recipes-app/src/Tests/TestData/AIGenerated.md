@@ -1,0 +1,3 @@
+# AI Generated
+
+I used [Chat-GPT](https://chat.openai.com/chat), [Midjourney](https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F) and [DALL-E](https://labs.openai.com/) to see if an AI could generate recipes and images to match said recipe title. At some point in this journey I would like to try each recipe out to gauge just how accurate these Generative AI tools are with generating recipe data.
