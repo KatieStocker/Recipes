@@ -5,11 +5,20 @@
         "description": "Master the chocolate cake with an airy, light sponge and rich buttercream filling. It's simple enough for an afternoon tea but special enough for a party too",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_chocolate_cake-b62f92c.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/easy-chocolate-cake",
-        "sectionValues": {
-            "1": "Cake",
-            "2": "Icing",
-            "3": "Chocolate Shards"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Cake"
+            },
+            {
+                "id": 2,
+                "section": "Icing"
+            },
+            {
+                "id": 3,
+                "section": "Chocolate Shards"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 35,
@@ -21,30 +30,14 @@
             },
             "servings": 14,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 523
-                },
-                "fat": {
-                    "perServing": 29
-                },
-                "saturates": {
-                    "perServing": 18
-                },
-                "carbs": {
-                    "perServing": 59
-                },
-                "sugar": {
-                    "perServing": 47
-                },
-                "fibre": {
-                    "perServing": 2
-                },
-                "protein": {
-                    "perServing": 6
-                },
-                "salt": {
-                    "perServing": 0.6
-                }
+                "calories": 523,
+                "fat": 29,
+                "saturates": 18,
+                "carbs": 59,
+                "sugar": 47,
+                "fibre": 2,
+                "protein": 6,
+                "salt": 0.6
             }
         },
         "isVegetarian": true,
@@ -69,10 +62,16 @@
         "description": "Of the winter soups, leek and potato is one of the most comforting and familiar.",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-22567_12-4803173.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/leek-potato-soup",
-        "sectionValues": {
-            "1": "Soup",
-            "2": "Garnish"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Soup"
+            },
+            {
+                "id": 2,
+                "section": "Garnish"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 20,
@@ -84,30 +83,14 @@
             },
             "servings": 6,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 252
-                },
-                "fat": {
-                    "perServing": 18
-                },
-                "saturates": {
-                    "perServing": 11
-                },
-                "carbs": {
-                    "perServing": 18
-                },
-                "sugar": {
-                    "perServing": 0
-                },
-                "fibre": {
-                    "perServing": 3
-                },
-                "protein": {
-                    "perServing": 5
-                },
-                "salt": {
-                    "perServing": 0.7
-                }
+                "calories": 252,
+                "fat": 18,
+                "saturates": 11,
+                "carbs": 18,
+                "sugar": 0,
+                "fibre": 3,
+                "protein": 5,
+                "salt": 0.7
             }
         },
         "isVegetarian": true,
@@ -133,9 +116,12 @@
         "description": "This easy passion fruit cocktail is bursting with zingy flavours and is perfect for celebrating with friends. Top with prosecco for a special drink.",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/passionfruit-pornstar-martini-df3bbfb.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/passionfruit-pornstar-martini",
-        "sectionValues": {
-            "1": "Drink"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Drink"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 5,
@@ -147,30 +133,14 @@
             },
             "servings": 2,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 224
-                },
-                "fat": {
-                    "perServing": 0
-                },
-                "saturates": {
-                    "perServing": 0
-                },
-                "carbs": {
-                    "perServing": 16
-                },
-                "sugar": {
-                    "perServing": 16
-                },
-                "fibre": {
-                    "perServing": 2
-                },
-                "protein": {
-                    "perServing": 1
-                },
-                "salt": {
-                    "perServing": 0.03
-                }
+                "calories": 224,
+                "fat": 0,
+                "saturates": 0,
+                "carbs": 16,
+                "sugar": 16,
+                "fibre": 2,
+                "protein": 1,
+                "salt": 0.03
             }
         },
         "isVegetarian": true,
@@ -198,9 +168,12 @@
         "description": "Learn a skill for life with our foolproof easy crepe recipe that ensures perfect pancakes every time - elaborate flip optional.",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1273477_8-ad36e3b.jpg?quality=90&webp=true&resize=375,341",
         "web_link": "https://www.bbcgoodfood.com/recipes/easy-pancakes",
-        "sectionValues": {
-            "1": "Pancake"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Pancake"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 10,
@@ -212,30 +185,14 @@
             },
             "servings": 12,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 61
-                },
-                "fat": {
-                    "perServing": 2
-                },
-                "saturates": {
-                    "perServing": 1
-                },
-                "carbs": {
-                    "perServing": 7
-                },
-                "sugar": {
-                    "perServing": 1
-                },
-                "fibre": {
-                    "perServing": 0
-                },
-                "protein": {
-                    "perServing": 3
-                },
-                "salt": {
-                    "perServing": 0.1
-                }
+                "calories": 61,
+                "fat": 2,
+                "saturates": 1,
+                "carbs": 7,
+                "sugar": 1,
+                "fibre": 0,
+                "protein": 3,
+                "salt": 0.1
             }
         },
         "isVegetarian": true,
@@ -258,9 +215,12 @@
         "description": "Make perfectly spiced mulled wine at Christmas with our easy recipe. Use a good quality red wine like an unoaked tempranillo or try a twist with a dash of sloe gin.",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/mulled-wine-890c21a.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/mulled-wine",
-        "sectionValues": {
-            "1": "Mulled Wine"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Mulled Wine"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 5,
@@ -272,30 +232,14 @@
             },
             "servings": 6,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 196
-                },
-                "fat": {
-                    "perServing": 0.1
-                },
-                "saturates": {
-                    "perServing": 0
-                },
-                "carbs": {
-                    "perServing": 13.8
-                },
-                "sugar": {
-                    "perServing": 13.6
-                },
-                "fibre": {
-                    "perServing": 0.2
-                },
-                "protein": {
-                    "perServing": 0.3
-                },
-                "salt": {
-                    "perServing": 0.03
-                }
+                "calories": 196,
+                "fat": 0.1,
+                "saturates": 0,
+                "carbs": 13.8,
+                "sugar": 13.6,
+                "fibre": 0.2,
+                "protein": 0.3,
+                "salt": 0.03
             }
         },
         "isVegetarian": false,
@@ -322,9 +266,12 @@
         "description": "Bake this classic Easter simnel cake. Top with 11 balls of marzipan, or with spring flowers.",
         "image_url": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/simnel-cake-df8d9ac.jpg?quality=90&webp=true&resize=300,272",
         "web_link": "https://www.bbcgoodfood.com/recipes/easter-simnel-cake",
-        "sectionValues": {
-            "1": "Cake"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Cake"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 30,
@@ -336,30 +283,14 @@
             },
             "servings": 12,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 619
-                },
-                "fat": {
-                    "perServing": 29
-                },
-                "saturates": {
-                    "perServing": 12
-                },
-                "carbs": {
-                    "perServing": 77
-                },
-                "sugar": {
-                    "perServing": 60
-                },
-                "fibre": {
-                    "perServing": 2
-                },
-                "protein": {
-                    "perServing": 10
-                },
-                "salt": {
-                    "perServing": 0.65
-                }
+                "calories": 619,
+                "fat": 29,
+                "saturates": 12,
+                "carbs": 77,
+                "sugar": 60,
+                "fibre": 2,
+                "protein": 10,
+                "salt": 0.65
             }
         },
         "isVegetarian": true,
@@ -385,9 +316,12 @@
         "description": "Simple bread puffs. Even more delicious if you spread on some warm butter and fresh parsley when still warm.",
         "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgs_fAZ3yL7aU72havOTtZFUSNGGi4GH3b8B7DAf_15Bh4o_aZhFU06jqd_4dWWsiXSGM&usqp=CAU",
         "web_link": "https://www.instagram.com/reel/CpKx3mHIhcF/?igshid=YmMyMTA2M2Y=",
-        "sectionValues": {
-            "1": "Bread"
-        },
+        "sectionValues": [
+            {
+                "id": 1,
+                "section": "Bread"
+            }
+        ],
         "extraInformation": {
             "prepTime": {
                 "minutes": 10,
@@ -399,30 +333,14 @@
             },
             "servings": 6,
             "nutritionalInformation": {
-                "calories": {
-                    "perServing": 320
-                },
-                "fat": {
-                    "perServing": 15
-                },
-                "saturates": {
-                    "perServing": 2
-                },
-                "carbs": {
-                    "perServing": 40
-                },
-                "sugar": {
-                    "perServing": 2
-                },
-                "fibre": {
-                    "perServing": 2
-                },
-                "protein": {
-                    "perServing": 7
-                },
-                "salt": {
-                    "perServing": 0.07
-                }
+                "calories": 320,
+                "fat": 15,
+                "saturates": 2,
+                "carbs": 40,
+                "sugar": 2,
+                "fibre": 2,
+                "protein": 7,
+                "salt": 0.07
             }
         },
         "isVegetarian": true,
