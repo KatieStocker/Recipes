@@ -1,8 +1,8 @@
 import '../../CSS/HomePage.css'
 
-import Categories from './Categories';
-import Featured from './Featured';
-import TitleSection from './TitleSection';
+import Categories from './Categories.jsx';
+import Featured from './Featured.jsx';
+import TitleSection from './TitleSection.jsx';
 
 const HomePage = ({ data }) => {
 

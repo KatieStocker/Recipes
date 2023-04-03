@@ -1,4 +1,4 @@
-import RecipeTimes from './RecipeTimes'
+import RecipeTimes from './RecipeTimes.jsx'
 
 const RecipePageRecipe = ({ data }) => {
 

@@ -1,4 +1,4 @@
-import { isTimeZero, renderTimings } from "../../utils/RecipeTimeUtils";
+import { isTimeZero, renderTimings } from "../../utils/RecipeTimeUtils.js";
 
 const RecipeTimes = ({ data }) => {
     const { recipeTimings, isThumbnail } = data;

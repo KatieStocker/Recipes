@@ -1,10 +1,10 @@
 import { useLocation } from 'react-router-dom';
 import '../../CSS/RecipePage.css'
 
-import BackButton from '../Navigation/BackButton';
-import RecipePageIngredients from './RecipePageIngredients'
-import RecipePageInstructions from './RecipePageInstructions'
-import RecipePageRecipe from './RecipePageRecipe';
+import BackButton from '../Navigation/BackButton.jsx';
+import RecipePageIngredients from './RecipePageIngredients.jsx'
+import RecipePageInstructions from './RecipePageInstructions.jsx'
+import RecipePageRecipe from './RecipePageRecipe.jsx';
 
 import ingredients from '../../Tests/TestData/RecipeIngredientsExample.json'
 import instructions from '../../Tests/TestData/RecipeInstructionsExample.json'

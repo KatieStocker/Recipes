@@ -1,4 +1,4 @@
-import { renderRecipes } from "../../utils/RecipesUtils";
+import { renderRecipes } from "../../utils/RecipesUtils.js";
 
 const Recipes = ({ data }) => {
     const { RecipeData, filter } = data;

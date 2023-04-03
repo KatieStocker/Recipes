@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import '../../CSS/SeasonalPage.css'
 
-import { renderRecipes } from "../../utils/RecipesUtils";
-import { categoriesData } from '../../lib/categoriesData';
+import { renderRecipes } from "../../utils/RecipesUtils.js";
+import { categoriesData } from '../../lib/categoriesData.js';
 
 const SeasonalPage = ({ data }) => {
     const { RecipeData } = data;

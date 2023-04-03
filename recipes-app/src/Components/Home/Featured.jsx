@@ -1,4 +1,4 @@
-import Recipes from '../Recipe/Recipes';
+import Recipes from '../Recipe/Recipes.jsx';
 
 const Featured = ({ data }) => {
 

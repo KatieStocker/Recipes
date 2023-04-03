@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import RecipeTimes from "./RecipeTimes";
+import RecipeTimes from "./RecipeTimes.jsx";
 
 const RecipeThumbnail = ({ data }) => {
     const { recipe } = data;

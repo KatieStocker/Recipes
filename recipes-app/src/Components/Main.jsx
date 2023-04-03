@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import RecipeData from '../Tests/TestData/RecipeExample.json'
 
-import About from './About';
-import FilteredRecipes from './Recipe/FilteredRecipes';
-import HomePage from './Home/HomePage'
-import NavigationBar from './Navigation/NavigationBar'
-import RecipePage from './Recipe/RecipePage'
-import SeasonalPage from './Seasonal/SeasonalPage';
+import About from './About.jsx';
+import FilteredRecipes from './Recipe/FilteredRecipes.jsx';
+import HomePage from './Home/HomePage.jsx'
+import NavigationBar from './Navigation/NavigationBar.jsx'
+import RecipePage from './Recipe/RecipePage.jsx'
+import SeasonalPage from './Seasonal/SeasonalPage.jsx';
 
 const Main = () => {
 

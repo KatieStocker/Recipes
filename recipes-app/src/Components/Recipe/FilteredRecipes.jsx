@@ -1,4 +1,4 @@
-import Recipes from './Recipes'
+import Recipes from './Recipes.jsx'
 
 const FilteredRecipes = ({ data }) => {
     const { RecipeData, filter } = data;
