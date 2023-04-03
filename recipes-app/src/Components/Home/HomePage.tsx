@@ -8,7 +8,8 @@ import TitleSection from './TitleSection.tsx';
 interface HomePageProps {
     data: {
         RecipeData: object
-    }
+    },
+    className: string
 }
 
 const HomePage: React.FC<HomePageProps> = ({ data }) => {
