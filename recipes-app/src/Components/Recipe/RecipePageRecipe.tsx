@@ -1,6 +1,14 @@
-import RecipeTimes from './RecipeTimes.jsx'
+import React from 'react'
+import RecipeTimes from './RecipeTimes.tsx'
+import { Recipe } from '../../Types/Recipe.ts';
 
-const RecipePageRecipe = ({ data }) => {
+interface RecipePageRecipeProps {
+    data: {
+        recipeData: Recipe,
+    }
+}
+
+const RecipePageRecipe: React.FC<RecipePageRecipeProps> = ({ data }) => {
 
     const { recipeData } = data;
 

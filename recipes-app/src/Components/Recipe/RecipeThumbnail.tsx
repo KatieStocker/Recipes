@@ -1,7 +1,15 @@
+import React from 'react';
 import { useNavigate } from "react-router-dom";
-import RecipeTimes from "./RecipeTimes.jsx";
+import RecipeTimes from "./RecipeTimes.tsx";
+import { Recipe } from '../../Types/Recipe.ts';
 
-const RecipeThumbnail = ({ data }) => {
+interface RecipeThumbnailProps {
+    data: {
+        recipe: Recipe
+    }
+}
+
+const RecipeThumbnail: React.FC<RecipeThumbnailProps> = ({ data }) => {
     const { recipe } = data;
     const navigate = useNavigate();
 

@@ -1,6 +1,18 @@
+import React from 'react';
 import { isTimeZero, renderTimings } from "../../utils/RecipeTimeUtils.js";
+import { Timings } from '../../Types/Timings.ts';
 
-const RecipeTimes = ({ data }) => {
+interface RecipeTimesProps {
+    data: {
+        recipeTimings: {
+            prepTime: Timings,
+            cookTime: Timings
+        },
+        isThumbnail: boolean
+    }
+}
+
+const RecipeTimes: React.FC<RecipeTimesProps> = ({ data }) => {
     const { recipeTimings, isThumbnail } = data;
     const cssClass = isThumbnail ? "" : "timings-section"
 

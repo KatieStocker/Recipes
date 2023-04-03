@@ -1,6 +1,13 @@
-import Recipes from '../Recipe/Recipes.jsx';
+import React from 'react';
+import Recipes from '../Recipe/Recipes.tsx';
 
-const Featured = ({ data }) => {
+interface FeaturedProps {
+    data: {
+        RecipeData: object;
+    }
+}
+
+const Featured: React.FC<FeaturedProps> = ({ data }) => {
 
     const { RecipeData } = data;
 

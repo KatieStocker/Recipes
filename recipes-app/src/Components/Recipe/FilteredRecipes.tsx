@@ -1,6 +1,16 @@
-import Recipes from './Recipes.jsx'
+import React from 'react'
+import Recipes from './Recipes.tsx'
+import { Recipe } from '../../Types/Recipe.ts'
 
-const FilteredRecipes = ({ data }) => {
+interface FilteredRecipesProps {
+    data: {
+        RecipeData: Recipe[],
+        filter: string
+    },
+    className?: string
+}
+
+const FilteredRecipes: React.FC<FilteredRecipesProps> = ({ data }) => {
     const { RecipeData, filter } = data;
 
     const getTitle = () => {
