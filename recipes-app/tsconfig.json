@@ -12,7 +12,8 @@
         "allowImportingTsExtensions": true,
         "target": "es6",
         "module": "commonjs",
-        "strict": true
+        "strict": true,
+        "resolveJsonModule": true
     },
     "exclude": [
         "node_modules",
