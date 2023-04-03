@@ -6,7 +6,7 @@ interface FilteredRecipesProps {
         RecipeData: object,
         filter: string
     },
-    className: string
+    className?: string
 }
 
 const FilteredRecipes: React.FC<FilteredRecipesProps> = ({ data }) => {
