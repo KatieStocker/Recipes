@@ -1,11 +1,10 @@
 import React from 'react'
 import { renderRecipes } from "../../utils/RecipesUtils.js";
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface RecipesProps {
     data: {
-        RecipeData: {
-            type: string,
-        }[],
+        RecipeData: Recipe[],
         filter: string
     }
 }

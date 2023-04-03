@@ -9,12 +9,11 @@ import RecipePageRecipe from './RecipePageRecipe.tsx';
 
 import ingredients from '../../Tests/TestData/RecipeIngredientsExample.json';
 import instructions from '../../Tests/TestData/RecipeInstructionsExample.json';
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface RecipePageProps {
     data: {
-        selectedRecipe: {
-            id: number
-        }
+        selectedRecipe: Recipe
     },
     className?: string
 }

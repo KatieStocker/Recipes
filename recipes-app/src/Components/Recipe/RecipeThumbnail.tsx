@@ -1,18 +1,11 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import RecipeTimes from "./RecipeTimes.tsx";
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface RecipeThumbnailProps {
     data: {
-        recipe: {
-            id: number,
-            title: string,
-            image_url: string,
-            extraInformation: {
-                prepTime: object,
-                cookTime: object
-            },
-        }
+        recipe: Recipe
     }
 }
 

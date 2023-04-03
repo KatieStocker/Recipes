@@ -1,9 +1,10 @@
 import React from 'react'
 import Recipes from './Recipes.tsx'
+import { Recipe } from '../../Types/Recipe.ts'
 
 interface FilteredRecipesProps {
     data: {
-        RecipeData: object,
+        RecipeData: Recipe[],
         filter: string
     },
     className?: string

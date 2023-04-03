@@ -1,18 +1,10 @@
 import React from 'react'
 import RecipeTimes from './RecipeTimes.tsx'
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface RecipePageRecipeProps {
     data: {
-        recipeData: {
-            title: string,
-            description: string,
-            image_url: string,
-            extraInformation: {
-                prepTime: object,
-                cookTime: object
-            },
-            author: string
-        },
+        recipeData: Recipe,
     }
 }
 

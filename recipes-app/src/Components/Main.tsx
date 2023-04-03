@@ -9,6 +9,7 @@ import HomePage from './Home/HomePage.tsx'
 import NavigationBar from './Navigation/NavigationBar.tsx'
 import RecipePage from './Recipe/RecipePage.tsx'
 import SeasonalPage from './Seasonal/SeasonalPage.tsx';
+import { Recipe } from '../Types/Recipe.ts';
 
 const Main: React.FC = () => {
 
@@ -18,7 +19,7 @@ const Main: React.FC = () => {
         setOpen(!open)
     }
 
-    let selectedRecipe = RecipeData[1]
+    let selectedRecipe: Recipe = RecipeData[1] as Recipe
 
     // ToDo: function will be called for when the user selects a recipe from the list/on the website.
     const getRecipeFromId = (selectedId: number) => {
