@@ -1,14 +1,9 @@
 import React from 'react'
+import { RecipeInstructions } from '../../Types/RecipeInstructions'
 
 interface RecipePageInstructionsProps {
     data: {
-        instructions: {
-            id: number,
-            recipeId: number,
-            step: number,
-            instruction: string,
-            instructionSection: number
-        }[],
+        instructions: RecipeInstructions[],
         recipeId: number
     }
 }
