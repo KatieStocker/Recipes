@@ -1,16 +1,9 @@
 import React from 'react'
+import { RecipeIngredients } from '../../Types/RecipeIngredients'
 
 interface RecipePageIngredientsProps {
     data: {
-        ingredients: {
-            id: number,
-            recipeId: number,
-            ingredient: string,
-            quantity: string,
-            unit: string,
-            instructionSection: number,
-            prepInfo: string
-        }[],
+        ingredients: RecipeIngredients[],
         recipeId: number
     }
 }

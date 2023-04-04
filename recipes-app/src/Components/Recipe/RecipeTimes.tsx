@@ -1,13 +1,10 @@
 import React from 'react';
 import { isTimeZero, renderTimings } from "../../utils/RecipeTimeUtils.js";
-import { Timings } from '../../Types/Timings.ts';
+import { RecipeTimings } from '../../Types/RecipeTimings.ts';
 
 interface RecipeTimesProps {
     data: {
-        recipeTimings: {
-            prepTime: Timings,
-            cookTime: Timings
-        },
+        recipeTimings: RecipeTimings,
         isThumbnail: boolean
     }
 }

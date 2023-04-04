@@ -4,10 +4,11 @@ import '../../CSS/HomePage.css'
 import Categories from './Categories.tsx';
 import Featured from './Featured.tsx';
 import TitleSection from './TitleSection.tsx';
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface HomePageProps {
     data: {
-        RecipeData: object
+        RecipeData: Recipe[]
     },
     className: string
 }
