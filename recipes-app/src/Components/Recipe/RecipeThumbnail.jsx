@@ -12,7 +12,7 @@ const RecipeThumbnail = ({ data }) => {
     return (
         <div className="col-4 recipe-thumbnail" onClick={handleClick}>
             <img src={recipe.image_url} alt="recipe-url" className="thumbnail-image" />
-            <h4>{recipe.title}</h4>
+            <h5>{recipe.title}</h5>
             <RecipeTimes data={{ recipeTimings: recipe.extraInformation, isThumbnail: true }} />
         </div>
     )
