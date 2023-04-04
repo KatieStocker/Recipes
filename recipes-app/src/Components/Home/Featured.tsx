@@ -1,9 +1,10 @@
 import React from 'react';
 import Recipes from '../Recipe/Recipes.tsx';
+import { Recipe } from '../../Types/Recipe.ts';
 
 interface FeaturedProps {
     data: {
-        RecipeData: object;
+        RecipeData: Recipe[];
     }
 }
 
