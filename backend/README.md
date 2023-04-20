@@ -18,3 +18,7 @@
   - config.js       `// Environment variables, exports variables, such as db URL and secret key for JWT auth`
 - package.json      `// Project dependencies`
 - .env              `// Environment variables, environment-specific configuration variables that should not be committed to version control`
+
+
+## Libraries
+- [pg library](https://www.npmjs.com/package/pg)
