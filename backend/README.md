@@ -26,4 +26,5 @@
 - [express](https://www.npmjs.com/package/express)
 
 ## Instructions
+- `npm install` to install all dependencies.
 - `npm start` to start the server while current directory is set to the backend folder level.
