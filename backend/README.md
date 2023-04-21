@@ -24,7 +24,9 @@
 - [pg library](https://www.npmjs.com/package/pg)
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [express](https://www.npmjs.com/package/express)
+- [nodemon](https://www.npmjs.com/package/nodemon)
 
 ## Instructions
 - `npm install` to install all dependencies.
 - `npm start` to start the server while current directory is set to the backend folder level.
+- `npm run start:dev` to run the dev server (this will show changes made without needing to restart the server)
