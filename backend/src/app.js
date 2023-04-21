@@ -5,7 +5,8 @@ const logger = require('./logger'),
     {
         PORT,
     } = process.env,
-    app = express();
+    app = express(),
+    db = require('./db/index');
 
 app.use(bodyParser.json());
 app.use(
@@ -17,6 +18,8 @@ app.use(
 app.get("/", (req, res) => {
     res.json({ info: 'Node.js, Express, and Postgres API' })
 });
+
+app.get('/recipe', db.getRecipes);
 
 app.listen(PORT, err => {
     logger.info("App running on port:::::" + PORT);
