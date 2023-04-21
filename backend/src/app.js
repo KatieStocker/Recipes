@@ -1,12 +1,10 @@
 require('dotenv').config()
-const logger = require('./logger');
-const express = require('express');
-
-const {
-    PORT,
-} = process.env;
-
-const app = express()
+const logger = require('./logger'),
+    express = require('express'),
+    {
+        PORT,
+    } = process.env,
+    app = express();
 
 app.get("/", function (req, res) {
     res.send("Server is running");
