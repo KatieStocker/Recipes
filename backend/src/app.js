@@ -1,11 +1,11 @@
 require('dotenv').config()
+const logger = require('./logger');
+const express = require('express');
 
 const {
     PORT,
 } = process.env;
 
-const logger = require('./logger');
-const express = require('express');
 const app = express()
 
 app.get("/", function (req, res) {
