@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: __dirname + '../../.env.local' });
 const logger = require('./logger'),
     express = require('express'),
     bodyParser = require('body-parser'),
