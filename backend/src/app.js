@@ -1,15 +1,23 @@
 require('dotenv').config()
 const logger = require('./logger'),
     express = require('express'),
+    bodyParser = require('body-parser'),
     {
         PORT,
     } = process.env,
     app = express();
 
-app.get("/", function (req, res) {
-    res.send("Server is running");
+app.use(bodyParser.json());
+app.use(
+    bodyParser.urlencoded({
+        extended: true,
+    })
+);
+
+app.get("/", (req, res) => {
+    res.json({ info: 'Node.js, Express, and Postgres API' })
 });
 
-app.listen(PORT, function (err) {
-    logger.info("running server from port:::::" + PORT);
+app.listen(PORT, err => {
+    logger.info("App running on port:::::" + PORT);
 });
