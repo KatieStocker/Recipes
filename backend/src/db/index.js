@@ -16,15 +16,16 @@ const pool = new Pool({
     port: DB_PORT,
 });
 
+const recipeQueries = require('./queries/recipes');
+
 const getRecipes = (req, res) => {
-    pool.query('SELECT * FROM recipe', (err, results) => {
-        if (err) {
-            throw err
-        }
-        res.status(200).json(results.rows)
-    })
+    recipeQueries.getRecipes(req, res, pool)
+};
+const getRecipeById = (req, res) => {
+    recipeQueries.getRecipeById(req, res, pool)
 };
 
 module.exports = {
-    getRecipes
+    getRecipes,
+    getRecipeById
 }
