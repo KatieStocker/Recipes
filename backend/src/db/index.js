@@ -16,7 +16,7 @@ const pool = new Pool({
     port: DB_PORT,
 });
 
-const recipeQueries = require('./queries/recipes');
+const recipeQueries = require('./queries/recipe');
 
 const getRecipes = (req, res) => {
     recipeQueries.getRecipes(req, res, pool)
