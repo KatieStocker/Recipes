@@ -1,8 +1,14 @@
 const db = require('../pool.js')
 const query = require('./sqlQueries.js');
 
+const recipeString = `${query.selectAllFrom} recipe`;
+const whereParam = `${query.where} recipe.id = $1`
+const getJoinString = (stringValue) => {
+    return `${query.leftJoin} ${stringValue} ${query.on} recipe.id = ${stringValue}.recipe_id`;
+}
+
 const getRecipes = (req, res) => {
-    db.query(`${query.selectAllFrom} recipe`, (err, results) => {
+    db.query(`${recipeString}`, (err, results) => {
         if (err) {
             throw err
         }
@@ -12,7 +18,7 @@ const getRecipes = (req, res) => {
 
 const getRecipeById = (req, res) => {
     const id = parseInt(req.params.id)
-    db.query(`${query.selectAllFrom} recipe ${query.where} id = $1`, [id], (err, results) => {
+    db.query(`${recipeString} ${whereParam}`, [id], (err, results) => {
         if (err) {
             throw err
         }
@@ -22,10 +28,11 @@ const getRecipeById = (req, res) => {
 
 const getRecipePageRecipes = (req, res) => {
     const id = parseInt(req.params.id)
-    db.query(`${query.selectAllFrom} recipe ${query.innerJoin} recipe_ingredient ${query.on} recipe.id = recipe_ingredient.recipe_id ${query.innerJoin} recipe_instruction ${query.on} recipe.id = recipe_instruction.recipe_id ${query.where} recipe.id = $1`, [id], (err, results) => {
+    db.query(`${recipeString} ${getJoinString('recipe_ingredient')} ${getJoinString('recipe_instruction')} ${whereParam}`, [id], (err, results) => {
         if (err) {
             throw err
         }
+        console.log(results.rows)
         res.status(200).json(results.rows)
     })
 }
