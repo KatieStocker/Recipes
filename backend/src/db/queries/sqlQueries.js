@@ -18,6 +18,7 @@ exports.offset = 'OFFSET'
 exports.on = 'ON'
 exports.or = 'OR'
 exports.orderBy = 'ORDER BY'
+exports.rightJoin = 'RIGHT JOIN'
 exports.select = 'SELECT'
 exports.selectAllFrom = `SELECT * FROM`
 exports.set = 'SET'
