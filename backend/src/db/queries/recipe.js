@@ -1,5 +1,8 @@
-const getRecipes = (req, res, pool) => {
-    pool.query('SELECT * FROM recipe', (err, results) => {
+const db = require('../pool.js')
+const query = require('./sqlQueries.js');
+
+const getRecipes = (req, res) => {
+    db.query(`${query.selectAllFrom} recipe`, (err, results) => {
         if (err) {
             throw err
         }
@@ -7,9 +10,9 @@ const getRecipes = (req, res, pool) => {
     })
 };
 
-const getRecipeById = (req, res, pool) => {
+const getRecipeById = (req, res) => {
     const id = parseInt(req.params.id)
-    pool.query('SELECT * FROM recipe WHERE id = $1', [id], (err, results) => {
+    db.query(`${query.selectAllFrom} recipe ${query.where} id = $1`, [id], (err, results) => {
         if (err) {
             throw err
         }
