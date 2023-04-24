@@ -20,7 +20,7 @@ const getRecipeById = (req, res) => {
     })
 }
 
-const getRecipeForRecipePage = (req, res) => {
+const getRecipePageRecipes = (req, res) => {
     const id = parseInt(req.params.id)
     db.query(`${query.selectAllFrom} recipe ${query.innerJoin} recipe_ingredient ${query.on} recipe.id = recipe_ingredient.recipe_id ${query.innerJoin} recipe_instruction ${query.on} recipe.id = recipe_instruction.recipe_id ${query.where} recipe.id = $1`, [id], (err, results) => {
         if (err) {
@@ -33,5 +33,5 @@ const getRecipeForRecipePage = (req, res) => {
 module.exports = {
     getRecipes,
     getRecipeById,
-    getRecipeForRecipePage
+    getRecipePageRecipes,
 }
