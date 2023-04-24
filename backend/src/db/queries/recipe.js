@@ -4,7 +4,7 @@ const query = require('./sqlQueries.js');
 const recipeString = `${query.selectAllFrom} recipe`;
 const whereParam = `${query.where} recipe.id = $1`
 const getJoinString = (stringValue) => {
-    return `${query.leftJoin} ${stringValue} ${query.on} recipe.id = ${stringValue}.recipe_id`;
+    return `${query.innerJoin} ${stringValue} ${query.on} recipe.id = ${stringValue}.recipe_id`;
 }
 
 const getRecipes = (req, res) => {
@@ -26,9 +26,11 @@ const getRecipeById = (req, res) => {
     })
 }
 
+const selectStringWithAliases = `${query.select} recipe.id ${query.as} RecipeID, recipe_ingredient.id ${query.as} RecipeIngredientID, recipe_instruction.id ${query.as} RecipeInstructionID, * ${query.from} recipe`
+
 const getRecipePageRecipes = (req, res) => {
     const id = parseInt(req.params.id)
-    db.query(`${recipeString} ${getJoinString('recipe_ingredient')} ${getJoinString('recipe_instruction')} ${whereParam}`, [id], (err, results) => {
+    db.query(`${selectStringWithAliases} ${getJoinString('recipe_ingredient')} ${getJoinString('recipe_instruction')} ${whereParam}`, [id], (err, results) => {
         if (err) {
             throw err
         }
