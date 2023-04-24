@@ -5,6 +5,7 @@ const instruction = require('./queries/recipeInstruction')
 module.exports = {
     getRecipes: recipe.getRecipes,
     getRecipeById: recipe.getRecipeById,
+    getRecipePageRecipes: recipe.getRecipePageRecipes,
 
     getIngredient: ingredient.getIngredients,
     getIngredientById: ingredient.getIngredientById,
