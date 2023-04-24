@@ -1,5 +1,6 @@
 exports.all = '*'
 exports.and = 'AND'
+exports.as = 'AS'
 exports.between = 'BETWEEN'
 exports.count = 'COUNT'
 exports.countAll = 'COUNT(*)'
