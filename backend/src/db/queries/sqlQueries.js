@@ -1,0 +1,10 @@
+exports.all = '*'
+exports.from = 'FROM'
+exports.insertInto = 'INSERT INTO'
+exports.orderBy = 'ORDER BY'
+exports.select = 'SELECT'
+exports.selectAllFrom = `SELECT * FROM`
+exports.set = 'SET'
+exports.update = 'UPDATE'
+exports.values = 'VALUES'
+exports.where = 'WHERE'
