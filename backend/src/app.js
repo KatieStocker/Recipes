@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 
 app.get('/recipe', db.getRecipes);
 app.get('/recipe/:id', db.getRecipeById);
+app.get('/recipepagerecipe/:id', db.getRecipePageRecipes);
 
 app.listen(PORT, err => {
     logger.info("App running on port:::::" + PORT);
