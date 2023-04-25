@@ -1,17 +1,26 @@
-require('dotenv').config()
-const logger = require('./logger');
-const express = require('express');
+require('dotenv').config({ path: __dirname + '../../.env.local' });
+const logger = require('./logger'),
+    express = require('express'),
+    bodyParser = require('body-parser'),
+    {
+        PORT,
+    } = process.env,
+    app = express();
 
-const {
-    PORT,
-} = process.env;
+app.use(bodyParser.json());
+app.use(
+    bodyParser.urlencoded({
+        extended: true,
+    })
+);
 
-const app = express()
-
-app.get("/", function (req, res) {
-    res.send("Server is running");
+app.get("/", (req, res) => {
+    res.json({ info: 'Node.js, Express, and Postgres API' })
 });
 
-app.listen(PORT, function (err) {
-    logger.info("running server from port:::::" + PORT);
+app.use('/recipes', require('./routes/recipes'))
+app.use('/tags', require('./routes/tags'));
+
+app.listen(PORT, err => {
+    logger.info("App running on port:::::" + PORT);
 });
