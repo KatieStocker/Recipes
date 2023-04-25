@@ -28,7 +28,7 @@ app.get('/recipetags/recipe/:id', db.getRecipeTagsByRecipeId);
 app.get('/recipetags/tag/:id', db.getRecipeTagsByTagId);
 
 app.get('/recipetimes', db.getRecipeTimes);
-app.get('/recipetimes/:id', db.getRecipeTimesByRecipeId);
+app.get('/recipetimes/recipe/:id', db.getRecipeTimesByRecipeId);
 
 app.get('/tags', db.getTags);
 
