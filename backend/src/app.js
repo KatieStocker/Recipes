@@ -23,6 +23,9 @@ app.get('/recipe', db.getRecipes);
 app.get('/recipe/:id', db.getRecipeById);
 app.get('/recipepagerecipe/:id', db.getRecipePageRecipes);
 
+app.get('/recipetimes', db.getRecipeTimes);
+app.get('/recipetimes/:id', db.getRecipeTimesByRecipeId);
+
 app.get('/tags', db.getTags);
 
 app.listen(PORT, err => {
