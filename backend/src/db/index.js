@@ -26,4 +26,5 @@ module.exports = {
     getRecipeTimesByRecipeId: recipeTime.getRecipeTimesByRecipeId,
 
     getTags: tag.getTags,
+    getTagById: tag.getTagById,
 }
