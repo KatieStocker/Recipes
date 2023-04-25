@@ -23,6 +23,10 @@ app.get('/recipe', db.getRecipes);
 app.get('/recipe/:id', db.getRecipeById);
 app.get('/recipepagerecipe/:id', db.getRecipePageRecipes);
 
+app.get('/recipetags', db.getRecipeTags);
+app.get('/recipetags/recipe/:id', db.getRecipeTagsByRecipeId);
+app.get('/recipetags/tag/:id', db.getRecipeTagsByTagId);
+
 app.get('/recipetimes', db.getRecipeTimes);
 app.get('/recipetimes/:id', db.getRecipeTimesByRecipeId);
 
