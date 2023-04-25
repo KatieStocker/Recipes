@@ -19,9 +19,7 @@ app.get("/", (req, res) => {
     res.json({ info: 'Node.js, Express, and Postgres API' })
 });
 
-app.get('/recipe', db.getRecipes);
-app.get('/recipe/:id', db.getRecipeById);
-app.get('/recipepagerecipe/:id', db.getRecipePageRecipes);
+app.use('/recipes', require('./routes/recipes'))
 
 app.get('/recipeingredient/:id', db.getIngredientById);
 app.get('/recipeingredient/recipe/:id', db.getIngredientByRecipeId);
