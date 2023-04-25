@@ -1,6 +1,7 @@
 const recipe = require('./queries/recipe')
 const ingredient = require('./queries/recipeIngredient')
 const instruction = require('./queries/recipeInstruction')
+const tag = require('./queries/tag')
 
 module.exports = {
     getRecipes: recipe.getRecipes,
@@ -14,4 +15,6 @@ module.exports = {
     getInstruction: instruction.getInstructions,
     getInstructionById: instruction.getInstructionById,
     getInstructionByRecipeId: instruction.getInstructionByRecipeId,
+
+    getTags: tag.getTags,
 }
