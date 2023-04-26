@@ -1,3 +1,4 @@
+const category = require('./queries/category')
 const recipe = require('./queries/recipe')
 const ingredient = require('./queries/recipeIngredient')
 const instruction = require('./queries/recipeInstruction')
@@ -6,6 +7,9 @@ const recipeTime = require('./queries/recipeTime')
 const tag = require('./queries/tag')
 
 module.exports = {
+    getCategories: category.getCategories,
+    getCategoryById: category.getCategoryById,
+
     getRecipes: recipe.getRecipes,
     getRecipeById: recipe.getRecipeById,
     getRecipePageRecipes: recipe.getRecipePageRecipes,

@@ -18,7 +18,8 @@ app.get("/", (req, res) => {
     res.json({ info: 'Node.js, Express, and Postgres API' })
 });
 
-app.use('/recipes', require('./routes/recipes'))
+app.use('/categories', require('./routes/categories'));
+app.use('/recipes', require('./routes/recipes'));
 app.use('/tags', require('./routes/tags'));
 
 app.listen(PORT, err => {
