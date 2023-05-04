@@ -1,5 +1,6 @@
 const category = require('./queries/category')
 const categoryGroup = require('./queries/categoryGroup')
+const categoryGroupOptions = require('./queries/categoryGroupOption')
 const categoryOption = require('./queries/categoryOption')
 const recipe = require('./queries/recipe')
 const ingredient = require('./queries/recipeIngredient')
@@ -14,6 +15,11 @@ module.exports = {
 
     getCategoryGroups: categoryGroup.getCategoryGroups,
     getCategoryGroupById: categoryGroup.getCategoryGroupById,
+
+    getCategoryGroupOptions: categoryGroupOptions.getCategoryGroupOptions,
+    getCategoryGroupOptionById: categoryGroupOptions.getCategoryGroupOptionById,
+    getCategoryGroupOptionByGroupId: categoryGroupOptions.getCategoryGroupOptionByGroupId,
+    getCategoryGroupOptionByOptionId: categoryGroupOptions.getCategoryGroupOptionByOptionId,
 
     getCategoryOptions: categoryOption.getCategoryOptions,
     getCategoryOptionById: categoryOption.getCategoryOptionById,
