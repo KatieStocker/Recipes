@@ -1,4 +1,3 @@
-const category = require('./queries/category')
 const categoryGroup = require('./queries/categoryGroup')
 const categoryGroupOptions = require('./queries/categoryGroupOption')
 const categoryOption = require('./queries/categoryOption')
@@ -10,9 +9,6 @@ const recipeTime = require('./queries/recipeTime')
 const tag = require('./queries/tag')
 
 module.exports = {
-    getCategories: category.getCategories,
-    getCategoryById: category.getCategoryById,
-
     getCategoryGroups: categoryGroup.getCategoryGroups,
     getCategoryGroupById: categoryGroup.getCategoryGroupById,
 
