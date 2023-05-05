@@ -1,7 +1,11 @@
 CREATE TABLE category_group_option (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     category_group_id INT NOT NULL REFERENCES category_group(id),
-    category_option_id INT NOT NULL REFERENCES category_option(id)
+    category_option_id INT NOT NULL REFERENCES category_option(id),
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 DO $$
 DECLARE

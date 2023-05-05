@@ -3,7 +3,11 @@ CREATE TABLE category_group (
     name VARCHAR(50) NOT NULL,
     is_season BOOLEAN NOT NULL DEFAULT FALSE,
     is_occasion BOOLEAN NOT NULL DEFAULT FALSE,
-    is_dietary BOOLEAN NOT NULL DEFAULT FALSE
+    is_dietary BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 INSERT INTO 
     category_group (name, is_season) 

@@ -1,7 +1,11 @@
 CREATE TABLE instruction_section (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     recipe_id INT NOT NULL REFERENCES recipe(id),
-    name VARCHAR(25) NOT NULL
+    name VARCHAR(25) NOT NULL,
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 DO $$
 DECLARE

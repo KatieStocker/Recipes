@@ -3,7 +3,11 @@ CREATE TABLE recipe_instruction (
     recipe_id INT NOT NULL REFERENCES recipe(id),
     step INT NOT NULL,
     instruction VARCHAR(1000) NOT NULL,
-    instruction_section_id INT NOT NULL REFERENCES instruction_section(id)
+    instruction_section_id INT NOT NULL REFERENCES instruction_section(id),
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 /*Easy Chocolate Cake*/
 DO $$

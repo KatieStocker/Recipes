@@ -1,7 +1,11 @@
 CREATE TABLE recipe_tag (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     recipe_id INT NOT NULL REFERENCES recipe(id),
-    tag_id INT NOT NULL REFERENCES tag(id)
+    tag_id INT NOT NULL REFERENCES tag(id),
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 DO $$
 -- Recipes

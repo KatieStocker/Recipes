@@ -9,7 +9,11 @@ CREATE TABLE recipe (
     is_seasonal BOOLEAN NOT NULL DEFAULT FALSE,
     is_occasional BOOLEAN NOT NULL DEFAULT FALSE,
     type VARCHAR(10) NOT NULL,
-    author VARCHAR(50) NOT NULL
+    author VARCHAR(50) NOT NULL,
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 INSERT INTO
     recipe (title, description, image_url, web_link, is_vegetarian, is_vegan, is_seasonal, is_occasional, type, author)

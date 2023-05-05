@@ -5,7 +5,11 @@ CREATE TABLE recipe_ingredient (
     quantity NUMERIC(10, 2),
     unit VARCHAR(25),
     instruction_section_id INT NOT NULL REFERENCES instruction_section(id),
-    prep_info VARCHAR(150)
+    prep_info VARCHAR(150),
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 /*Easy Chocolate Cake*/
 /*declaring variables to re-use*/
