@@ -4,6 +4,8 @@ const categoryOption = require('./queries/categoryOption')
 const recipe = require('./queries/recipe')
 const ingredient = require('./queries/recipeIngredient')
 const instruction = require('./queries/recipeInstruction')
+const instructionSection = require('./queries/instructionSection')
+const nutritionalInfo = require('./queries/nutritionalInfo')
 const recipeTag = require('./queries/recipeTag')
 const recipeTime = require('./queries/recipeTime')
 const tag = require('./queries/tag')
@@ -31,6 +33,12 @@ module.exports = {
     getInstruction: instruction.getInstructions,
     getInstructionById: instruction.getInstructionById,
     getInstructionByRecipeId: instruction.getInstructionByRecipeId,
+
+    getInstructionSection: instructionSection.getInstructionSections,
+    getInstructionSectionById: instructionSection.getInstructionSectionById,
+
+    getNutritionalInfo: nutritionalInfo.getNutritionalInfos,
+    getNutritionalInfoById: nutritionalInfo.getNutritionalInfoById,
 
     getRecipeTags: recipeTag.getRecipeTags,
     getRecipeTagsByRecipeId: recipeTag.getRecipeTagsByRecipeId,
