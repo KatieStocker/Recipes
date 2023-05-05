@@ -42,6 +42,9 @@ module.exports = (sequelize, DataTypes, Model) => {
         created_at: {
             type: DataTypes.DATE
         },
+        author: {
+            type: DataTypes.STRING
+        },
         updated_at: {
             type: DataTypes.DATE
         },
