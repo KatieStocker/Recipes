@@ -4,7 +4,11 @@ CREATE TABLE recipe_time (
     prep_minutes INT CHECK (prep_minutes < 60) DEFAULT 0 NOT NULL,
     prep_hours INT DEFAULT 0 NOT NULL,
     cook_minutes INT CHECK (cook_minutes < 60) DEFAULT 0 NOT NULL,
-    cook_hours INT DEFAULT 0 NOT NULL
+    cook_hours INT DEFAULT 0 NOT NULL,
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 INSERT INTO 
     recipe_time (recipe_id, prep_minutes, cook_minutes, cook_hours)

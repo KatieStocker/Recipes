@@ -12,6 +12,12 @@ router.get('/ingredients/recipe/:id', db.getIngredientByRecipeId);
 router.get('/instructions/:id', db.getInstructionById);
 router.get('/instructions/recipe/:id', db.getInstructionByRecipeId);
 
+router.get('/instruction-section', db.getInstructionSection);
+router.get('/instruction-section/:id', db.getInstructionSectionById);
+
+router.get('/nutritional-info', db.getNutritionalInfo);
+router.get('/nutritional-info/:id', db.getNutritionalInfoById);
+
 router.get('/tags', db.getRecipeTags);
 router.get('/tags/recipe/:id', db.getRecipeTagsByRecipeId);
 router.get('/tags/tag/:id', db.getRecipeTagsByTagId);

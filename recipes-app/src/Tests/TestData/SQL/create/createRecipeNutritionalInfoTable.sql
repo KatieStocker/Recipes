@@ -9,7 +9,11 @@ CREATE TABLE recipe_nutritional_info (
     sugar NUMERIC(10, 3) NOT NULL DEFAULT 0,
     fibre NUMERIC(10, 3) NOT NULL DEFAULT 0,
     protein NUMERIC(10, 3) NOT NULL DEFAULT 0,
-    salt NUMERIC(10, 3) NOT NULL DEFAULT 0
+    salt NUMERIC(10, 3) NOT NULL DEFAULT 0,
+    created_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    updated_at DATE DEFAULT CURRENT_DATE NOT NULL,
+    created_by VARCHAR(50) DEFAULT 'System' NOT NULL,
+    updated_by VARCHAR(50) DEFAULT 'System' NOT NULL
 );
 INSERT INTO 
     recipe_nutritional_info (recipe_id, servings, calories, fat, saturates, carbs, sugar, fibre, protein, salt)
