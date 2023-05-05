@@ -1,25 +1,13 @@
 module.exports = (sequelize, DataTypes, Model) => {
 
-    class RecipeTime extends Model { }
+    class RecipeTag extends Model { }
 
-    RecipeTime.init({
+    RecipeTag.init({
         recipe_id: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        prep_minutes: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        prep_hours: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        cook_minutes: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        cook_hours: {
+        tag_id: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
@@ -37,8 +25,8 @@ module.exports = (sequelize, DataTypes, Model) => {
         },
     }, {
         sequelize,
-        modelName: 'recipe_time'
+        modelName: 'recipe_tag'
     });
 
-    return RecipeTime;
+    return RecipeTag;
 }
