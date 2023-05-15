@@ -25,3 +25,5 @@ app.use('/tags', require('./routes/tags'));
 app.listen(PORT, err => {
     logger.info("App running on port:::::" + PORT);
 });
+
+module.exports = app;
