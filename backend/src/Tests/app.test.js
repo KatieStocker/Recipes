@@ -39,4 +39,13 @@ describe('Test API endpoints', () => {
                 done();
             });
     });
+
+    it('should return a 200 response for GET /recipes', (done) => {
+        chai.request(app)
+            .get('/recipes')
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    });
 });
