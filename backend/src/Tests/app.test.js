@@ -32,11 +32,9 @@ client.connect();
 
 describe('Test API endpoints', () => {
     it('should return a 200 response for GET /', (done) => {
-        console.log(`testing the .env values: ${DB_USER}, ${DB_HOST}`);
         chai.request(app)
             .get('/')
             .end((err, res) => {
-                console.log(`response object from request: ${res}`)
                 res.should.have.status(200);
                 done();
             });
