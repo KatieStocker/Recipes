@@ -48,4 +48,13 @@ describe('Test API endpoints', () => {
                 done();
             });
     });
+
+    it('should return a 200 response for GET /tags', (done) => {
+        chai.request(app)
+            .get('/tags')
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    });
 });
