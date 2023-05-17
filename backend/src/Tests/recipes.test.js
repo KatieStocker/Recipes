@@ -44,7 +44,6 @@ describe('Test API endpoints', () => {
         chai.request(app)
             .get('/recipes/1')
             .end((err, res) => {
-                console.log(res)
                 res.should.have.status(200);
                 done();
             });
