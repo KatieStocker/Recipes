@@ -3,6 +3,7 @@ const chaiHttp = require('chai-http');
 const app = require('../app');
 
 const should = chai.should();
+const { expect } = require("chai")
 chai.use(chaiHttp);
 
 const { Client } = require('pg');
@@ -45,6 +46,8 @@ describe('Test API endpoints', () => {
             .get('/tags/1')
             .end((err, res) => {
                 res.should.have.status(200);
+                expect(res).to.have.property("text")
+                expect(res.text).to.include(`"id":"1"`)
                 done();
             });
     });
