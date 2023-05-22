@@ -41,7 +41,7 @@ describe('Test API endpoints', () => {
             });
     });
 
-    it('should return a 200 response for GET /tags/:id where the id exists', (done) => {
+    it('should return a 200 response for GET /tags/:id where the id exists and the response object should contain the correct values', (done) => {
         chai.request(app)
             .get('/tags/1')
             .end((err, res) => {
