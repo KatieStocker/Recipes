@@ -31,15 +31,6 @@ client.connect();
 // implement an 'after' to clean up the tables after all tests are complete
 
 describe('Test API endpoints', () => {
-    it('should return a 200 response for GET /', (done) => {
-        chai.request(app)
-            .get('/')
-            .end((err, res) => {
-                res.should.have.status(200);
-                done();
-            });
-    });
-
     it('should return a 200 response for GET /recipes', (done) => {
         chai.request(app)
             .get('/recipes')
@@ -49,9 +40,9 @@ describe('Test API endpoints', () => {
             });
     });
 
-    it('should return a 200 response for GET /tags', (done) => {
+    it('should return a 200 response for GET /recipes/:id where the id = 1', (done) => {
         chai.request(app)
-            .get('/tags')
+            .get('/recipes/1')
             .end((err, res) => {
                 res.should.have.status(200);
                 done();

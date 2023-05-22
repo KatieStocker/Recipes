@@ -3,6 +3,7 @@ const chaiHttp = require('chai-http');
 const app = require('../app');
 
 const should = chai.should();
+const { expect } = require("chai")
 chai.use(chaiHttp);
 
 const { Client } = require('pg');
@@ -31,29 +32,22 @@ client.connect();
 // implement an 'after' to clean up the tables after all tests are complete
 
 describe('Test API endpoints', () => {
-    it('should return a 200 response for GET /', (done) => {
-        chai.request(app)
-            .get('/')
-            .end((err, res) => {
-                res.should.have.status(200);
-                done();
-            });
-    });
-
-    it('should return a 200 response for GET /recipes', (done) => {
-        chai.request(app)
-            .get('/recipes')
-            .end((err, res) => {
-                res.should.have.status(200);
-                done();
-            });
-    });
-
     it('should return a 200 response for GET /tags', (done) => {
         chai.request(app)
             .get('/tags')
             .end((err, res) => {
                 res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('should return a 200 response for GET /tags/:id where the id exists and the response object should contain the correct values', (done) => {
+        chai.request(app)
+            .get('/tags/1')
+            .end((err, res) => {
+                res.should.have.status(200);
+                expect(res).to.have.property("text")
+                expect(res.text).to.include(`"id":"1"`)
                 done();
             });
     });
