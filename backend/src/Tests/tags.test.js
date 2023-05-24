@@ -48,6 +48,7 @@ describe('Test API endpoints', () => {
                 res.should.have.status(200);
                 expect(res).to.have.property("text")
                 expect(res.text).to.include(`"id":"1"`)
+                expect(res.text).to.include(`"name":"Cake"`)
                 done();
             });
     });
