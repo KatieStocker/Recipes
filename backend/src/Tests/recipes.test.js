@@ -1,7 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const app = require('../app');
-
+const { expect } = require("chai")
 const should = chai.should();
 chai.use(chaiHttp);
 
@@ -45,6 +45,19 @@ describe('Test API endpoints', () => {
             .get('/recipes/1')
             .end((err, res) => {
                 res.should.have.status(200);
+                done();
+            });
+    });
+
+    it('should return a 200 response for GET /recipes/page/1 where the id exists and the response object should contain the correct values', (done) => {
+        chai.request(app)
+            .get('/recipes/page/1')
+            .end((err, res) => {
+                res.should.have.status(200);
+                expect(res).to.have.property("text")
+                expect(res.text).to.include(`"id":"1"`)
+                expect(res.text).to.include(`"title":"Easy Chocolate Cake"`)
+                expect(res.text).to.include(`"name":"Cocoa Powder"`)
                 done();
             });
     });
